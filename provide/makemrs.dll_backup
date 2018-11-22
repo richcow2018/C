@@ -1,0 +1,168 @@
+##################################################################
+#		Makefile.dl
+#			Sample Makefile for TRADE Application Program
+#				with Dynamic Link Function
+#						96.03.25
+#               ＳＭＰ用ｍａｋｅｆｉｌｅ
+##################################################################
+
+
+# 2002.11.12 
+# TRADE未提供ヘッダファイル対応：現状の対処として"SMP/inc" へ格納
+# →対象ヘッダファイルは必ず対処すること!
+# 1. osexdef.h
+
+#OUTDIR		=	/opt/lala/smp
+#INDIR		=	/home/smp/lala
+#MYHOME		=	/home/smp/supply/test/edp
+
+OUTDIR		=	/usr/rev/SMP
+#INDIR		=	/usr/test/TRADE
+MYHOME		=	/usr/rev/SMP/src/rcv
+OBJHOME		=	/usr/rev/SMP/obj/rcv
+APLM		=	/opt/lala/smp
+APLIB		=	/opt/lala/smp/dll/smplib
+
+
+##################################################################
+#	ディレクトリの定義（各マシンの環境に設定を合わせること）
+##################################################################
+# TRADE開発環境のrootディレクトリ
+##################################################################
+BASE	=	${OUTDIR}
+
+##################################################################
+# TRADEヘッダファイルのディレクトリ
+##################################################################
+#TRADEH	=	${INDIR}/tinc
+TRADEH	=	${BASE}/tinc
+
+##################################################################
+# SMPヘッダファイルのディレクトリ
+##################################################################
+SMPH	=	/usr/rev/SMP/sinc
+
+##################################################################
+# SMPロードセグメントのディレクトリ
+##################################################################
+SMPLIB	=	${APLIB}
+SMPLM	=	${APLM}
+
+##################################################################
+# SMPソ−スファイルのディレクトリ
+##################################################################
+SMPS	=	${MYHOME}/mrs
+
+##################################################################
+# SMPオブジェクトファイルのディレクトリ
+##################################################################
+SMPOBJ	=	${OBJHOME}/mrs
+
+#EDPLS	=	${MYHOME}/dll/smplib
+
+##################################################################
+# DCS-LIBディレクトリ
+##################################################################
+DCSLIBH	=	/opt/FJSVsblp/include
+LSDCS_L	=	/opt/FJSVsblp/lib
+
+##################################################################
+#	コンパイラオプションの定義(-I等を除き基本的に変更しないこと)
+# コンパイラ
+##################################################################
+CC	=	gcc
+AR	=	ar
+AS	=	as
+
+##################################################################
+# リンカ
+##################################################################
+LD	=	gcc
+
+##################################################################
+# LMを作成する時のリンカオプション
+##################################################################
+#LMLDOPT	=	-lc -L/opt/FJSVsblp/lib -lfmpf2 -lpthread -lnsl
+LMLDOPT =   -lc -L/opt/FJSVsblp/lib -lfmpf2 -ldcs_lib -lu_dacicl -lpthread
+
+##################################################################
+# LSを作成する時のコンパイラオプション
+##################################################################
+LSCCOPT =	-fPIC \
+			-c \
+			-O \
+			-g \
+			-O2 \
+			-Wall
+LSOOPT	=	-DTPAPI -DMOLOG -DEXITRM -DDEBUGF
+
+#LSOOPT	=	-DTPAPI -DMOLOG -DEXITRM -DSI_DEBUG 
+
+
+##################################################################
+# LSを作成する時のリンカオプション
+##################################################################
+#LSLDOPT	=	-lc -shared -L/opt/FJSVsblp/lib -lfmpf2 -ldcs_lib
+LSLDOPT	=	-lc -shared -L/opt/FJSVsblp/lib -lfmpf2 
+
+##################################################################
+# スタートアップルーチンの定義（環境に合わせて設定する）
+##################################################################
+CRT0=
+
+##################################################################
+#	ユーザプログラムファイルの定義			
+##################################################################
+#LS=	${SMPLM}/aphost.so ${LSSMP} ${EDPLS}/libmedp.so
+#LM=	${MYHOME}/fipts01
+#LS=	${MYHOME}/fipts01.so ${LSSMP}
+LM=		${APLM}/mrs
+LS=		${APLIB}/mrs.so ${LSSMP}
+
+##################################################################
+LSSMP = 		\
+		${SMPLIB}/libmfip.so \
+		${SMPLIB}/libmfip1.so \
+		${SMPLIB}/libmcom.so \
+		${SMPLIB}/libmscp.so \
+		${SMPLIB}/libmocp.so \
+		${SMPLIB}/libmtbl.so \
+		${SMPLIB}/libmasin.so \
+		${SMPLIB}/libmap.so \
+		${SMPLIB}/libmedp.so \
+		${SMPLIB}/libmrcv.so
+
+##################################################################
+TRADELIB =	\
+		${APLIB}/libmtre.so 
+##################################################################
+OBJ1	=	${SMPOBJ}/mr_mrs.o \
+		${SMPOBJ}/mr_smrs.o \
+ 		${SMPOBJ}/lm_mrs.o
+#		${SMPOBJ}/dump.o
+
+     
+##################################################################
+${LM}	:	${LS}
+	${LD} ${LMLDOPT} -o ${LM} ${CRT0} ${LS}	${TRADELIB} ${SMPOBJ}/lm_mrs.o
+
+#	cp fipts01 /opt/lala/apl/.
+#	cp fipts01.so /opt/lala/apl/dll/aplm/.
+##################################################################
+#${MYHOME}/fipts01.so	:	${OBJ1}
+#	${LD} ${LSLDOPT} -o ${MYHOME}/fipts01.so ${OBJ1}
+${APLIB}/mrs.so		:	${OBJ1}
+	${LD} ${LSLDOPT} -o ${APLIB}/mrs.so ${OBJ1} 
+
+##################################################################
+${SMPOBJ}/lm_mrs.o	:	${SMPS}/lm_mrs.c 
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${DCSLIBH} -I${TRADEH} -o ${SMPOBJ}/lm_mrs.o ${SMPS}/lm_mrs.c
+
+${SMPOBJ}/mr_mrs.o	:	${SMPS}/mr_mrs.c 
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${DCSLIBH} -I${TRADEH} -o ${SMPOBJ}/mr_mrs.o ${SMPS}/mr_mrs.c
+
+${SMPOBJ}/mr_smrs.o	:	${SMPS}/mr_smrs.c 
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${DCSLIBH} -I${TRADEH} -o ${SMPOBJ}/mr_smrs.o ${SMPS}/mr_smrs.c
+
+#${SMPOBJ}/dump.o	:	${SMPS}/dump.c
+#	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${DCSLIBH} -I${TRADEH} -o ${SMPOB#J}/dump.o ${SMPS}/dump.c

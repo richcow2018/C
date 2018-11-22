@@ -1,0 +1,836 @@
+##################################################################
+#		Makefile.dl
+#			Sample Makefile for TRADE Application Program
+#				with Dynamic Link Function
+#						96.03.25
+#               ＳＭＰ用ｍａｋｅｆｉｌｅ
+##################################################################
+
+
+ROOTDIR		=	/usr/rev/SMP
+LIBDIR		=	/opt/lala/smp
+#SHAREDDIR	=	/opt/lala/smp
+
+##################################################################
+#	ディレクトリの定義（各マシンの環境に設定を合わせること）
+##################################################################
+# TRADE開発環境のrootディレクトリ
+##################################################################
+BASE	=	${ROOTDIR}
+																	
+##################################################################
+# TRADEヘッダファイルのディレクトリ
+##################################################################
+TRADEH	=	${ROOTDIR}/tinc
+																	
+##################################################################
+# SMPヘッダファイルのディレクトリ
+##################################################################
+SMPH	=	${ROOTDIR}/sinc
+																	
+##################################################################
+# SMPロードセグメントのディレクトリ
+##################################################################
+SMPLIB	=	${LIBDIR}/dll/smplib
+SMPLM	=	${LIBDIR}/dll/smplm
+##################################################################
+# SMPソ−スファイルのディレクトリ
+##################################################################
+SMPS	=	${ROOTDIR}/src/rcv/com
+																	
+##################################################################
+# SMPオブジェクトファイルのディレクトリ
+##################################################################
+SMPOBJ	=	${ROOTDIR}/obj/rcv/com
+
+##################################################################
+#	コンパイラオプションの定義(-I等を除き基本的に変更しないこと)
+# コンパイラ
+##################################################################
+CC	=	gcc
+AR	=	ar
+AS	=	as
+																	
+##################################################################
+# リンカ
+##################################################################
+LD	=	gcc
+																	
+##################################################################
+# LMを作成する時のリンカオプション
+##################################################################
+#LMLDOPT	=	-dy
+LMLDOPT	=	-lc -L/opt/FJSVsblp/lib -lfmpf2
+##################################################################
+# LSを作成する時のコンパイラオプション 2003/02/27 -DDEBUGF削除
+##################################################################
+LSCCOPT =	-fPIC \
+			-c \
+			-g
+LSOOPT  =   -D MOLOG -D EXITRM -D DEBUGF
+
+##################################################################
+# LSを作成する時のリンカオプション
+##################################################################
+LSLDOPT	=	-lc -shared -L/opt/FJSVsblp/lib -lfmpf2
+##LSLDOPT	=	-dy -G
+##################################################################
+# スタートアップルーチンの定義（環境に合わせて設定する）
+##################################################################
+#CRT0=		$(BASE)/rlib/rcrt0.o									
+CRT0=
+##################################################################
+#TRADELIB =	\
+#		${ROOTDIR}/dll/smplib/libmtre.so 
+#		$(BASE)/lib/libmtre.so 
+#		/usr/lala/trade/lib/trade.so 
+#		$(SMPLIB)/libmtre.so 
+##################################################################
+##################################################################
+#	ユーザプログラムファイルの定義			
+##################################################################
+LM=
+LS=libmrcv
+##LM=														
+##LS=		$(SMPLM)/libmrcv
+OBJ1=                    \
+     $(SMPOBJ)/mr_libmrcv.o \
+     $(SMPOBJ)/mr_cpca.o \
+     $(SMPOBJ)/mr_cpct.o \
+     $(SMPOBJ)/mr_ejrq.o \
+     $(SMPOBJ)/mr_esrq.o \
+     $(SMPOBJ)/mr_jclr.o \
+     $(SMPOBJ)/mr_jcls.o \
+     $(SMPOBJ)/mr_jedt.o \
+     $(SMPOBJ)/mr_jint.o \
+     $(SMPOBJ)/mr_jnl.o \
+     $(SMPOBJ)/mr_jopn.o \
+     $(SMPOBJ)/mr_nabt.o \
+     $(SMPOBJ)/mr_pffj.o \
+     $(SMPOBJ)/mr_pfil.o \
+     $(SMPOBJ)/mr_pftj.o \
+     $(SMPOBJ)/mr_pint.o \
+     $(SMPOBJ)/mr_pint2.o \
+     $(SMPOBJ)/mr_prec.o \
+     $(SMPOBJ)/mr_ptrm.o \
+     $(SMPOBJ)/mr_pcan.o \
+     $(SMPOBJ)/mr_pexs.o \
+     $(SMPOBJ)/mr_pset.o \
+     $(SMPOBJ)/mr_peri.o \
+     $(SMPOBJ)/mr_prcv.o \
+     $(SMPOBJ)/mr_prcx.o \
+     $(SMPOBJ)/mr_ptbl.o \
+     $(SMPOBJ)/mr_cgbf.o \
+     $(SMPOBJ)/mr_sabt.o \
+     $(SMPOBJ)/mr_sdwn.o \
+     $(SMPOBJ)/mr_sinf.o \
+     $(SMPOBJ)/mr_sjnc.o \
+     $(SMPOBJ)/mr_sjnl.o \
+     $(SMPOBJ)/mr_sjud.o \
+     $(SMPOBJ)/mr_smnt.o \
+     $(SMPOBJ)/mr_somc.o \
+     $(SMPOBJ)/mr_sumt.o \
+     $(SMPOBJ)/mr_srba.o \
+     $(SMPOBJ)/mr_srbc.o \
+     $(SMPOBJ)/mr_trcv.o \
+     $(SMPOBJ)/mr_intg.o \
+     $(SMPOBJ)/mr_writ.o \
+     $(SMPOBJ)/mr_read.o \
+     $(SMPOBJ)/mr_ferr.o \
+     $(SMPOBJ)/mr_ifer.o \
+     $(SMPOBJ)/mr_sfer.o \
+     $(SMPOBJ)/mr_clop.o \
+     $(SMPOBJ)/syscom_get_bootmode.o \
+     $(SMPOBJ)/mr_jedt2.o
+OBJ2=         \
+     $(SMPOBJ)/mr_lmrcv.o \
+     $(SMPOBJ)/mr_sint.o \
+     $(SMPOBJ)/mr_strm.o
+#OBJ3=		  \
+#     $(SMPOBJ)/mr_libmrcv1.o \
+#	 $(SMPOBJ)/mr_nabt.o
+##################################################################
+###共用オブジェクト
+###   ${SMPLIB}/libmrcv1.so \
+###   ${SMPLIB}/lmrcv.so \
+###   ${SMPLIB}/libmrcv.so
+##################################################################
+LSSMP = 		\
+		${SMPLM}/moa2.so
+#		${SMPLIB}/libmfip.so \
+#		${SMPLIB}/libmfip1.so \
+#		${SMPLIB}/libmdcp1.so \
+#		${SMPLIB}/libmdcp2.so \
+#		${SMPLIB}/libmcom.so \
+#		${SMPLIB}/libmscp.so \
+#		${SMPLIB}/libmocp.so \
+#		${SMPLIB}/libmtbl.so
+##################################################################
+# $(LM):	$(LS)
+#			$(LD) $(LMLDOPT) -o $(LM) $(CRT0) $(LS)	$(TRADELIB)	
+#			xdlchk $(LM) $(LSSMP) $(SMPLM)/					
+##################################################################
+$(SMPLIB)/libmrcv:		$(SMPLIB)/libmrcv.so $(SMPLIB)/lmrcv.so		\
+						$(SMPLIB)/libmrcv.a $(SMPLIB)/lmrcv.a 		
+$(SMPLIB)/libmrcv.so:	$(OBJ1)									
+						$(LD) $(LSLDOPT) -o $(SMPLIB)/libmrcv.so $(OBJ1)
+$(SMPLIB)/libmrcv.a:	$(OBJ1)									
+						$(AR) -rc $(SMPLIB)/libmrcv.a $(OBJ1)
+$(SMPLIB)/lmrcv.so:		$(OBJ2)									
+						$(LD) $(LSLDOPT) -o $(SMPLIB)/lmrcv.so $(OBJ2) $(LSSMP)
+$(SMPLIB)/lmrcv.a:		$(OBJ2)									
+						$(AR) -rc $(SMPLIB)/lmrcv.a $(OBJ2) $(LSSMP)
+###$(SMPLIB)/libmrcv1.so:	$(OBJ3)									
+###						$(LD) $(LSLDOPT) -o $(SMPLIB)/libmrcv1.so $(OBJ3)
+###$(SMPLIB)/libmrcv1.a:	$(OBJ3)									
+###						$(AR) -rc $(SMPLIB)/libmrcv1.a $(OBJ3)
+##################################################################
+### 
+### mr_cpca:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_cpca.o	: ${SMPS}/mr_cpca.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_cpca.c -o ${SMPOBJ}/mr_cpca.o
+##################################################################
+### 
+### mr_esrq:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_esrq.o	: ${SMPS}/mr_esrq.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_esrq.c -o ${SMPOBJ}/mr_esrq.o
+##################################################################
+### 
+### mr_jcls:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_jcls.o	: ${SMPS}/mr_jcls.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_jcls.c -o ${SMPOBJ}/mr_jcls.o
+##################################################################
+### 
+### mr_jedt:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_jedt.o	: ${SMPS}/mr_jedt.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_jedt.c -o ${SMPOBJ}/mr_jedt.o
+##################################################################
+### 
+### mr_jint:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_jint.o	: ${SMPS}/mr_jint.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_jint.c -o ${SMPOBJ}/mr_jint.o
+##################################################################
+### 
+### mr_jnl :Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_jnl.o	: ${SMPS}/mr_jnl.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_jnl.c -o ${SMPOBJ}/mr_jnl.o
+##################################################################
+### 
+### mr_jopn:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_jopn.o	: ${SMPS}/mr_jopn.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_jopn.c -o ${SMPOBJ}/mr_jopn.o
+##################################################################
+### 
+### mr_pint2:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_pint2.o	: ${SMPS}/mr_pint2.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_pint2.c -o ${SMPOBJ}/mr_pint2.o
+##################################################################
+### 
+### mr_ptrm:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_ptrm.o	: ${SMPS}/mr_ptrm.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_ptrm.c -o ${SMPOBJ}/mr_ptrm.o
+##################################################################
+###
+### syscom_get_bootmode:Nop対応
+###
+##################################################################
+${SMPOBJ}/syscom_get_bootmode.o : ${SMPS}/syscom_get_bootmode.c \
+            ${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/syscom_get_bootmode.c -o ${SMPOBJ}/syscom_get_bootmode.o
+##################################################################
+###
+### mr_intg:
+###
+##################################################################
+${SMPOBJ}/mr_intg.o : ${SMPS}/mr_intg.c \
+            ${SMPH}/mr.h \
+            ${SMPH}/trcv.h \
+            ${SMPH}/mrmsg.h \
+            ${SMPH}/mcdebug.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_intg.c -o ${SMPOBJ}/mr_intg.o
+##################################################################
+###
+### mr_writ:
+###
+##################################################################
+${SMPOBJ}/mr_writ.o : ${SMPS}/mr_writ.c \
+            ${SMPH}/mr.h \
+            ${SMPH}/mrmsg.h \
+            ${SMPH}/mcdebug.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_writ.c -o ${SMPOBJ}/mr_writ.o
+##################################################################
+###
+### mr_read:
+###
+##################################################################
+${SMPOBJ}/mr_read.o : ${SMPS}/mr_read.c \
+            ${SMPH}/mr.h \
+            ${SMPH}/mrmsg.h \
+            ${SMPH}/mcdebug.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_read.c -o ${SMPOBJ}/mr_read.o
+##################################################################
+###
+### mr_ferr:
+###
+##################################################################
+${SMPOBJ}/mr_ferr.o : ${SMPS}/mr_ferr.c \
+            ${SMPH}/mr.h \
+            ${SMPH}/mrmsg.h \
+            ${SMPH}/trcv.h \
+            ${SMPH}/mcdebug.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_ferr.c -o ${SMPOBJ}/mr_ferr.o
+##################################################################
+###
+### mr_ifer:
+###
+##################################################################
+${SMPOBJ}/mr_ifer.o : ${SMPS}/mr_ifer.c \
+            ${SMPH}/mr.h \
+            ${SMPH}/mrmsg.h \
+            ${SMPH}/trcv.h \
+            ${SMPH}/mcdebug.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_ifer.c -o ${SMPOBJ}/mr_ifer.o
+##################################################################
+###
+### mr_sfer:
+###
+##################################################################
+${SMPOBJ}/mr_sfer.o : ${SMPS}/mr_sfer.c \
+            ${SMPH}/mr.h \
+            ${SMPH}/mrmsg.h \
+            ${SMPH}/trcv.h \
+            ${SMPH}/mcdebug.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_sfer.c -o ${SMPOBJ}/mr_sfer.o
+##################################################################
+###
+### mr_clop:
+###
+##################################################################
+${SMPOBJ}/mr_clop.o : ${SMPS}/mr_clop.c \
+            ${SMPH}/mr.h \
+            ${SMPH}/mrmsg.h \
+            ${SMPH}/trcv.h \
+            ${SMPH}/mcdebug.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_clop.c -o ${SMPOBJ}/mr_clop.o
+##################################################################
+### 
+### mr_pint:
+### 
+##################################################################
+${SMPOBJ}/mr_pint.o	: ${SMPS}/mr_pint.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/psect.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mr.h \
+			${SMPH}/mc.h \
+			${SMPH}/tpct.h \
+			${SMPH}/mo_wlg.h \
+			${SMPH}/mcdebug.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_pint.c -o ${SMPOBJ}/mr_pint.o
+##################################################################
+### 
+### mr_sabt:
+### 
+##################################################################
+${SMPOBJ}/mr_sabt.o	: ${SMPS}/mr_sabt.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/tpct.h \
+			${SMPH}/tput.h \
+			${SMPH}/mr.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/psect.h \
+			${SMPH}/mcdebug.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_sabt.c -o ${SMPOBJ}/mr_sabt.o
+##################################################################
+### 
+### mr_sdwn:
+### 
+##################################################################
+${SMPOBJ}/mr_sdwn.o	: ${SMPS}/mr_sdwn.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/tsst.h \
+			${SMPH}/tcst.h \
+			${SMPH}/tsrt.h \
+			${SMPH}/tpct.h \
+			${SMPH}/tbpt.h \
+			${SMPH}/mr.h \
+			${SMPH}/mo.h \
+			${SMPH}/mocom.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/mrmuse.h \
+			${SMPH}/mrmac.h \
+			${TRADEH}/ossenmsp.h \
+			${TRADEH}/osexpcode.h \
+			${SMPH}/mrsdwn.h \
+			${SMPH}/mcmia.h \
+			${SMPH}/momhead.h \
+			${SMPH}/psect.h \
+			${SMPH}/mopcb.h \
+			${SMPH}/mcdebug.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_sdwn.c -o ${SMPOBJ}/mr_sdwn.o
+##################################################################
+### 
+### mr_sint:
+### 
+##################################################################
+${SMPOBJ}/mr_sint.o	: ${SMPS}/mr_sint.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/psect.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/mrmuse.h \
+			${SMPH}/tcst.h \
+			${SMPH}/tsst.h \
+			${SMPH}/tbpt.h \
+			${SMPH}/tsrt.h \
+			${SMPH}/tpct.h \
+			${SMPH}/trbt.h \
+			${SMPH}/mrs.h \
+			${SMPH}/mopcb.h \
+			${SMPH}/ttct.h \
+			${SMPH}/trct.h \
+			${SMPH}/mr.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mrcode.h \
+			${TRADEH}/osgtdat.h \
+			${TRADEH}/osexpcode.h \
+			${SMPH}/mcdebug.h \
+			${TRADEH}/ossstd.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_sint.c -o ${SMPOBJ}/mr_sint.o
+##################################################################
+### 
+### mr_strm:
+### 
+##################################################################
+${SMPOBJ}/mr_strm.o	: ${SMPS}/mr_strm.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/mr.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/mcdebug.h \
+			${TRADEH}/ossstd.h \
+			${SMPH}/psect.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_strm.c -o ${SMPOBJ}/mr_strm.o
+##################################################################
+### 
+### mr_pcan:
+###    修正:1.${TRADEH}/osexdef.h \ → ${SMPH}/osexdef.h \
+###        :2.${TRADEH}/osrstex.h \ → 削除
+##################################################################
+${SMPOBJ}/mr_pcan.o	: ${SMPS}/mr_pcan.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/tpct.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mcdebug.h \
+			${SMPH}/psect.h \
+			${TRADEH}/osexdef.h \
+			${TRADEH}/osexpcode.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_pcan.c -o ${SMPOBJ}/mr_pcan.o
+##################################################################
+### 
+### mr_pexs:
+###
+##################################################################
+${SMPOBJ}/mr_pexs.o	: ${SMPS}/mr_pexs.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/mcdebug.h \
+			${SMPH}/psect.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_pexs.c -o ${SMPOBJ}/mr_pexs.o
+##################################################################
+### 
+### mr_pset:
+###    修正:1.${TRADEH}/osexdef.h \ → ${SMPH}/osexdef.h \
+###        :2.${TRADEH}/osrstex.h \ → 削除
+###
+##################################################################
+${SMPOBJ}/mr_pset.o	: ${SMPS}/mr_pset.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/tpct.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mcdebug.h \
+			${SMPH}/psect.h \
+			${TRADEH}/osexdef.h \
+			${TRADEH}/osexpcode.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_pset.c -o ${SMPOBJ}/mr_pset.o
+##################################################################
+### 
+### mr_cgbf
+### 
+##################################################################
+${SMPOBJ}/mr_cgbf.o	: ${SMPS}/mr_cgbf.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/tsst.h \
+			${SMPH}/tcst.h \
+			${SMPH}/tbpt.h \
+			${SMPH}/tsrt.h \
+			${SMPH}/tpct.h \
+			${SMPH}/psect.h \
+			${SMPH}/mopcb.h \
+			${SMPH}/mo.h \
+			${SMPH}/mc.h \
+			${SMPH}/mr.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mrcode.h \
+			${TRADEH}/osdelay.h \
+			${TRADEH}/osexpcode.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_cgbf.c -o ${SMPOBJ}/mr_cgbf.o
+##################################################################
+### 
+### mr_nabt
+### 
+##################################################################
+${SMPOBJ}/mr_nabt.o	: ${SMPS}/mr_nabt.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/tpct.h \
+			${SMPH}/tput.h \
+			${SMPH}/mr.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/psect.h \
+			${SMPH}/mcdebug.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_nabt.c -o ${SMPOBJ}/mr_nabt.o
+##################################################################
+### 
+### mr_peri
+### 
+##################################################################
+${SMPOBJ}/mr_peri.o	: ${SMPS}/mr_peri.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/tsst.h \
+			${SMPH}/tbpt.h \
+			${SMPH}/tsrt.h \
+			${SMPH}/tpct.h \
+			${SMPH}/tcst.h \
+			${SMPH}/mopcb.h \
+			${SMPH}/psect.h \
+			${SMPH}/mrprcv.h \
+			${SMPH}/mrmsg.h \
+			${SMPH}/mcdebug.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_peri.c -o ${SMPOBJ}/mr_peri.o
+##################################################################
+### 
+### mr_prcv
+###    修正:1.${TRADEH}/osexdef.h \ → ${SMPH}/osexdef.h \
+###        :2.${TRADEH}/osrstex.h \ → 削除
+### 
+##################################################################
+${SMPOBJ}/mr_prcv.o	: ${SMPS}/mr_prcv.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/tbkt.h \
+			${SMPH}/tpct.h \
+			${SMPH}/ttct.h \
+			${SMPH}/tjct.h \
+			${SMPH}/tsst.h \
+			${SMPH}/tcst.h \
+			${SMPH}/tbpt.h \
+			${SMPH}/tsrt.h \
+			${SMPH}/psect.h \
+			${SMPH}/mopcb.h \
+			${SMPH}/mrprcv.h \
+			${SMPH}/mr.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/mrj.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mf.h \
+			${SMPH}/mfcom.h \
+			${SMPH}/mrcode.h \
+			${SMPH}/mcdebug.h \
+			${TRADEH}/osexdef.h \
+			${TRADEH}/osexpcode.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_prcv.c -o ${SMPOBJ}/mr_prcv.o
+##################################################################
+### 
+### mr_prcx
+###    修正:1.${TRADEH}/osexdef.h \ → ${SMPH}/osexdef.h \
+### 
+##################################################################
+${SMPOBJ}/mr_prcx.o	: ${SMPS}/mr_prcx.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tpct.h \
+			${SMPH}/tcom.h \
+			${SMPH}/psect.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mrcode.h \
+			${SMPH}/mcdebug.h \
+			${TRADEH}/osexdef.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_prcx.c -o ${SMPOBJ}/mr_prcx.o
+##################################################################
+### 
+### mr_prec:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_prec.o	: ${SMPS}/mr_prec.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_prec.c -o ${SMPOBJ}/mr_prec.o
+##################################################################
+### 
+### mr_ptbl
+###    修正:1.${TRADEH}/osexdef.h \ → ${SMPH}/osexdef.h \
+### 
+##################################################################
+${SMPOBJ}/mr_ptbl.o	: ${SMPS}/mr_ptbl.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mr.h \
+			${SMPH}/ttct.h \
+			${SMPH}/tsst.h \
+			${SMPH}/tcst.h \
+			${SMPH}/tadt.h \
+			${SMPH}/tpct.h \
+			${SMPH}/tbpt.h \
+			${SMPH}/tsrt.h \
+			${SMPH}/tbkt.h \
+			${SMPH}/tjct.h \
+			${SMPH}/psect.h \
+			${SMPH}/mf.h \
+			${SMPH}/mrj.h \
+			${SMPH}/mopcb.h \
+			${SMPH}/mo_wlg.h \
+			${SMPH}/mcdebug.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_ptbl.c -o ${SMPOBJ}/mr_ptbl.o
+##################################################################
+### 
+### mr_cpct
+### 
+##################################################################
+${SMPOBJ}/mr_cpct.o	: ${SMPS}/mr_cpct.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/tcom.h \
+			${SMPH}/psect.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mcdebug.h \
+			${SMPH}/tpct.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_cpct.c -o ${SMPOBJ}/mr_cpct.o
+##################################################################
+### 
+### mr_ejrq
+### 
+##################################################################
+${SMPOBJ}/mr_ejrq.o	: ${SMPS}/mr_ejrq.c \
+			${SMPH}/mosmpcom.h \
+			${SMPH}/mr.h \
+			${SMPH}/mo.h \
+			${SMPH}/mc.h \
+			${SMPH}/tcom.h \
+			${SMPH}/psect.h \
+			${SMPH}/mrcom.h \
+			${SMPH}/tbpt.h \
+			${SMPH}/tsst.h \
+			${SMPH}/tcst.h \
+			${SMPH}/tsrt.h \
+			${SMPH}/tpct.h \
+			${SMPH}/mopcb.h \
+			${SMPH}/mcmia.h \
+			${SMPH}/mrmuse.h \
+			${SMPH}/mrcode.h \
+			${SMPH}/mrmac.h \
+			${SMPH}/mcdebug.h \
+			${TRADEH}/ossenmsp.h \
+			${TRADEH}/osexpcode.h \
+			${SMPH}/mre.h \
+			${TRADEH}/osgtpin.h \
+			${SMPH}/mo_wlg.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_ejrq.c -o ${SMPOBJ}/mr_ejrq.o
+##################################################################
+### 
+### mr_libmrcv
+### 
+##################################################################
+${SMPOBJ}/mr_libmrcv.o	: ${SMPS}/mr_libmrcv.c
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_libmrcv.c -o ${SMPOBJ}/mr_libmrcv.o
+##################################################################
+### 
+### mr_libmrcv1
+### 
+##################################################################
+#${SMPOBJ}/mr_libmrcv1.o	: ${SMPS}/mr_libmrcv1.c
+#	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_libmrcv1.c -o ${SMPOBJ}/mr_libmrcv1.o
+##################################################################
+### 
+### mr_lmrcv
+### 
+##################################################################
+${SMPOBJ}/mr_lmrcv.o	: ${SMPS}/mr_lmrcv.c
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_lmrcv.c -o ${SMPOBJ}/mr_lmrcv.o
+##################################################################
+### 
+### mr_jclr:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_jclr.o	: ${SMPS}/mr_jclr.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_jclr.c -o ${SMPOBJ}/mr_jclr.o
+##################################################################
+### 
+### mr_sinf:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_sinf.o	: ${SMPS}/mr_sinf.c \
+			${SMPH}/tpct.h \
+			${SMPH}/mrs.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_sinf.c -o ${SMPOBJ}/mr_sinf.o
+##################################################################
+### 
+### mr_sjnc:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_sjnc.o	: ${SMPS}/mr_sjnc.c \
+			${SMPH}/tpct.h \
+			${SMPH}/mrs.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_sjnc.c -o ${SMPOBJ}/mr_sjnc.o
+##################################################################
+### 
+### mr_sjnl:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_sjnl.o	: ${SMPS}/mr_sjnl.c 
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_sjnl.c -o ${SMPOBJ}/mr_sjnl.o
+##################################################################
+### 
+### mr_sjud:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_sjud.o	: ${SMPS}/mr_sjud.c 
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_sjud.c -o ${SMPOBJ}/mr_sjud.o
+##################################################################
+### 
+### mr_smnt:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_smnt.o	: ${SMPS}/mr_smnt.c 
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_smnt.c -o ${SMPOBJ}/mr_smnt.o
+##################################################################
+### 
+### mr_somc:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_somc.o	: ${SMPS}/mr_somc.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_somc.c -o ${SMPOBJ}/mr_somc.o
+##################################################################
+### 
+### mr_srba:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_srba.o	: ${SMPS}/mr_srba.c \
+			${SMPH}/tpct.h \
+			${SMPH}/mrs.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_srba.c -o ${SMPOBJ}/mr_srba.o
+##################################################################
+### 
+### mr_srbc:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_srbc.o	: ${SMPS}/mr_srbc.c \
+			${SMPH}/tpct.h \
+			${SMPH}/mrs.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_srbc.c -o ${SMPOBJ}/mr_srbc.o
+##################################################################
+### 
+### mr_trcv:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_trcv.o	: ${SMPS}/mr_trcv.c \
+			${SMPH}/mr.h
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_trcv.c -o ${SMPOBJ}/mr_trcv.o
+##################################################################
+### 
+### mr_jedt2:Nop対応
+### 
+##################################################################
+${SMPOBJ}/mr_jedt2.o	:	${SMPS}/mr_jedt2.c
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_jedt2.c -o ${SMPOBJ}/mr_jedt2.o
+##################################################################
+### 
+### mr_mro
+### 
+##################################################################
+${SMPOBJ}/mr_mro.o	:	${SMPS}/mr_mro.c
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_mro.c -o ${SMPOBJ}/mr_mro.o
+##################################################################
+### 
+### mr_pffj：NOP対応
+### 
+##################################################################
+${SMPOBJ}/mr_pffj.o	:	${SMPS}/mr_pffj.c
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_pffj.c -o ${SMPOBJ}/mr_pffj.o
+##################################################################
+### 
+### mr_pfil：NOP対応
+### 
+##################################################################
+${SMPOBJ}/mr_pfil.o	:	${SMPS}/mr_pfil.c
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_pfil.c -o ${SMPOBJ}/mr_pfil.o
+##################################################################
+### 
+### mr_pftj：NOP対応
+### 
+##################################################################
+${SMPOBJ}/mr_pftj.o	:	${SMPS}/mr_pftj.c
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_pftj.c -o ${SMPOBJ}/mr_pftj.o
+##################################################################
+### 
+### mr_sumt：NOP対応
+### 
+##################################################################
+${SMPOBJ}/mr_sumt.o	:	${SMPS}/mr_sumt.c
+	${CC} ${LSCCOPT} ${LSOOPT} -I${SMPH} -I${TRADEH} ${SMPS}/mr_sumt.c -o ${SMPOBJ}/mr_sumt.o
+
+
+clear:;		@rm ${SMPOBJ}/*.o
+
