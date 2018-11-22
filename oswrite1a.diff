@@ -1,0 +1,187 @@
+38,40c38,41
+< /* ＜ソース作成年月日＞ 			 ２００２年　９月２７日 									*/
+< /* ＜ソース修正者＞ 			 	 															*/
+< /* ＜ソース正年月日及び修正ＩＤ＞	 															*/
+---
+> /* ＜ソース作成年月日＞ 			 ２００３年　９月２７日 									*/
+> /* ＜ソース修正者＞ 			 	 												*/
+> /* ＜ソース正年月日及び修正ＩＤ＞	 ２００３年　６月　４日     故障管理番号（ＴＢＣＳ０１２３）*/
+> /*                                                              								*/
+54,56c55,57
+< /*      long fildes                                      */
+< /*      char *buf                                        */
+< /*      long len                                         */
+---
+> /*      long fildes                              										        */
+> /*      char *buf                                        										*/
+> /*      long len                                         										*/
+97c98
+< void os_ChangeCode(char*, short*, long,long);
+---
+> void os_ChangeCode(char*, short*, long, long, char*);
+394,395c395,397
+< 		
+< 		pcTmpForMsg = (char*)malloc(lBufLen + lMsgLen + 20);
+---
+> 															
+> 															// TBCS0123	
+> 		pcTmpForMsg = (char*)malloc( (lBufLen * 2) + lMsgLen);
+628c630,631
+< 		pcTmpForMsg = (char*)malloc(lBufLen + lMsgLen + 20);
+---
+> 															// TBCS0123
+> 		pcTmpForMsg = (char*)malloc( (lBufLen * 2) + lMsgLen);
+895c898
+< 		os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, lBufLen + lMsgLen + 20 );													
+---
+> 		os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, lBufLen + lMsgLen + 20 );
+897c900,901
+< 		pcTmpForMsg = (char*)malloc(lBufLen + lMsgLen + 20);
+---
+> 															// TBCS0123
+> 		pcTmpForMsg = (char*)malloc( (lBufLen * 2) + lMsgLen);
+1054c1058
+< /*                              short *sCode)			 										*/
+---
+> /*                              short *sCode, long lMsgLen)										*/
+1065a1070,1071
+> /*		パラメーター(6)	 -	テーブルのメッセージサイズ											*/
+> /*																								*/
+1084c1090
+< 
+---
+> 	
+1096,1097c1102,1103
+< 	*pcMsg = (char*)malloc(lBufLen + lMsgLen + 20);			// の領域を取ります
+< 	
+---
+> 	*pcMsg = (char*)malloc( (lBufLen * 2) + lMsgLen);		// の領域を取ります
+> 															// TBCS0123
+1127c1133
+< 			ltemp = lBufEnd;
+---
+> 			ltemp = lBufEnd;								// TBCS0123
+1129c1135
+< 			lFlg = lBufEnd - lBufStart; 
+---
+> 			lFlg = lBufEnd - lBufStart; 					// TBCS0123
+1139c1145,1147
+< 				os_ChangeCode(pcBuf, sCode, lBufStart, lBufEnd);
+---
+> 														// TBCS0123
+> 				 os_ChangeCode(pcBuf, sCode, lBufStart, lBufEnd, *pcMsg);
+> 
+1141c1149,1150
+< 														// データ格納バッファから
+---
+> 			else										// TBCS0123
+> 			{											// データ格納バッファから
+1143c1152,1154
+< 			os_EditString(pcBuf, *pcMsg, lBufStart, lBufEnd);
+---
+> 				os_EditString(pcBuf, *pcMsg, lBufStart, lBufEnd);
+> 			}
+> 			
+1337d1347
+< 	
+1365,1371d1374
+< 		
+< 		if(pcFmtAdr[12] == '$') 							// 出力指示文字は'$'の場合
+< 		{
+< 															// コード変換
+< 			os_ChangeCode(pcBuf, sConAfter, lStartPos + 2, lBufLen);
+< 		}	
+< 		
+1376a1380,1396
+> 		if(pcFmtAdr[12] == '$') 							// 出力指示文字は'$'の場合
+> 		{
+> 			DbgMsg01( DLv04, ( OutPut, "*** os_GetLogMsg (5.2) lMsgLen=%ld\n", 
+> 				 	lMsgLen) );
+> 				 	
+> 		 	DbgMsg01( DLv04, ( OutPut, "*** os_GetLogMsg (5.3) lStartPos=%ld\n", 
+> 				 	lStartPos + 2) );
+> 			
+> 			DbgMsg01( DLv04, ( OutPut, "*** os_GetLogMsg (5.4) lBufLen=%ld\n", 
+> 				 	lBufLen) );
+> 															// コード変換
+> 			os_ChangeCode(pcBuf, sConAfter, lStartPos + 2, lBufLen, pcMsg);
+> 		}	
+> 		else
+> 		{
+> 			DbgMsg01( DLv04, ( OutPut, "*** os_GetLogMsg (5.4)\n" ) );
+> 			
+1378,1379c1398,1400
+< 		os_EditString(pcBuf, pcMsg, lStartPos + 2, lBufLen);
+< 
+---
+> 			os_EditString(pcBuf, pcMsg, lStartPos + 2, lBufLen);
+> 		}
+> 		
+1707c1728,1729
+< /*	＜関数名＞ os_ChangeCode(char *pcMsgSig, short *after)									  	*/
+---
+> /*	＜関数名＞ os_ChangeCode(char *pcMsgSig, short *after, long lBufStart, long lBufEnd,		*/ 
+> /*							 char *pcMsg)													  	*/
+1715a1738,1740
+> /*		パラメーター(3)	 -  変換範囲の先頭														*/
+> /*		パラメーター(4)	 -  変換範囲の最後														*/
+> /*		パラメーター(5)	 -  データ格納バッファ													*/
+1719c1744
+< void os_ChangeCode(char *pcMsgSig, short *after, long lBufStart,long lBufEnd)
+---
+> void os_ChangeCode(char *pcMsgSig, short *after, long lBufStart, long lBufEnd, char *pcMsg)
+1727a1753,1758
+> 	short sTemp = 0;									// 変換コード TBCS0123
+> 	
+> 	long lSize = 0;										// 変換されたバイト数 TBCS0123
+> 	
+> 	char *pcWork = NULL;								// 変換用の領域 TBCS0123
+> 	
+1730a1762,1763
+> 	
+> 	pcWork = (char*)malloc( lBufEnd * 2 );				// TBCS0123
+1734c1767,1772
+< 		lRet=os_SearchJIS(before, 0, 85, pcMsgSig[lCnt]);  
+---
+> 		
+> 		sTemp = 0x00ff & pcMsgSig[lCnt]; 				// TBCS0123
+> 		
+> 		lRet=os_SearchJIS(before, 0, 89, sTemp);    
+> 
+> 		DbgMsg01( DLv04, ( OutPut, "*** os_SearchJIS (5) lRet == %ld\n", lRet) );	
+1738c1776,1797
+< 			pcMsgSig[lCnt] = after[lRet];
+---
+> 
+> 			if( (after[lRet] & 0xff00) != 0x0000 )		// TBCS0123
+> 			{
+> 					
+> 				pcWork[lSize] = after[lRet] >> 8;		// TBCS0123
+> 				
+> 				pcWork[lSize+1] = after[lRet];			// TBCS0123
+> 				
+> 				DbgMsg01( DLv04, ( OutPut, "*** os_SearchJIS (9) pcWork == %08x\n", pcWork[lSize]) );
+> 				DbgMsg01( DLv04, ( OutPut, "*** os_SearchJIS (10) pcWork == %08x\n", pcWork[lSize+1]) );
+> 				
+> 				lSize += 2;								// TBCS0123
+> 			}
+> 			else
+> 			{
+> 				pcWork[lSize] = after[lRet];			// TBCS0123
+> 				
+> 				DbgMsg01( DLv04, ( OutPut, "*** os_SearchJIS (11) pcWork == %08x\n", pcWork[lSize]) );
+> 				
+> 				lSize += 1;								// TBCS0123
+> 			}
+> 			
+1740c1799
+< 	
+---
+> 		
+1741a1801,1802
+> 	
+> 	os_EditString(pcWork, pcMsg, 0, lSize);				// TBCS0123
+1745a1807,1809
+> 	
+> 	free(pcWork);										// TBCS0123
+> 
