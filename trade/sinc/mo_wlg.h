@@ -1,0 +1,228 @@
+/****************************************************************************/
+/*	Ｓトレースログ情報取得用ｄｅｆｉｎｅ名	(1994.03.04)					*/
+/****************************************************************************/
+
+/****************************************/
+/*	詳細情報							*/
+/****************************************/
+#define	WBSYS	0x22220000					/*	システムコール発行前		*/
+#define	WASYS	0x2222FFFF					/*	システムコール発行後		*/
+#define	WINSC	0x11110001					/*	サービスコール入口点		*/
+#define	WOTSC	0x99990001					/*	サービスコール出口点		*/
+#define	WNGPM	0x33330000					/*	パラメタエラー時点			*/
+#define	WNGSC	0x3333FFFF					/*	システムコールエラー時点	*/
+
+/****************************************/
+/*	システムコール種別(1994.01.06)		*/
+/****************************************/
+										/* 実行管理・ﾌﾟﾛｾｽ制御				*/
+#define	OSCREPR		0x01
+#define	OSDESPR		0x02
+#define	OSTERM		0x03
+#define	OSRESPR		0x04
+#define	OSSLEEP		0x05
+#define	OSWAKEUP	0x06
+#define	OSRSCHD		0x07
+#define	OSSUSPR		0x08
+#define	OSWCHLD		0x09
+#define	OSWCHLDR	0x0a
+#define	OSSTUIC		0x0b
+#define	OSSTPGR		0x0c
+#define	OSCHPRI		0x0d
+#define	OSCHOPRI	0x0e
+#define	OSGTPIN		0x0f
+#define	OSGTPRI		0x10
+#define	OSGTOPRI	0x11
+#define	OSGTSTS		0x12
+#define	OSGTUIC		0x13
+#define	OSGTPGR		0x14
+#define	OSCREMPR	0x15
+										/* 0x16〜1f：予備					*/
+										/* 実行管理・ｲﾍﾞﾝﾄ制御				*/
+#define	OSCRESP		0x20
+#define	OSDELSP		0x21
+#define	OSWAITSP	0x22
+#define	OSWAITEV	0x23
+#define	OSSIGSP		0x24
+#define	OSEVENT		0x25
+#define	OSSNSSP		0x26
+#define	OSSNSEV		0x27
+#define	OSRSTEV		0x28
+										/* 0x29〜2f：予備					*/
+										/* 実行管理・ﾒｯｾｰｼﾞ通信				*/
+#define	OSCREMB		0x30
+#define	OSDELMB		0x31
+#define	OSSENMS		0x32
+#define	OSSENMSP	0x33
+#define	OSRCVMS		0x34
+#define	OSRCVMSR	0x35
+#define	OSRCVMSP	0x36
+#define	OSRCVMSPR	0x37
+#define	OSSNSMS		0x38
+#define	OSSTMS		0x39
+										/* 0x3a〜3f：予備					*/
+										/* 実行管理・ﾘｻﾞﾙﾄ･例外				*/
+#define	OSGTNRL		0x40
+#define	OSGTNRLA	0x41
+#define	OSANYRL		0x42
+#define	OSCANRQ		0x43
+#define	OSSNSRL		0x44
+#define	OSATRQEV	0x45
+#define	OSATRQEVI	0x46
+#define	OSDTRQEV	0x47
+#define	OSRSRRD		0x48
+#define	OSRELRD		0x49
+#define	OSSTPIR		0x4a
+#define	OSSTPIRI	0x4b
+#define	OSSETEX		0x4c
+#define	OSSETEXI	0x4d
+#define	OSRSTPIR	0x4e
+#define	OSRSTEX		0x4f
+#define	OSGTCPIR	0x50
+#define	OSGTEX		0x51
+#define	OSRTNPIR	0x52
+#define	OSEXITH		0x53
+#define	OSRAIEX		0x54
+										/* 0x55〜5f：予備					*/
+										/* 実行管理・ﾊﾞｯﾌｧﾌﾟｰﾙ管理 			*/
+#define	OSCRELBP	0x60
+#define	OSCRECBP	0x61
+#define	OSDELBP		0x62
+#define	OSGTPBF		0x63
+#define	OSFRPBF		0x64
+#define	OSSNSFU		0x65
+#define	OSSNSAU		0x66
+#define	OSSNSUS		0x67
+#define	OSSNSLC		0x68
+#define	OSSNSPBI	0x69
+#define	OSSNSADI	0x6a
+#define	OSATBP		0x6b
+#define	OSDTBP		0x6c
+										/* 0x6d〜6f：予備					*/
+										/* 実行管理・共用ﾒﾓﾘ管理 			*/
+#define	OSGTSHM		0x70
+#define	OSATSHM		0x71
+#define	OSDTSHM		0x72
+										/* 0x73〜78：予備					*/
+										/* 実行管理・ﾀｲﾏ管理 				*/
+#define	OSDELAY		0x79
+#define	OSSLPUM		0x7a
+#define	OSSTTIM		0x7b
+#define	OSSTDTIM	0x7c
+#define	OSSTDAT		0x7d
+#define	OSGTDAT		0x7e
+#define	OSSNSTM		0x7f
+										/* 実行管理・その他 				*/
+#define	OSLTORAD	0x80
+#define	OSGETINF	0x81
+#define	OSRSTINF	0x82
+#define	OSSTINF		0x83
+#define	OSTMINF		0x84
+#define	OSGTPRCINF	0x85
+#define	OSGTKTRINF	0x86
+#define	OSPATHOPN	0x87
+#define	OSPATHCLS	0x88
+#define	OSSYMTOAD	0x89
+										/* 0x8a〜8f：予備					*/
+										/* ファイル管理・ﾌｧｲﾙ･ﾃﾞｨﾚｸﾄﾘ操作 	*/
+#define	OSCHROOT	0x90
+#define	OSCHWKD		0x91
+#define	OSCLOSE		0x92
+#define	OSICLOSE	0x93
+#define	OSCONN		0x94
+#define	OSCREAT		0x95
+#define	OSDCONN		0x96
+#define	OSDELET		0x97
+#define	OSEXTEN		0x98
+#define	OSLINK		0x99
+#define	OSMKNOD		0x9a
+#define	OSMOUNT		0x9b
+#define	OSOPEN		0x9c
+#define	OSIOPEN		0x9d
+#define	OSRENAM		0x9e
+#define	OSTRUNC		0x9f
+#define	OSUMOUNT	0xa0
+#define	OSUMOUNTF	0xa1
+										/* 0xa2〜a7：予備					*/
+										/* ファイル管理・ﾃﾞｰﾀ操作 			*/
+#define	OSFLUSH		0xa8
+#define	OSFREE		0xa9
+#define	OSREAD		0xaa
+#define	OSIREAD		0xab
+#define	OSREADD		0xac
+#define	OSIREADD	0xad
+#define	OSREADDL	0xae
+#define	OSIREADDL	0xaf
+#define	OSSEEK		0xb0
+#define	OSISEEK		0xb1
+#define	OSSYNC		0xb2
+#define	OSWRITE		0xb3
+#define	OSIWRIT		0xb4
+#define	OSWRITD		0xb5
+#define	OSIWRITD	0xb6
+										/* 0xb7：予備						*/
+										/* ファイル管理・制御 				*/
+#define	OSACCESS	0xb8
+#define	OSCHACC		0xb9
+#define	OSCHOWN		0xba
+#define	OSDUP		0xbb
+										/* define名変更(define名が二重定義)	*/
+#define	MWOSFCNTL	0xbc				/* OSFCNTL -> MWOSFCNTL	('94.03.04)	*/
+#define	MWOSGFINF	0xbd				/* OSGFINF -> MWOSGFINF	('94.03.04)	*/
+										/* 0xbd：欠番						*/
+#define	OSGLOCK		0xbf
+#define	OSGTACC		0xc0
+#define	OSGTIDN		0xc1
+#define	OSGTWKD		0xc2
+#define	OSGUNLOCK	0xc3
+#define	OSIOCTL		0xc4
+#define	OSIIOCTL	0xc5
+#define	OSUMASK		0xc6
+										/* 0xc7：欠番→0xa1(osumountf)存在	*/
+										/* 0xc8〜cf：予備					*/
+										/* システム制御・開始 				*/
+#define	OSIPL		0xd0
+#define	OSIPL2		0xd1
+#define	OSRESTART	0xd2
+#define	OSRESTART2	0xd3
+										/* システム制御・終了 				*/
+#define	OSSYSOFF	0xd4
+										/* システム制御・障害 				*/
+#define	OSSYSDOWN	0xd5
+#define	OSSYSDOWN2	0xd6
+#define	OSCHGACT	0xd7
+#define	OSCHGACT2	0xd8
+										/* システム制御・装置管理 			*/
+#define	OSCONFIG	0xd9
+#define	OSCFPCON	0xda
+#define	OSDSPINF	0xdb
+#define	OSCFPRSLT	0xdc
+										/* 0xdd：欠番						*/
+#define	OSGETPTH	0xde
+#define	OSEXCHGPTH	0xdf
+										/* システム管理・運用管理 			*/
+#define	OSGETAPMD	0xe0
+#define	OSGETHSW	0xe1
+#define	OSGETSSW	0xe2
+#define	OSSYSRCVR	0xe3
+#define	OSMBINF		0xe4
+#define	OSGETMBID	0xe5
+#define	OSPRGMD		0xe6
+#define	OSGETPUC	0xe7
+#define	OSGETIOS	0xe8
+#define	OSGETBNO	0xe9
+#define	OSSYSMD		0xea
+										/* システム管理・その他 			*/
+#define	OSSETPTM	0xeb
+#define	OSGETPTM	0xec
+#define	OSENBPTM	0xed
+#define	OSDSBPTM	0xee
+#define	OSEXCNTRL	0xef
+#define	OSGETSRV	0xf0
+#define	OSCMDMD		0xf1
+#define	OSTELREG	0xf2
+#define	OSTELDEL	0xf3
+#define	OSTELGET	0xf4
+#define	OSTELCAL	0xf5
+#define	OSABTMD		0xf6
+										/* 0xf7〜ff：予備					*/
