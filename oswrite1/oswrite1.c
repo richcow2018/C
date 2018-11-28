@@ -1,86 +1,86 @@
 /************************************************************************************************/
-/*	���	��������																			*/
-/*			  ������ңΣԣԥǡ���																*/
-/*				��ͻ�ӥ��ͥ���������															*/
+/*	著作権																				*/
+/*			 															*/
+/*																		*/
 /*																								*/
 /*																								*/
-/*	����ʪ	�̣��̣�ݣӣͣХ����ƥ�    �ԣң��ģť��ߥ�졼��									*/
+/*	収容物	ＬＡＬａ－ＳＭＰシステム    ＴＲＡＤＥエミュレータ									*/
 /************************************************************************************************/
-/* ���оݶ�̳̾��					 �ԣң��ģť��ߥ�졼��										*/
-/* ���оݶ�̳�ɣġ� 				 �ԣң� 													*/
-/* �㥵���ӥ�����̾��				 ������													*/
-/* �㥵���ӥ����ܣɣġ� 			 �أأأأأأ�												*/
-/* ��⥸�塼��̾��					 ��å���������												*/
-/* ��⥸�塼��ɣġ�				 oswrite1													*/
-/* ��⥸�塼�����֡�																			*/
+/* ＜対象業務名＞					 ＴＲＡＤＥエミュレータ										*/
+/* ＜対象業務ＩＤ＞ 				 ＴＲＥ 													*/
+/* ＜サービス項目名＞				 操作管理													*/
+/* ＜サービス項目ＩＤ＞ 			 ＸＸＸＸＸＸＸ												*/
+/* ＜モジュール名＞					 メッセージ出力												*/
+/* ＜モジュールＩＤ＞				 oswrite1													*/
+/* ＜モジュール通番＞																			*/
 /*----------------------------------------------------------------------------------------------*/
-/* ��Ŭ�ѵ���̾��					 ���ѥ�����													*/
-/* ��Ŭ�ѣϣӡ� 					 �̣����� 												*/
-/* �㳫ȯ�Ķ��� 					 �ңȣ��ӣ�����												*/
-/* �㵭�Ҹ���� 					 �ø��� 													*/
-/* ��⥸�塼����֡�				 �ؿ�														*/
-/* �㵡ǽ��ʬ�� 																				*/
-/* ���оݥǡ�����																				*/
-/* �㹩�������ض�ʬ��																			*/
+/* ＜適用機種名＞					 汎用サーバ													*/
+/* ＜適用ＯＳ＞ 					 Ｌｉｎｕｘ 												*/
+/* ＜開発環境＞ 					 ＲＨＡＳ２．１												*/
+/* ＜記述言語＞ 					 Ｃ言語 													*/
+/* ＜モジュール形態＞				 関数														*/
+/* ＜機能区分＞ 																				*/
+/* ＜対象データ＞																				*/
+/* ＜工程・階層区分＞																			*/
 /*----------------------------------------------------------------------------------------------*/
-/* �㳫ȯ�����ƥ�̾��				 �̣��̣�ݣӣͣХ����ƥ�									*/
-/* �㳫ȯ�����ƥ��ֹ�� 			 �УУ����£�����������										*/
+/* ＜開発システム名＞				 ＬＡＬａ－ＳＭＰシステム									*/
+/* ＜開発システム番号＞ 			 ＰＰ４０Ｂ００１２２０										*/
 /*----------------------------------------------------------------------------------------------*/
-/* �㳫ȯô��̾��					 �ã»��ӥ��ͥ����ô��(�᡼���������ץ饤)			    	*/
-/* �������ֹ�� 					 148-1457(03-5437-1457) 									*/
+/* ＜開発担当名＞					 ＣＢ事ビジネス企画担当()			    	*/
+/* ＜電話番号＞ 														*/
 /*----------------------------------------------------------------------------------------------*/
-/* ���߷׼�̾�� 					 �ã»��ӥ��ͥ����ô��										*/
-/* ���߷�ǯ������					 ��������ǯ��������� 									*/
-/* ���߷׽�����̾�� 																			*/
-/* ���߷׽���ǯ�����ڤӽ����ɣġ�																*/
+/* ＜設計者名＞ 					 ＣＢ事ビジネス企画担当										*/
+/* ＜設計年月日＞					 									*/
+/* ＜設計修正者名＞ 																			*/
+/* ＜設計修正年月日及び修正ＩＤ＞																*/
 /*----------------------------------------------------------------------------------------------*/
-/* �㥽���������ԡ� 				 �ã»��ӥ��ͥ����ô��(�᡼���������ץ饤)					*/
-/* �㥽��������ǯ������ 			 ��������ǯ��������� 									*/
-/* �㥽���������ԡ� 			 	 ���ץ饤����												*/
-/* �㥽������ǯ�����ڤӽ����ɣġ�	 ��������ǯ���������     �ξ�����ֹ�ʣԣ£ãӣ���������*/
-/* �㥽���������ԡ� 			 	 ���ץ饤����												*/
-/* �㥽������ǯ�����ڤӽ����ɣġ�	 ��������ǯ���������     �ξ�����ֹ�ʣԣ£ãӣ���������*/
-/*																�ξ�����ֹ�ʣԣ£ãӣ���������*/
-/* �㥽���������ԡ� 			 	 ���ץ饤����												*/
-/* �㥽������ǯ�����ڤӽ����ɣġ�	 ��������ǯ���������     �ξ�����ֹ�ʣԣ£ãӣ���������*/
+/* ＜ソース作成者＞ 				 ＣＢ事ビジネス企画担当					*/
+/* ＜ソース作成年月日＞ 			 ２００３年　９月２７日 									*/
+/* ＜ソース修正者＞ 			 	 サプライ　朱												*/
+/* ＜ソース正年月日及び修正ＩＤ＞	 ２００３年　６月　４日     故障管理番号（ＴＢＣＳ０１２３）*/
+/* ＜ソース修正者＞ 			 	 サプライ　朱												*/
+/* ＜ソース正年月日及び修正ＩＤ＞	 ２００３年　６月１７日     故障管理番号（ＴＢＣＳ０１５３）*/
+/*																故障管理番号（ＴＢＣＳ０１５５）*/
+/* ＜ソース修正者＞ 			 	 サプライ　朱												*/
+/* ＜ソース正年月日及び修正ＩＤ＞	 ２００３年　６月２７日     故障管理番号（ＴＢＣＳ０１７２）*/
 /*                                                              								*/
 /*----------------------------------------------------------------------------------------------*/
-/* �㸫�ѥ��ƥå׿���				 ���ƥå�													*/
+/* ＜見積ステップ数＞				 ステップ													*/
 /*----------------------------------------------------------------------------------------------*/
-/* �㵡ǽ���ס� 																				*/
-/*		�֥ǡ�����Ǽ�Хåե��פ˳�Ǽ���줿��å���������ʸ������Ƭ�����ʸ���ˤ�KEY�Ȥ���		*/
-/*		��ͭ������Ÿ������Ƥ��륳�󥽡�������ѡ������ե���������ѡ�����ץ����������Ѥ�	*/
-/*		��å������ե����ޥåȤ�����������줾����ϥ�å������Խ���Ԥ���						*/
-/*		�Խ���λ��˽��ϥ�å������򡢡֥�å��������ϻؼ�ʸ���פ˽�����						*/
-/*		���󥽡��롿�����ե����롿����Υץ��������Ф��ƥ�å��������Ϥ�Ԥ���					*/
+/* ＜機能概要＞ 																				*/
+/*		「データ格納バッファ」に格納されたメッセージ識別文字（先頭４桁の文字）をKEYとして		*/
+/*		共有メモリ上に展開されているコンソール出力用／ログファイル出力用／特定プロセス出力用の	*/
+/*		メッセージフォーマットを取得し、それぞれ出力メッセージ編集を行う。						*/
+/*		編集完了後に出力メッセージを、「メッセージ出力指示文字」に従い、						*/
+/*		コンソール／ログファイル／特定のプロセスに対してメッセージ出力を行う。					*/
 /*																								*/
 /*----------------------------------------------------------------------------------------------*/
-/* ��ƽз����� 																				*/
+/* ＜呼出形式＞ 																				*/
 /*		#include	<oswrite1.h>																*/
 /*																								*/
 /*      long oswrite1(long fildes, char *buf, long len)                                         */
 /*																								*/
-/* �㲾������																					*/
-/*      long fildes        �ե����뵭�һ�                     							        */
-/*      char *buf          �ǡ�����Ǽ�Хåե���NULL�ʳ���                              			*/
-/*      long len           ����ǡ�����������0�ʾ��                              				*/
+/* ＜仮引数＞																					*/
+/*      long fildes        ファイル記述子                     							        */
+/*      char *buf          データ格納バッファ（NULL以外）                              			*/
+/*      long len           指定データサイズ（0以上）                              				*/
 /*																								*/
-/* ���ֵ��͡�																					*/
-/*		���ｪλ			0x0000XXXX															*/
-/*		�۾ｪλ			0x940dXXXX															*/
+/* ＜返却値＞																					*/
+/*		正常終了			0x0000XXXX															*/
+/*		異常終了			0x940dXXXX															*/
 /*																								*/
 /*----------------------------------------------------------------------------------------------*/
-/* �������ϥǡ�����¤�� 																		*/
-/* �����»���� 																				*/
-/*	   �äˤʤ� 																				*/
-/* ����ѳ����⥸�塼��ɣġ�																	*/
-/* ��ƽи��Υ⥸�塼��ɣġ�																	*/
+/* ＜入出力データ構造＞ 																		*/
+/* ＜制限事項＞ 																				*/
+/*	   特になし 																				*/
+/* ＜使用外部モジュールＩＤ＞																	*/
+/* ＜呼出元のモジュールＩＤ＞																	*/
 /*																								*/
 /*																								*/
 /************************************************************************************************/
 
 /************************************************************************************************/
-/*								���̥إå����ե�����                							*/
+/*								共通ヘッダ・ファイル                							*/
 /*																								*/
 /************************************************************************************************/
 #include <string.h>
@@ -91,7 +91,7 @@
 
 
 /************************************************************************************************/
-/*								���ѼԺ����إå����ե�����             							*/
+/*								利用者作成ヘッダ・ファイル             							*/
 /*																								*/
 /************************************************************************************************/
 #include "oswrite1.h"
@@ -99,7 +99,7 @@
 
 
 /************************************************************************************************/
-/*	�����ؿ�											             							*/
+/*	内部関数											             							*/
 /*																								*/
 /************************************************************************************************/
 void os_GetBufMsg(char*, long);
@@ -121,18 +121,18 @@ int  os_ChgPriority(char*);
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾��	 oswrite1(long fildes, char *buf, long len)										*/
+/*	＜関数名＞	 oswrite1(long fildes, char *buf, long len)										*/
 /*																								*/
-/*	�㵡ǽ���ס� ��å���������                     											*/
+/*	＜機能概要＞ メッセージ出力                     											*/
 /*  																							*/
-/*  �ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1) - �ե����뵭�һ�														*/
-/*		�ѥ�᡼����(2)	- �ǡ�����Ǽ�Хåե�													*/
-/*		�ѥ�᡼����(3)	- ����ǡ���������														*/
+/*  パラメーター:																				*/
+/*		パラメーター(1) - ファイル記述子														*/
+/*		パラメーター(2)	- データ格納バッファ													*/
+/*		パラメーター(3)	- 指定データサイズ														*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (NORMAL)																			*/
-/*		���� (D_OSWRITE1_NULL_BUFFER) or (OSEEWKEX) or (D_OSWRITE1_OUTPUT_ERROR)				*/
+/*	リターン:																					*/
+/*		成功 (NORMAL)																			*/
+/*		失敗 (D_OSWRITE1_NULL_BUFFER) or (OSEEWKEX) or (D_OSWRITE1_OUTPUT_ERROR)				*/
 /*																								*/
 /*																								*/
 /************************************************************************************************/
@@ -140,23 +140,23 @@ long oswrite1(long fildes, char *buf, long len)
 {
 
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
-	long lResult = 0x00000000;								// �꡼������
+	long lResult = 0x00000000;								// リータン値
 		
-	long lRetForLog = 0x00000000;							// sendlog()���ֵ���
+	long lRetForLog = 0x00000000;							// sendlog()の返却値
 	
-	long lRetForPrc = 0x00000000;							// sendProc()���ֵ���
+	long lRetForPrc = 0x00000000;							// sendProc()の返却値
 	
-	long lRetForCon = 0x00000000;							// sendCon()���ֵ���
+	long lRetForCon = 0x00000000;							// sendCon()の返却値
 	
-	long lRetForTime = 0;									// Time()���ֵ���
+	long lRetForTime = 0;									// Time()の返却値
 	
-	long lmm = 0;											// ʬ�ο���
+	long lmm = 0;											// 分の数値
 	
-	long lhr = 0;											// ���ο���
+	long lhr = 0;											// 時の数値
 	
-	char pcTmpBufMsgId[4];									// ��å��������̻�
+	char pcTmpBufMsgId[4];									// メッセージ識別子
 	
 
 //	DbgMsg01( DLv04, ( OutPut, " (1) IN ****\n" ) );
@@ -164,48 +164,48 @@ long oswrite1(long fildes, char *buf, long len)
 	os_trcget2( D_MD_OSWRITE1, D_T_TRA_IN, 3, fildes, buf, len );
 	
 	/********************************************************************************************/
-	/*	 �������																				*/
+	/*	 初期処理																				*/
 	/********************************************************************************************/
 	/*---------------------------------------*/
-	/*  �����γ�ǧ                           */
+	/*  引数の確認                           */
 	/*---------------------------------------*/
-	if (NULL == buf)										// �ǡ�����Ǽ�Хåե���NULL�ξ��
+	if (NULL == buf)										// データ格納バッファがNULLの場合
 	{
 		lResult = ERR_HEADER | DAT_ERROR;
 		
 		os_trcget2( D_MD_OSWRITE1, D_T_ERR_PRA, 1, lResult );
 		
-		return(lResult);									// �۾��å��������ֵ�
+		return(lResult);									// 異常メッセージを返却
 	} 
 	
-	if (len < 1)											// �񤭹��ߥХ��ȿ���1�ʾ�ʤ����
+	if (len < 1)											// 書き込みバイト数が1以上ない場合
 	{
 		lResult = ERR_HEADER | SIZ_ERROR;
 		
 		os_trcget2( D_MD_OSWRITE1, D_T_ERR_PRA, 1, lResult );
 		
-		return(lResult);									// �۾��å��������ֵ�
+		return(lResult);									// 異常メッセージを返却
 	}  
 
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 	/******************************************/
-	/* ��å������Խ����Ͻ��� 				  */
+	/* メッセージ編集出力処理 				  */
 	/******************************************/
 	
-	lRetForTime = os_Time(&lhr, &lmm);						// �����ƥ���֤���
+	lRetForTime = os_Time(&lhr, &lmm);						// システム時間を求め
 	
 //	DbgMsg01( DLv04, ( OutPut, "*** oswrite1 (2)\n" ) );
 	
-	if(lRetForTime !=NORMAL)								// ���֤����ʤ����
+	if(lRetForTime !=NORMAL)								// 時間を得ない場合
 	{
 		lResult = ERR_HEADER | INV_ERROR;
 	
 		os_trcget2( D_MD_OSWRITE1, D_T_ERR_SYS, 1, lResult );
 	
-		return(lResult);									// ���顼����
+		return(lResult);									// エラー処理
 	}
 	
 //	DbgMsg01( DLv04, ( OutPut, "*** oswrite1 (3)\n" ) );
@@ -215,8 +215,8 @@ long oswrite1(long fildes, char *buf, long len)
 	
 	if(len >= 4)										// TBCS0153/TBCS0155
 	{
-		strncpy(pcTmpBufMsgId, buf, 4);					// �ǡ�����Ǽ�Хåե�����
-														// ��å��������̻Ҥ���
+		strncpy(pcTmpBufMsgId, buf, 4);					// データ格納バッファから
+														// メッセージ識別子を取る
 	}
 	else												// TBCS0153/TBCS0155
 	{
@@ -228,14 +228,14 @@ long oswrite1(long fildes, char *buf, long len)
 	         pcTmpBufMsgId[0], pcTmpBufMsgId[1], pcTmpBufMsgId[2], pcTmpBufMsgId[3] ) );
 
 	/********************************************/
-	/* �����ե���������ѥ�å������Խ����Ͻ��� */
+	/* ログファイル出力用メッセージ編集出力処理 */
 	/********************************************/
-															// �����ե��������
-															// ��å������ν���
+															// ログファイル出力
+															// メッセージの処理
 	lRetForLog = os_SendLog(buf, pcTmpBufMsgId, lhr, lmm, len);
 	
 	
-	if(lRetForLog > LOG_NORMAL)							// ���ϤǤ��ʤ����
+	if(lRetForLog > LOG_NORMAL)							// 出力できない場合
 	{
 		lRetForLog = lRetForLog | LOG_ERROR;
 	}
@@ -245,14 +245,14 @@ long oswrite1(long fildes, char *buf, long len)
 
 	
 	/********************************************/
-	/* ����ץ������̿��ѥ�å������Խ����Ͻ��� */
+	/* 特定プロセス通信用メッセージ編集出力処理 */
 	/********************************************/		
-															// ����ץ���������
-															// ��å������ν���
+															// 特定プロセス出力
+															// メッセージの処理
 	lRetForPrc = os_SendProc(buf, pcTmpBufMsgId, lhr, lmm, len);
 	
 	
-	if(lRetForPrc > PRC_NORMAL)								// ���ϤǤ��ʤ����
+	if(lRetForPrc > PRC_NORMAL)								// 出力できない場合
 	{
 		lRetForPrc = lRetForPrc | PRC_ERROR ;		
 	}
@@ -260,14 +260,14 @@ long oswrite1(long fildes, char *buf, long len)
 	DbgMsg01( DLv04, ( OutPut, "*** oswrite1 (7) lRetForPrc == %08lx\n", lRetForPrc) );
 	
 	/********************************************/
-	/* ���󥽡�������ѥ�å������Խ����Ͻ���   */
+	/* コンソール出力用メッセージ編集出力処理   */
 	/********************************************/
-															// ����ץ���������
-															// ��å������ν���
+															// 特定プロセス出力
+															// メッセージの処理
 	lRetForCon = os_SendCon(buf, pcTmpBufMsgId, lhr, lmm, len);		
 	
 	
-	if(lRetForCon > CON_NORMAL)								// ���ϤǤ��ʤ����
+	if(lRetForCon > CON_NORMAL)								// 出力できない場合
 	{
 		lRetForCon = lRetForCon | CON_ERROR;
 	}
@@ -275,7 +275,7 @@ long oswrite1(long fildes, char *buf, long len)
 	DbgMsg01( DLv04, ( OutPut, "*** oswrite1 (8) lRetForCon == %08lx\n", lRetForCon) );
 	
 	/********************************************************************************************/
-	/*	 ������λ																				*/
+	/*	 処理終了																				*/
 	/********************************************************************************************/
 	
 	 lResult = lRetForCon | lRetForPrc | lRetForLog;
@@ -303,22 +303,22 @@ long oswrite1(long fildes, char *buf, long len)
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾��long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, 						*/
+/*	＜関数名＞long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, 						*/
 /*                            long lmm, long lBufLen)											*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� ���󥽡�������ѥ�å������Խ����Ͻ���											*/
+/*	＜機能概要＞ コンソール出力用メッセージ編集出力処理											*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1) - �ǡ�����Ǽ�Хåե�													*/
-/*		�ѥ�᡼����(2)	- ��å��������̻�														*/
-/*		�ѥ�᡼����(3)	- ���ο���																*/
-/*		�ѥ�᡼����(4)	- ʬ�ο���																*/
-/*		�ѥ�᡼����(5)	- �ǡ�����Ǽ�Хåե�������												*/
+/*	パラメーター:																				*/
+/*		パラメーター(1) - データ格納バッファ													*/
+/*		パラメーター(2)	- メッセージ識別子														*/
+/*		パラメーター(3)	- 時の数値																*/
+/*		パラメーター(4)	- 分の数値																*/
+/*		パラメーター(5)	- データ格納バッファサイズ												*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (NORMAL)																			*/
-/*		���� (D_OSWRITE1_OUTPUT_ERROR) 															*/
+/*	リターン:																					*/
+/*		成功 (NORMAL)																			*/
+/*		失敗 (D_OSWRITE1_OUTPUT_ERROR) 															*/
 /*																								*/
 /*																								*/
 /************************************************************************************************/
@@ -326,60 +326,60 @@ long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 {
 		
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
 	
-	long lRet = 0;											// ��å��������̻Ҹ������ֵ���
+	long lRet = 0;											// メッセージ識別子検索の返却値
 	
-	long lRetForSend = 0x00000000;							// ��å������������ֵ���
+	long lRetForSend = 0x00000000;							// メッセージ送信の返却値
 	
-	long lRetForSPrintf = 0;								// sprintf���ֵ���
+	long lRetForSPrintf = 0;								// sprintfの返却値
 	
 	long lMsgLen = 0;
 	
-	char cMsgOutFlg;										// ��å��������ϻؼ�ʸ��
+	char cMsgOutFlg;										// メッセージ出力指示文字
 
-	char *pcTmpMsg = NULL;									// ���ϥ�å�����
+	char *pcTmpMsg = NULL;									// 出力メッセージ
 	
-	char *pcFormatMsg = NULL;								// ��å��������ɥ쥹
+	char *pcFormatMsg = NULL;								// メッセージアドレス
 	
-	char pcPriority[8];										// �ץ饤����ǥ�
+	char pcPriority[8];										// プライオリディ
 		
-	char cNotFoundMsg[100];									// ���̻Ҥ��ʤ��Ȥ���
-															// ���ϥ�å�����
+	char cNotFoundMsg[100];									// 識別子がないときの
+															// 出力メッセージ
 
 	char *pcTmpForMsg = NULL;	
 	
-	TEmmcTableInd *ptEmmcInd = NULL;						// ��å����������ơ��֥�
+	TEmmcTableInd *ptEmmcInd = NULL;						// メッセージ管理テーブル
 	
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 	/******************************************/
-	/* ��å������򸡺�����					  */
+	/* メッセージを検索処理					  */
 	/******************************************/
-	ptEmmcInd = (TEmmcTableInd*)ptEmmc->ptConAdr; 			// ���󥽡������
-															// ��å��������ɥ쥹������
+	ptEmmcInd = (TEmmcTableInd*)ptEmmc->ptConAdr; 			// コンソール出力
+															// メッセージアドレスを設定
 															
 //	DbgMsg01( DLv04, ( OutPut, "*** os_SendCon (1)\n" ) );						
 										
-															// ��å��������̻Ҥθ���
+															// メッセージ識別子の検索
 	lRet = os_SearchMsgID(ptEmmcInd, ptEmmc->lConCnt, pcTmpBufMsgId);
 	
 	DbgMsg01( DLv04, ( OutPut, "\n*** os_SendCon (1.1) after os_SearchMsgID\n") );
 	
-	if(lRet < 0)											// ��å��������̻Ҥ����Ĥ���
-	{														// �ʤ��ä����
+	if(lRet < 0)											// メッセージ識別子が見つから
+	{														// なかった場合
 	
-															// ���ϥ�å��������ΰ��Ȥ�
+															// 出力メッセージの領域をとる
 //		DbgMsg01( DLv04, ( OutPut, "*** os_SendCon (3)\n" ) );
 		
 	
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendCon (4) Get into Not Found \n") );	
 		
 		
-															// not found��å��������Խ�
+															// not foundメッセージを編集
 		lRetForSPrintf = sprintf(cNotFoundMsg, "[ERR    ] %.2d:%.2d KO00* CMES %c%c%c%c not found", 
 								 lhr, lmm, pcTmpBufMsgId[0], pcTmpBufMsgId[1], pcTmpBufMsgId[2],
 		                         pcTmpBufMsgId[3]);
@@ -390,12 +390,12 @@ long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 			return(CON_ERROR);
 		}
 	
-															// ���Ϥ���
+															// 出力する
 		lRetForSend = os_MsgOut(cNotFoundMsg, D_SG_EMMC_CONSOLE, "ERR"); 
 		
-		if(lRetForSend != NORMAL)							// ���ϤǤ��ʤ����
+		if(lRetForSend != NORMAL)							// 出力できない場合
 		{
-			return(lRetForSend);							// ���顼����		
+			return(lRetForSend);							// エラー処理		
 		}
 	
 	}
@@ -404,12 +404,12 @@ long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 		
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendCon (5)\n") );
 
-		pcFormatMsg = (ptEmmcInd + lRet)->pcFormatAdr;		// ���󥽡�������ѥ�å�����
-															// ���ɥ쥹������
+		pcFormatMsg = (ptEmmcInd + lRet)->pcFormatAdr;		// コンソール出力用メッセージ
+															// アドレスを設定
 
-		lMsgLen = strlen(pcFormatMsg);						// ��å����������ơ��ָ�������
-															// ��å������ե����ޥåȾ���
-															// ���ɥ쥹�Υ�����
+		lMsgLen = strlen(pcFormatMsg);						// メッセージ管理テーブ個別部の
+															// メッセージフォーマット情報
+															// アドレスのサイズ
 															
 															
 //		os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, lBufLen + lMsgLen + 20 );		
@@ -420,26 +420,26 @@ long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 															// TBCS0153/TBCS0155
 		os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, ( (lBufLen * 2) + (lMsgLen + 9) ) );
 															// TBCS0153/TBCS0155
-															// ���Ѥ��Խ����륵����ʬ=����*2
-															// ����,���ڡ���,[]�Υ�����ʬ=9
+															// 全角に編集するサイズ分=引数*2
+															// 時間,スペース,[]のサイズ分=9
 		pcTmpForMsg = (char*)malloc( (lBufLen * 2) + (lMsgLen + 9) );
 		
 		
 		os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 1, pcTmpForMsg );	
 															
 		/******************************************/
-		/* ��å��������Խ�����					  */
+		/* メッセージを編集する					  */
 		/******************************************/
-															// ��å��������Խ�
+															// メッセージを編集
 		os_GetMsg(pcFormatMsg, buf, &pcTmpMsg, lBufLen, sConAfter, lMsgLen);
 		
-		cMsgOutFlg = pcFormatMsg[12];						// ��å��������ϻؼ�ʸ��������
+		cMsgOutFlg = pcFormatMsg[12];						// メッセージ出力指示文字を設定
 
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendCon (6) pcTmpMsg == %s\n", pcTmpMsg) );
 		
-															// �ץ饤����ǥ����ΰ�����
+															// プライオリディの領域を確保
 
-		strncpy(pcPriority, pcFormatMsg, 7);				// �ץ饤����Ǥ����
+		strncpy(pcPriority, pcFormatMsg, 7);				// プライオリデを取得
 		
 		pcPriority[7]='\0';
 
@@ -450,11 +450,11 @@ long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 	
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendCon (7) pcFormatMsg == %s\n", pcFormatMsg) );
 		
-		if(lRetForSPrintf < 0)								// ���ϥ�å��������Խ�
-		{													// ���Ǥ��ʤ��ä����
+		if(lRetForSPrintf < 0)								// 出力メッセージの編集
+		{													// ができなかった場合
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 
-			free(pcTmpMsg);									// �ΰ�����
+			free(pcTmpMsg);									// 領域を解放
 			
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 			
@@ -464,29 +464,29 @@ long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 			
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 
-			return(CON_ERROR);								// ���顼����
+			return(CON_ERROR);								// エラー処理
 			
 		} 
 		
 		/******************************************/
-		/* ��å����������						  */
+		/* メッセージを出力						  */
 		/******************************************/
-		if(cMsgOutFlg == '*')								// ���ϻؼ�ʸ����������
+		if(cMsgOutFlg == '*')								// 出力指示文字がある場合
 		{
 			DbgMsg01( DLv04, ( OutPut, "*** os_SendCon  (8) cMsgOutFlg == %c\n", 
 					cMsgOutFlg) );	
 			
-															// ��å���������Ϥ���	
+															// メッセージを出力する	
 			lRetForSend = os_MsgOut(pcTmpForMsg, D_SG_EMMC_CONSOLE, pcPriority);
 			
 			DbgMsg01( DLv04, ( OutPut, "*** os_SendCon (9) lRetForSend == %ld\n", 
 					lRetForSend) );	
 			
-			if(lRetForSend != NORMAL)						// ���ϤǤ��ʤ����
+			if(lRetForSend != NORMAL)						// 出力できない場合
 			{
 				os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 
-				free(pcTmpMsg);								// �ΰ�����
+				free(pcTmpMsg);								// 領域を解放
 				
 				os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 				
@@ -496,14 +496,14 @@ long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 				
 				os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
-				return(lRetForSend);						// ���顼����
+				return(lRetForSend);						// エラー処理
 			}
 		}
 		else
 		{
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 	
-			free(pcTmpMsg);									// �ΰ�����
+			free(pcTmpMsg);									// 領域を解放
 	
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
@@ -523,11 +523,11 @@ long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 //				pcTmpMsg) );
 															
 	/********************************************************************************************/
-	/*  ������λ				                                                                */
+	/*  処理終了				                                                                */
 	/********************************************************************************************/
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 	
-	free(pcTmpMsg);									// �ΰ�����
+	free(pcTmpMsg);									// 領域を解放
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
@@ -546,22 +546,22 @@ long os_SendCon(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾��long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm,              */
+/*	＜関数名＞long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm,              */
 /*                            long lBufLen)	                                                    */
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� �����ե���������ѥ�å������Խ����Ͻ���										*/
+/*	＜機能概要＞ ログファイル出力用メッセージ編集出力処理										*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1) - �ǡ�����Ǽ�Хåե�													*/
-/*		�ѥ�᡼����(2)	- ��å��������̻�														*/
-/*		�ѥ�᡼����(3)	- ���ο���																*/
-/*		�ѥ�᡼����(4)	- ʬ�ο���																*/
-/*		�ѥ�᡼����(5)	- �ǡ�����Ǽ�Хåե�������												*/
+/*	パラメーター:																				*/
+/*		パラメーター(1) - データ格納バッファ													*/
+/*		パラメーター(2)	- メッセージ識別子														*/
+/*		パラメーター(3)	- 時の数値																*/
+/*		パラメーター(4)	- 分の数値																*/
+/*		パラメーター(5)	- データ格納バッファサイズ												*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (NORMAL)																			*/
-/*		���� (D_OSWRITE1_OUTPUT_ERROR) 															*/
+/*	リターン:																					*/
+/*		成功 (NORMAL)																			*/
+/*		失敗 (D_OSWRITE1_OUTPUT_ERROR) 															*/
 /*																								*/
 /*																								*/
 /************************************************************************************************/
@@ -569,54 +569,54 @@ long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 {
 		
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
-	long lRet = 0;											// ��å��������̻Ҹ������ֵ���
+	long lRet = 0;											// メッセージ識別子検索の返却値
 	
-	long lRetForSend = 0x00000000;							// ��å������������ֵ���
+	long lRetForSend = 0x00000000;							// メッセージ送信の返却値
 	
-	long lRetForSPrintf = 0;								// sprintf���ֵ���
+	long lRetForSPrintf = 0;								// sprintfの返却値
 	
 	long lMsgLen = 0;
 	
-	char cMsgOutFlg;										// ��å��������ϻؼ�ʸ��
+	char cMsgOutFlg;										// メッセージ出力指示文字
 
-	char *pcFormatMsg = NULL;								// ��å��������ɥ쥹
+	char *pcFormatMsg = NULL;								// メッセージアドレス
 	
-	char pcPriority[8];										// �ץ饤����ǥ�
+	char pcPriority[8];										// プライオリディ
 		
-	char *pcTmpMsg = NULL;									// ���ϥ�å�����
+	char *pcTmpMsg = NULL;									// 出力メッセージ
 
-	char cNotFoundMsg[100];									// ���̻Ҥ��ʤ��Ȥ��ν��ϥ�å�����
+	char cNotFoundMsg[100];									// 識別子がないときの出力メッセージ
 
-	TEmmcTableInd *ptEmmcInd = NULL;						// ��å����������ơ��֥�
+	TEmmcTableInd *ptEmmcInd = NULL;						// メッセージ管理テーブル
 	
 	char *pcTmpForMsg = NULL;	
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 	/******************************************/
-	/* ��å������򸡺�����					  */
+	/* メッセージを検索処理					  */
 	/******************************************/
-	ptEmmcInd = (TEmmcTableInd*)ptEmmc->ptLogAdr; 			// �����ե��������
-															// ��å��������ɥ쥹������
+	ptEmmcInd = (TEmmcTableInd*)ptEmmc->ptLogAdr; 			// ログファイル出力
+															// メッセージアドレスを設定
 															
 //	DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (1)\n" ) );	
-															// ��å��������̻Ҥθ���
+															// メッセージ識別子の検索
 	lRet = os_SearchMsgID(ptEmmcInd, ptEmmc->lLogCnt, pcTmpBufMsgId);
 
 //	DbgMsg01( DLv04, ( OutPut, "\n*** os_SendLog (2) After os_SearchMsgID\n" ) );
 
 	
-	if(lRet < 0)											// ��å��������̻Ҥ�
-	{														// ���Ĥ���ʤ��ä����
+	if(lRet < 0)											// メッセージ識別子が
+	{														// 見つからなかった場合
 
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (3) Get into Not Found \n") );	
 		
 	
 		
-															// not found��å��������Խ�
+															// not foundメッセージを編集
 		lRetForSPrintf = sprintf(cNotFoundMsg, 
 								 "[ERR    ] %.2d:%.2d KO00* LMES %c%c%c%c not found", 
 								 lhr, lmm, pcTmpBufMsgId[0], pcTmpBufMsgId[1], 
@@ -629,12 +629,12 @@ long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 					
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (5) pcTmpMsg == %s\n", pcTmpMsg) );
 
-															//����
+															//出力
 		lRetForSend = os_MsgOut(cNotFoundMsg, D_SG_EMMC_SYSLOG, "ERR"); 
 		
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (6) lRetForSend == %d\n", lRetForSend) );
 
-		if(lRetForSend != NORMAL)							// ���ϤǤ��ʤ����
+		if(lRetForSend != NORMAL)							// 出力できない場合
 		{
 						
 			return(lRetForSend);
@@ -647,12 +647,12 @@ long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (7)\n") );
 			
 
-		pcFormatMsg = (ptEmmcInd + lRet)->pcFormatAdr;		// �����ե���������ѥ�å��������ɥ쥹
-															// ������
+		pcFormatMsg = (ptEmmcInd + lRet)->pcFormatAdr;		// ログファイル出力用メッセージアドレス
+															// を設定
 															
-		lMsgLen = strlen(pcFormatMsg);						// ��å����������ơ��ָ�������
-															// ��å������ե����ޥåȾ��󥢥ɥ쥹
-															// �Υ�����
+		lMsgLen = strlen(pcFormatMsg);						// メッセージ管理テーブ個別部の
+															// メッセージフォーマット情報アドレス
+															// のサイズ
 		
 //		os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, lBufLen + lMsgLen + 20 );
 		
@@ -662,8 +662,8 @@ long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 																	// TBCS0153/TBCS0155
 		os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, ( (lBufLen * 2) + (lMsgLen + 9) ) );
 															// TBCS0153/TBCS0155
-															// ���Ѥ��Խ����륵����ʬ=����*2
-															// ����,���ڡ���,[]�Υ�����ʬ=9
+															// 全角に編集するサイズ分=引数*2
+															// 時間,スペース,[]のサイズ分=9
 		pcTmpForMsg = (char*)malloc( (lBufLen * 2) + (lMsgLen + 9) );
 		
 		os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 1, pcTmpForMsg );	
@@ -673,41 +673,41 @@ long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (7.2) lBufLen == %ld\n", lBufLen) );	
 													
 		/******************************************/
-		/* ��å��������Խ�����					  */
+		/* メッセージを編集する					  */
 		/******************************************/
-		cMsgOutFlg = pcFormatMsg[12];						// ��å��������ϻؼ�ʸ��������
+		cMsgOutFlg = pcFormatMsg[12];						// メッセージ出力指示文字を設定
 		
-															// ��å��������Խ�
+															// メッセージを編集
 		os_GetMsg(pcFormatMsg, buf, &pcTmpMsg, lBufLen, sConAfter, lMsgLen);
 		
 		
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (8) pcTmpMsg == %s\n", pcTmpMsg) );
 		
-		if( (cMsgOutFlg == '$') || (cMsgOutFlg == '&') )	// ���ϻؼ�ʸ����������
+		if( (cMsgOutFlg == '$') || (cMsgOutFlg == '&') )	// 出力指示文字がある場合
 		{ 
-			os_GetLogMsg(buf, pcFormatMsg, pcTmpMsg, lBufLen);	// �����վ�������
+			os_GetLogMsg(buf, pcFormatMsg, pcTmpMsg, lBufLen);	// ログ付情報を取得
 		}
 		
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (9) pcTmpMsg == %s\n", pcTmpMsg) );
 		
-		strncpy(pcPriority, pcFormatMsg, 7);				// �ץ饤����Ǥ����
+		strncpy(pcPriority, pcFormatMsg, 7);				// プライオリデを取得
 		
 		pcPriority[7]='\0';
 		
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (10) pcPriority == %s\n", pcPriority) );
 		
-															// ���ϥ�å��������Խ�
+															// 出力メッセージを編集
 		lRetForSPrintf = sprintf( pcTmpForMsg, "[%s] %.2d:%.2d %s", 
 								pcPriority, lhr, lmm, pcTmpMsg);
 		
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (11) pcTmpForMsg == %s\n", 
 				pcTmpForMsg) );	
 			
-		if(lRetForSPrintf < 0)								// ���ϥ�å��������Խ���
-		{													// �Ǥ��ʤ��ä����
+		if(lRetForSPrintf < 0)								// 出力メッセージの編集が
+		{													// できなかった場合
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 	
-			free(pcTmpMsg);									// �ΰ�����
+			free(pcTmpMsg);									// 領域を解放
 			
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 				
@@ -717,30 +717,30 @@ long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 				
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 
-			return(LOG_ERROR);								// ���顼����
+			return(LOG_ERROR);								// エラー処理
 		} 
 		
 		
 		/******************************************/
-		/* ��å����������						  */
+		/* メッセージを出力						  */
 		/******************************************/
 		
-		if( (cMsgOutFlg == '$') || (cMsgOutFlg == '&') )	// ���ϻؼ�ʸ����������
+		if( (cMsgOutFlg == '$') || (cMsgOutFlg == '&') )	// 出力指示文字がある場合
 		{
 			DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (12) cMsgOutFlg == %c\n", cMsgOutFlg) );	
 															
-															// ��å���������Ϥ���	
+															// メッセージを出力する	
 			lRetForSend = os_MsgOut(pcTmpForMsg, D_SG_EMMC_SYSLOG, pcPriority);
 			
 			DbgMsg01( DLv04, ( OutPut, "*** os_SendLog (13) lRetForSend == %ld\n", 
 					lRetForSend) );	
 			
 			
-			if(lRetForSend != NORMAL)							// ���ϤǤ��ʤ����
+			if(lRetForSend != NORMAL)							// 出力できない場合
 			{
 				os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 	
-				free(pcTmpMsg);									// �ΰ�����
+				free(pcTmpMsg);									// 領域を解放
 				
 				os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 				
@@ -750,18 +750,18 @@ long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 			
 				os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 
-				return(lRetForSend);							// ���顼����
+				return(lRetForSend);							// エラー処理
 			}
 		}
 		else
 		{
 			/******************************************/
-			/* ��å���������Ϥ��ʤ�				  */
+			/* メッセージを出力しない				  */
 			/******************************************/
 	
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 	
-			free(pcTmpMsg);										// �ΰ�����
+			free(pcTmpMsg);										// 領域を解放
 	
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
@@ -778,11 +778,11 @@ long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 
 															
 	/********************************************************************************************/
-	/*  ������λ				                                                                */
+	/*  処理終了				                                                                */
 	/********************************************************************************************/
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 	
-	free(pcTmpMsg);									// �ΰ�����
+	free(pcTmpMsg);									// 領域を解放
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
@@ -798,22 +798,22 @@ long os_SendLog(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufLe
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾��long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, 						*/
+/*	＜関数名＞long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, 						*/
 /*							  long lmm, long lBufLen)											*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� ����֥����������ѥ�å������Խ����Ͻ���										*/
+/*	＜機能概要＞ 特定ブロセス出力用メッセージ編集出力処理										*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1) - �ǡ�����Ǽ�Хåե�													*/
-/*		�ѥ�᡼����(2)	- ��å��������̻�														*/
-/*		�ѥ�᡼����(3)	- ���ο���																*/
-/*		�ѥ�᡼����(4)	- ʬ�ο���																*/
-/*		�ѥ�᡼����(5)	- �ǡ�����Ǽ�Хåե�������												*/
+/*	パラメーター:																				*/
+/*		パラメーター(1) - データ格納バッファ													*/
+/*		パラメーター(2)	- メッセージ識別子														*/
+/*		パラメーター(3)	- 時の数値																*/
+/*		パラメーター(4)	- 分の数値																*/
+/*		パラメーター(5)	- データ格納バッファサイズ												*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (NORMAL)																			*/
-/*		���� (D_OSWRITE1_OUTPUT_ERROR) 															*/
+/*	リターン:																					*/
+/*		成功 (NORMAL)																			*/
+/*		失敗 (D_OSWRITE1_OUTPUT_ERROR) 															*/
 /*																								*/
 /*																								*/
 /************************************************************************************************/
@@ -821,52 +821,52 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 {
 		
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
 
-	long lRet = 0;											// ��å��������̻Ҹ������ֵ���
+	long lRet = 0;											// メッセージ識別子検索の返却値
 	
-	long lRetForSend = 0;									// ��å������������ֵ���
+	long lRetForSend = 0;									// メッセージ送信の返却値
 	
-	long lRetForSPrintf = 0;								// sprintf���ֵ���
+	long lRetForSPrintf = 0;								// sprintfの返却値
 	
 	long lTmpProcOutLen = 0;
 	
 	long lMsgLen = 0;
 	
-	char cMsgOutFlg;										// ��å��������ϻؼ�ʸ��
+	char cMsgOutFlg;										// メッセージ出力指示文字
 
-	char *pcTmpMsg = NULL;									// ���ϥ�å�����
+	char *pcTmpMsg = NULL;									// 出力メッセージ
 	
-	char *pcFormatMsg = NULL;								// ��å��������ɥ쥹
+	char *pcFormatMsg = NULL;								// メッセージアドレス
 	
-	char cNotFoundMsg[100];									// ���̻Ҥ��ʤ��Ȥ��ν��ϥ�å�����
+	char cNotFoundMsg[100];									// 識別子がないときの出力メッセージ
 	
-	TEmmcTableInd *ptEmmcInd = NULL;						// ��å����������ơ��֥�
+	TEmmcTableInd *ptEmmcInd = NULL;						// メッセージ管理テーブル
 	
 	char *pcTmpForMsg = NULL;	
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 	/******************************************/
-	/* ��å������򸡺�����					  */
+	/* メッセージを検索処理					  */
 	/******************************************/
-	ptEmmcInd = (TEmmcTableInd*)ptEmmc->ptProcAdr; 			// ����֥���������
-															// ��å��������ɥ쥹������
+	ptEmmcInd = (TEmmcTableInd*)ptEmmc->ptProcAdr; 			// 特定ブロセス出力
+															// メッセージアドレスを設定
 															
 	DbgMsg01( DLv04, ( OutPut, "*** os_SendProc (1.1) \n" ) );						
 										
-															// ��å��������̻Ҥθ���
+															// メッセージ識別子の検索
 	lRet = os_SearchMsgID(ptEmmcInd, ptEmmc->lProcCnt, pcTmpBufMsgId);
 	
 //	DbgMsg01( DLv04, ( OutPut, "\n*** os_SendProc (1.2) after os_SearchMsgID\n") );
 	
-	if(lRet < 0)											// ��å��������̻Ҥ�
-	{														// ���Ĥ���ʤ��ä����
+	if(lRet < 0)											// メッセージ識別子が
+	{														// 見つからなかった場合
 
 		/******************************************/
-		/* ����ץ��������̻ҥ���å�			  */
+		/* 特定プロセス識別子チュック			  */
 		/******************************************/
 	
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendProc (0) \n" ) );	
@@ -888,15 +888,15 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 
 		memset(cNotFoundMsg, 0x00, 1);
 
-															// not found��å��������Խ�
+															// not foundメッセージを編集
 		lRetForSPrintf = sprintf(cNotFoundMsg+1, "%.2d:%.2dKO00* SMES %c%c%c%c not found", 
 								 lhr, lmm, pcTmpBufMsgId[0], pcTmpBufMsgId[1], 
 								 pcTmpBufMsgId[2], pcTmpBufMsgId[3]);
 					
-		DbgDmp02( DLv04, ("## sprintf�� ", cNotFoundMsg, lRetForSPrintf+1,1,0));						 
+		DbgDmp02( DLv04, ("## sprintf後 ", cNotFoundMsg, lRetForSPrintf+1,1,0));						 
 
-		if(lRetForSPrintf < 0)								// ���ϥ�å��������Խ�
-		{													// ���Ǥ��ʤ��ä����
+		if(lRetForSPrintf < 0)								// 出力メッセージの編集
+		{													// ができなかった場合
 			os_trcget2( D_MD_OS_SENDPROC, D_T_ERR_SYS, 1, PRC_ERROR );
 			
 			return(PRC_ERROR);
@@ -906,15 +906,15 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 		
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendProc (3.1) lTmpProcOutLen == %ld\n", lTmpProcOutLen) );
 		
-															// �����ؿ��ǥ�å�����������
+															// 送信関数でメッセージを送る
 		lRetForSend = ossenms(ptEmmc->lPCode, lTmpProcOutLen, cNotFoundMsg);
 		
 
-		if(lRetForSend != NORMAL)							// ���ϤǤ��ʤ����
+		if(lRetForSend != NORMAL)							// 出力できない場合
 		{
 			os_trcget2( D_MD_OS_SENDPROC, D_T_ERR_SYS, 1, INV_ERROR );
 			
-			return(INV_ERROR);								// ���顼����
+			return(INV_ERROR);								// エラー処理
 		}
 	
 	}
@@ -923,12 +923,12 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendProc (4)\n") );
 
-		pcFormatMsg = (ptEmmcInd + lRet)->pcFormatAdr;		// ����֥�����������
-															// ��å��������ɥ쥹������
+		pcFormatMsg = (ptEmmcInd + lRet)->pcFormatAdr;		// 特定ブロセス出力用
+															// メッセージアドレスを設定
 															
-		lMsgLen = strlen(pcFormatMsg);						// ��å����������ơ��ָ�������
-															// ��å������ե����ޥå�
-															// ���󥢥ɥ쥹�Υ�����
+		lMsgLen = strlen(pcFormatMsg);						// メッセージ管理テーブ個別部の
+															// メッセージフォーマット
+															// 情報アドレスのサイズ
 															
 															
 //		os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, lBufLen + lMsgLen + 20 );
@@ -940,17 +940,17 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 															// TBCS0153/TBCS0155
 		os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, ( (lBufLen * 2) + (lMsgLen + 9) ) );
 															// TBCS0153/TBCS0155
-															// ���Ѥ��Խ����륵����ʬ=����*2
-															// ����,���ڡ���,[]�Υ�����ʬ=9
+															// 全角に編集するサイズ分=引数*2
+															// 時間,スペース,[]のサイズ分=9
 		pcTmpForMsg = (char*)malloc( (lBufLen * 2) + (lMsgLen + 9) );
 		
 		os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 1, pcTmpForMsg );		
 		
 															
 		/******************************************/
-		/* ��å��������Խ�����					  */
+		/* メッセージを編集する					  */
 		/******************************************/
-															// ��å��������Խ�
+															// メッセージを編集
 		os_GetMsg(pcFormatMsg, buf, &pcTmpMsg, lBufLen, sProAfter, lMsgLen);
 		
 		cMsgOutFlg = pcFormatMsg[12];
@@ -960,20 +960,20 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 		
 		memset(pcTmpForMsg, 0x00, 1);
 		
-															// ���ϥ�å��������Խ�
+															// 出力メッセージを編集
 		lRetForSPrintf = sprintf(pcTmpForMsg+1, "%.2d:%.2d%s", lhr, lmm, pcTmpMsg);
 		
-		DbgDmp02( DLv04, ("## sprintf�� ", pcTmpForMsg, lRetForSPrintf+1,1,0));
+		DbgDmp02( DLv04, ("## sprintf後 ", pcTmpForMsg, lRetForSPrintf+1,1,0));
 		
 		DbgMsg01( DLv04, ( OutPut, "*** os_SendProc (7) pcTmpForMsg == %s\n", 
 				pcTmpForMsg) );
 				
 		
-		if(lRetForSPrintf < 0)								// ���ϥ�å��������Խ�
-		{													// ���Ǥ��ʤ��ä����
+		if(lRetForSPrintf < 0)								// 出力メッセージの編集
+		{													// ができなかった場合
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 			
-			free(pcTmpMsg);									// �ΰ�����
+			free(pcTmpMsg);									// 領域を解放
 	
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 			
@@ -983,18 +983,18 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 				
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 			
-			return(PRC_ERROR);								// ���顼����
+			return(PRC_ERROR);								// エラー処理
 			
 		} 
 		
 		/******************************************/
-		/* ��å����������						  */
+		/* メッセージを出力						  */
 		/******************************************/
-		if(cMsgOutFlg == '*')								// ���ϻؼ�ʸ����������
+		if(cMsgOutFlg == '*')								// 出力指示文字がある場合
 		{
 	
 			/******************************************/
-			/* ����ץ��������̻ҥ���å�			  */
+			/* 特定プロセス識別子チュック			  */
 			/******************************************/
 	
 //			DbgMsg01( DLv04, ( OutPut, "*** os_SendProc (0) \n" ) );	
@@ -1013,7 +1013,7 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 					lTmpProcOutLen ) );
 					
 					
-			lTmpProcOutLen = lRetForSPrintf + 1;			// ���ϥ�å������Υ���������			
+			lTmpProcOutLen = lRetForSPrintf + 1;			// 出力メッセージのサイズを求め			
 			
 			DbgMsg01( DLv04, ( OutPut, "*** os_SendProc (8.1) lTmpProcOutLen == %ld\n", lTmpProcOutLen) );			
 					
@@ -1021,15 +1021,15 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 					ptEmmc->lPCode ) );	
 					
 			
-															// �����ؿ��ǥ�å����������� 
+															// 送信関数でメッセージを送る 
 			lRetForSend = ossenms(ptEmmc->lPCode, lTmpProcOutLen, pcTmpForMsg);
 			
 					
-			if(lRetForSend != NORMAL)						// ���ϤǤ��ʤ����
+			if(lRetForSend != NORMAL)						// 出力できない場合
 			{
 				os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 	
-				free(pcTmpMsg);								// �ΰ�����
+				free(pcTmpMsg);								// 領域を解放
 	
 				os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
@@ -1040,18 +1040,18 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 				os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 
 					
-				return(INV_ERROR);							// ���顼����
+				return(INV_ERROR);							// エラー処理
 			}
 		}
 		else
 		{
 			/******************************************/
-			/* ��å���������Ϥ��ʤ�				  */
+			/* メッセージを出力しない				  */
 			/******************************************/
 			
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 	
-			free(pcTmpMsg);									// �ΰ�����
+			free(pcTmpMsg);									// 領域を解放
 	
 			os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
@@ -1074,12 +1074,12 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 //	                   pcTmpMsg) );
 	
 	/********************************************************************************************/
-	/*  ������λ				                                                                */
+	/*  処理終了				                                                                */
 	/********************************************************************************************/
 
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_FREE, 1, pcTmpMsg );
 	
-	free(pcTmpMsg);									// �ΰ�����
+	free(pcTmpMsg);									// 領域を解放
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
@@ -1098,20 +1098,20 @@ long os_SendProc(char *buf, char pcTmpBufMsgId[], long lhr, long lmm, long lBufL
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen, 			*/
+/*	＜関数名＞ void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen, 			*/
 /*                              short *sCode, long lMsgLen)										*/
 /*	                             	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� ���ϥ�å����������															*/
+/*	＜機能概要＞ 出力メッセージを取得															*/
 /*																								*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - 	��å������ե����ޥåȾ��󥢥ɥ쥹									*/
-/*		�ѥ�᡼����(2)	 - 	�ǡ�����Ǽ�Хåե�													*/
-/*		�ѥ�᡼����(3)	 -	�Խ���Υ�å�����													*/
-/*		�ѥ�᡼����(4)	 -	�ǡ�����Ǽ�Хåե��Υ�����											*/
-/*		�ѥ�᡼����(5)	 -	�������Ѵ�����														*/
-/*		�ѥ�᡼����(6)	 -	�ơ��֥�Υ�å�����������											*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 	メッセージフォーマット情報アドレス									*/
+/*		パラメーター(2)	 - 	データ格納バッファ													*/
+/*		パラメーター(3)	 -	編集後のメッセージ													*/
+/*		パラメーター(4)	 -	データ格納バッファのサイズ											*/
+/*		パラメーター(5)	 -	コード変換情報														*/
+/*		パラメーター(6)	 -	テーブルのメッセージサイズ											*/
 /*																								*/
 /*																								*/
 /*																								*/
@@ -1121,37 +1121,37 @@ void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen,
 				short *sCode, long lMsgLen)
 {
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
 	
-	long lMsgStart = 0;										// ��å������ե����ޥåȾ����Ѥ���Ƭ
+	long lMsgStart = 0;										// メッセージフォーマット情報用の先頭
 	
-	long lMsgEnd = 0;										// ��å������ե����ޥåȾ����Ѥν�ü
+	long lMsgEnd = 0;										// メッセージフォーマット情報用の終端
 	
-	long lBufStart = 0;										// �ǡ�����Ǽ�Хåե��Ѥ���Ƭ
+	long lBufStart = 0;										// データ格納バッファ用の先頭
 	
-	long lBufEnd = 0;										// �ǡ�����Ǽ�Хåե��Ѥν�ü 
+	long lBufEnd = 0;										// データ格納バッファ用の終端 
 	
 	long ltemp = 0;
 	
 	long lFlg = 0;
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 
 //	os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, lBufLen + lMsgLen + 20);
-															// ��å������ե����ޥåȾ����
-															// �ǡ�����Ǽ�Хåե�����ݤ��뤿��
-//	*pcMsg = (char*)malloc( (lBufLen * 2) + lMsgLen);		// ���ΰ����ޤ�
+															// メッセージフォーマット情報と
+															// データ格納バッファを確保するため
+//	*pcMsg = (char*)malloc( (lBufLen * 2) + lMsgLen);		// の領域を取ります
 															// TBCS0123
 															
 															// TBCS0153 / TBCS0155
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, ( (lBufLen * 2) + (lMsgLen + 9) ) );
 
-	*pcMsg = (char*)malloc( (lBufLen * 2) + (lMsgLen + 9)); // �ǡ����Խ����ΰ�����
-															// ���Ѥ��Խ����륵����ʬ=����*2
-															// ����,���ڡ���,[]�Υ�����ʬ=9
+	*pcMsg = (char*)malloc( (lBufLen * 2) + (lMsgLen + 9)); // データ編集の領域を確保
+															// 全角に編集するサイズ分=引数*2
+															// 時間,スペース,[]のサイズ分=9
 															// TBCS0153 / TBCS0155
 
 
@@ -1167,12 +1167,12 @@ void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen,
 
 															// TBCS0172		Start	2003.06.27
 	/****************************************/
-	/*	�Խ�����ʸ����������				*/
+	/*	編集制御文字検索処理				*/
 	/****************************************/
-	lMsgStart = 8;											// ����ʸ�����֤�����
+	lMsgStart = 8;											// 検索文字位置を設定
 	while(lMsgStart > 0)
 	{ 
-															// �Խ�����ʸ���򸡺�
+															// 編集制御文字を検索
 		lMsgStart  = os_SeekStr(pcFmtAdr, '%', lMsgStart, lMsgLen);
 
 		if(lMsgStart != -1)
@@ -1190,10 +1190,10 @@ void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen,
 
 //	DbgMsg01( DLv04, ( OutPut, "*** os_GetMsg(1) lMsgStart == %ld\n", lMsgStart ) );
 	
-	if ( lMsgStart != -1) 									// �Խ�����ʸ�������ä����
+	if ( lMsgStart != -1) 									// 編集制御文字があった場合
 	{
-		strncpy(*pcMsg, (pcFmtAdr + 8), lMsgStart - 8); 	// �����ϰϤ��줿��å��������󤫤�
-															// ���ϥ�å������˲ä�
+		strncpy(*pcMsg, (pcFmtAdr + 8), lMsgStart - 8); 	// 指定範囲されたメッセージ情報から
+															// 出力メッセージに加え
 															
 		ltemp = lMsgStart - 8;
 		
@@ -1203,27 +1203,27 @@ void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen,
 		
 	//	DbgMsg01( DLv04, ( OutPut, "*** os_GetMsg(1.3) *pcMsg\n ") );
 
-		while(lMsgEnd != -1)								// ��å������ǡ������ʤ��ʤ�ޤǥ롼��
+		while(lMsgEnd != -1)								// メッセージデータがなくなるまでループ
 		{
 			/****************************************/
-			/*	������ʸ������Խ�����			*/
+			/*	埋め込み文字列の編集処理			*/
 			/****************************************/
 			if( (pcFmtAdr[lMsgStart] == '%') &&
 			  ( (pcFmtAdr[lMsgStart + 1] == 's') || (pcFmtAdr[lMsgStart + 1] == 'z') ) )
 			{
-															// �ǡ�����Ǽ�Хåե���������ʸ����
-															// ���ϰϤ����
+															// データ格納バッファの埋め込み文字列
+															// の範囲を取得
 				os_GetStrPos(pcBuf, '\t', &lBufStart, &lBufEnd, lBufLen);
 
-														// �Խ�����ʸ����%z�ξ�祳�����Ѵ�
+														// 編集制御文字は%zの場合コード変換
 				if( ( pcFmtAdr[lMsgStart] == '%' ) && ( pcFmtAdr[lMsgStart+1] == 'z' ) )
 				{
 															// TBCS0123
 				 	os_ChangeCode(pcBuf, sCode, lBufStart, lBufEnd, *pcMsg);
 				}
 				else										// TBCS0123
-				{											// �ǡ�����Ǽ�Хåե�����
-															// ���ϥ�å��������Խ�
+				{											// データ格納バッファから
+															// 出力メッセージに編集
 					os_EditString(pcBuf, *pcMsg, lBufStart, lBufEnd);
 				
 					DbgMsg01( DLv04, ( OutPut, "*** os_GetMsg(1.5) lBufStart = %ld\n", lBufStart));
@@ -1237,15 +1237,15 @@ void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen,
 		//	DbgMsg01( DLv04, ( OutPut, "*** os_GetMsg(4) lBufEnd == %d\n", lBufEnd ) ); 
 
 			/****************************************/
-			/*	�Խ�����ʸ����������				*/
+			/*	編集制御文字検索処理				*/
 			/****************************************/
 			lMsgEnd = os_SeekStr(pcFmtAdr, '%', ltemp, lMsgLen);
 			if(lMsgEnd != -1)  
 			{
 				if( (pcFmtAdr[lMsgEnd + 1 ] == 'z') || (pcFmtAdr[lMsgEnd + 1] == 's') ) 
 				{
-															// ��å������ե����ޥåȾ��󤫤�
-															// ���ϥ�å��������Խ�
+															// メッセージフォーマット情報から
+															// 出力メッセージに編集
 					os_EditString(pcFmtAdr, *pcMsg, lMsgStart + 1, lMsgEnd);
 					
 					lMsgStart = lMsgEnd;
@@ -1256,8 +1256,8 @@ void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen,
 			}
 			else
 			{
-															// ��å������ե����ޥåȾ��󤫤�
-															// ���ϥ�å��������Խ�
+															// メッセージフォーマット情報から
+															// 出力メッセージに編集
 					os_EditString(pcFmtAdr, *pcMsg, lMsgStart + 1, lMsgLen);
 			}
 															
@@ -1272,8 +1272,8 @@ void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen,
 		
 	//	DbgMsg01( DLv04, ( OutPut, "*** os_GetMsg (8) pcFmtAdr == %s\n", pcFmtAdr) );	
 		
-		strncpy(*pcMsg, (pcFmtAdr + 8), lMsgLen); 			// �����ϰϤ��줿��å���������
-															// ���ϥ�å������˲ä�
+		strncpy(*pcMsg, (pcFmtAdr + 8), lMsgLen); 			// 指定範囲されたメッセージ情報か
+															// 出力メッセージに加え
 	} 
 
 }
@@ -1282,49 +1282,49 @@ void os_GetMsg(char *pcFmtAdr, char *pcBuf, char **pcMsg, long lBufLen,
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� long os_SearchMsgID(TEmmcTableInd *pcEmmcIndAdr, long lTEmmcCnt, 				*/
+/*	＜関数名＞ long os_SearchMsgID(TEmmcTableInd *pcEmmcIndAdr, long lTEmmcCnt, 				*/
 /*								   char pcTmpBufMsgId[])				 						*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� ��å��������̻Ҥθ���															*/
+/*	＜機能概要＞ メッセージ識別子の検索															*/
 /*																								*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - 	��å������ե����ޥåȾ��󥢥ɥ쥹									*/
-/*		�ѥ�᡼����(2)	 - 	��å��������Х��ɥ쥹												*/
-/*		�ѥ�᡼����(3)	 -	��å��������̻�													*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 	メッセージフォーマット情報アドレス									*/
+/*		パラメーター(2)	 - 	メッセージ相対アドレス												*/
+/*		パラメーター(3)	 -	メッセージ識別子													*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (��å����������ơ��֥����������													*/
-/*		���� (-1)																				*/
+/*	リターン:																					*/
+/*		成功 (メッセージ管理テーブル個別部数）													*/
+/*		失敗 (-1)																				*/
 /*																								*/
 /************************************************************************************************/
 long os_SearchMsgID(TEmmcTableInd *pcEmmcIndAdr, long lTEmmcCnt, char pcTmpBufMsgId[])
 {
 
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
 	
-	long lRet = -1;											// strncmp���ֵ���	
+	long lRet = -1;											// strncmpの返却値	
 	
-	long lCounter = 0;										// �롼�ץ�����
+	long lCounter = 0;										// ループカウンタ
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 	DbgMsg01( DLv04, ( OutPut, "*** os_SearchMsgID (1) lTEmmcCnt == %d\n", lTEmmcCnt) );
 	
-	do														// �ǡ�����Ǽ�Хåե��ˤ���
-	{														// ��å��������̻Ҥ���å�����	
-															// �����ơ��֥�Υ�å�����	
-															// ���̻Ҥȹ���
+	do														// データ格納バッファにある
+	{														// メッセージ識別子がメッセージ	
+															// 管理テーブルのメッセージ	
+															// 識別子と合致
 															
 		lRet = strncmp(pcTmpBufMsgId, (pcEmmcIndAdr + lCounter)->acMsgID, 4);
 		
 		lCounter += 1;									
 		
-	}while((lRet != 0) && (lCounter < lTEmmcCnt));			// ���פ���ޤ�	
+	}while((lRet != 0) && (lCounter < lTEmmcCnt));			// 合致するまで	
 
 	if(lRet == 0)											
 	{
@@ -1332,31 +1332,31 @@ long os_SearchMsgID(TEmmcTableInd *pcEmmcIndAdr, long lTEmmcCnt, char pcTmpBufMs
 		
 		lCounter--;
 		
-		return(lCounter);									// ��å����������ơ��֥���������ֵ�
+		return(lCounter);									// メッセージ管理テーブル個別部数返却
 	}
 	
 	DbgMsg01( DLv04, ( OutPut, "*** os_SearchMsgID (1) return to -1") );
 	
-	return(-1);												// ���顼����
+	return(-1);												// エラー処理
 }
 
 
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� void os_GetStrPos(char *pcBuf, char cTarget, long *lStart, long *lEnd,			*/
+/*	＜関数名＞ void os_GetStrPos(char *pcBuf, char cTarget, long *lStart, long *lEnd,			*/
 /*								 long lLen)							 							*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� ��å���������λ����ϰϤ����													*/
+/*	＜機能概要＞ メッセージ配列の指定範囲を取得													*/
 /*																								*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - 	�ǡ�����Ǽ�Хåե�													*/
-/*  	�ѥ�᡼����(2)	 -	��ɸ																*/
-/*		�ѥ�᡼����(3)	 -  ��Ƭ�ΰ���															*/
-/*		�ѥ�᡼����(4)	 -  ��ü�ΰ���															*/
-/*		�ѥ�᡼����(5)	 -  �ǡ�����Ǽ�Хåե�������											*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 	データ格納バッファ													*/
+/*  	パラメーター(2)	 -	目標																*/
+/*		パラメーター(3)	 -  先頭の位置															*/
+/*		パラメーター(4)	 -  終端の位置															*/
+/*		パラメーター(5)	 -  データ格納バッファサイズ											*/
 /*																								*/
 /*																								*/
 /************************************************************************************************/
@@ -1364,28 +1364,28 @@ void os_GetStrPos(char *pcMessage, char cTarget, long *lStart, long *lEnd, long 
 {
 	
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
 	
-	long lRetForStart = 0;									// ��Ƭ�ΰ��֤򸡺����ֵ���
+	long lRetForStart = 0;									// 先頭の位置を検索の返却値
 	
-	long lRetForEnd = -1;									// ��ü�ΰ��֤򸡺����ֵ���
+	long lRetForEnd = -1;									// 終端の位置を検索の返却値
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
-															// ��Ƭ�ΰ��֤򸡺�
+															// 先頭の位置を検索
 	lRetForStart = os_SeekStr(pcMessage, cTarget, *lStart, lLen);		
 	
-	if(lRetForStart != -1)									// ���Ĥ��ä����
+	if(lRetForStart != -1)									// 見つかった場合
 	{
 	
 		if(pcMessage[lRetForStart] != pcMessage[lRetForStart+1])
 		{
 															// TBCS0172		Start	2003.06.27
-			*lStart = lRetForStart + 1;						// ��ɸ����Ƭ���֤�����
+			*lStart = lRetForStart + 1;						// 目標の先頭位置を設定
 		
-															// ��ɸ�ν�ü���֤򸡺�
+															// 目標の終端位置を検索
 			lRetForEnd = os_SeekStr(pcMessage, cTarget, lRetForStart + 1, lLen);
 		
 			if(lRetForEnd != -1)
@@ -1414,35 +1414,35 @@ void os_GetStrPos(char *pcMessage, char cTarget, long *lStart, long *lEnd, long 
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� void os_GetLogMsg(char *pcBuf, char *pcFmtAdr, char *pcMsg, long lBufLen)		*/
+/*	＜関数名＞ void os_GetLogMsg(char *pcBuf, char *pcFmtAdr, char *pcMsg, long lBufLen)		*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� �����վ����������ƽ��ϥ�å�����������										*/
+/*	＜機能概要＞ ログ付情報を取得して出力メッセージに編入										*/
 /*																								*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)	 -  �ǡ�����Ǽ�Хåե�													*/
-/*		�ѥ�᡼����(2)  - 	��å������ե����ޥåȾ��󥢥ɥ쥹									*/
-/*		�ѥ�᡼����(3)	 -  ���ϥ�å�����														*/
-/*		�ѥ�᡼����(4)	 -  �ǡ�����Ǽ�Хåե�������											*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)	 -  データ格納バッファ													*/
+/*		パラメーター(2)  - 	メッセージフォーマット情報アドレス									*/
+/*		パラメーター(3)	 -  出力メッセージ														*/
+/*		パラメーター(4)	 -  データ格納バッファサイズ											*/
 /*																								*/
 /*																								*/
 /************************************************************************************************/
 void os_GetLogMsg(char *pcBuf, char *pcFmtAdr, char *pcMsg, long lBufLen)
 {
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
 	
-	long lStartPos = 0;										// �롼�ץ�����
+	long lStartPos = 0;										// ループカウンタ
 	
 	long lMsgLen = 0;
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 	
-															// '\t\t'�򸫤Ĥ���ޤǷ����֤�
+															// '\t\t'を見つけるまで繰り返し
 	while( (pcBuf[lStartPos] != '\t' || pcBuf[lStartPos + 1] != '\t') && lStartPos != -1 )
 	{
 		DbgMsg01( DLv04, ( OutPut, "*** os_GetLogMsg (1) lStartPos == %d\n", lStartPos) );
@@ -1453,7 +1453,7 @@ void os_GetLogMsg(char *pcBuf, char *pcFmtAdr, char *pcMsg, long lBufLen)
 		DbgMsg01( DLv04, ( OutPut, "*** os_GetLogMsg (3) pcBuf[lStartPos + 1]  == %c\n", 
 				pcBuf[lStartPos + 1] ) );
 															
-															// '\t'�򸡺�
+															// '\t'を検索
 		lStartPos  = os_SeekStr(pcBuf, '\t', lStartPos + 1, lBufLen);
 	
 	}
@@ -1470,7 +1470,7 @@ void os_GetLogMsg(char *pcBuf, char *pcFmtAdr, char *pcMsg, long lBufLen)
 
 		strncpy(pcMsg+lMsgLen, " \0", 2);
 		
-		if(pcFmtAdr[12] == '$') 							// ���ϻؼ�ʸ����'$'�ξ��
+		if(pcFmtAdr[12] == '$') 							// 出力指示文字は'$'の場合
 		{
 			DbgMsg01( DLv04, ( OutPut, "*** os_GetLogMsg (5.2) lMsgLen=%ld\n", 
 				 	lMsgLen) );
@@ -1480,14 +1480,14 @@ void os_GetLogMsg(char *pcBuf, char *pcFmtAdr, char *pcMsg, long lBufLen)
 			
 			DbgMsg01( DLv04, ( OutPut, "*** os_GetLogMsg (5.4) lBufLen=%ld\n", 
 				 	lBufLen) );
-															// �������Ѵ�
+															// コード変換
 			os_ChangeCode(pcBuf, sConAfter, lStartPos + 2, lBufLen, pcMsg);
 		}	
 		else
 		{
 			DbgMsg01( DLv04, ( OutPut, "*** os_GetLogMsg (5.4)\n" ) );
 			
-															// ���ϥ�å�����������
+															// 出力メッセージに編入
 			os_EditString(pcBuf, pcMsg, lStartPos + 2, lBufLen);
 		}
 		
@@ -1502,51 +1502,51 @@ void os_GetLogMsg(char *pcBuf, char *pcFmtAdr, char *pcMsg, long lBufLen)
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� void os_EditString(char *pcInPtr, char *pcOutPtr, long lInPtrStart, 				*/
+/*	＜関数名＞ void os_EditString(char *pcInPtr, char *pcOutPtr, long lInPtrStart, 				*/
 /*								  long lInPtrEnd)	  											*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� ���ꤵ�줿�ϰϤ�ʸ���������ϥ�å�����������									*/
+/*	＜機能概要＞ 指定された範囲の文字配列を出力メッセージに編入									*/
 /*																								*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - 	INPUTʸ������														*/
-/*  	�ѥ�᡼����(2)	 -	OUTPUTʸ������														*/
-/*		�ѥ�᡼����(3)	 -  ��Ƭ�ΰ���															*/
-/*		�ѥ�᡼����(4)	 -  ��ü�ΰ���															*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 	INPUT文字配列														*/
+/*  	パラメーター(2)	 -	OUTPUT文字配列														*/
+/*		パラメーター(3)	 -  先頭の位置															*/
+/*		パラメーター(4)	 -  終端の位置															*/
 /*																								*/
 /************************************************************************************************/
 void os_EditString(char *pcInPtr, char *pcOutPtr, long lInPtrStart, long lInPtrEnd)
 {
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
-	int iCnt = 0;											// �롼�ץ�����
+	int iCnt = 0;											// ループカウンタ
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 
 	if(lInPtrStart < lInPtrEnd)
 	{
 	
-		while(pcOutPtr[iCnt] != '\0')						// ouputʸ������ν�üʸ����
-		{													// ã����ޤǥ������
+		while(pcOutPtr[iCnt] != '\0')						// ouput文字配列の終端文字を
+		{													// 達するまでカウント
 			iCnt++;
 		}
 	
 		while(lInPtrStart < lInPtrEnd)
 		{
 	
-			pcOutPtr[iCnt] = pcInPtr[lInPtrStart];			// inputʸ�����󤫤�ouput
-															// ʸ�����������
+			pcOutPtr[iCnt] = pcInPtr[lInPtrStart];			// input文字配列からouput
+															// 文字配列に編入
 			iCnt++;
 		
 			lInPtrStart++;
 
 		} 
 	
-		pcOutPtr[iCnt++] = '\0';							// ��üʸ��������
+		pcOutPtr[iCnt++] = '\0';							// 終端文字を設定
 	}
 	
 }
@@ -1554,40 +1554,40 @@ void os_EditString(char *pcInPtr, char *pcOutPtr, long lInPtrStart, long lInPtrE
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� long os_MsgOut(char *pcMsgFormat, char *pcKey, char *pcPriority)	   				*/
+/*	＜関数名＞ long os_MsgOut(char *pcMsgFormat, char *pcKey, char *pcPriority)	   				*/
 /*																								*/
-/*	�㵡ǽ���ס�  - ��å���������										                        */
+/*	＜機能概要＞  - メッセージ出力										                        */
 /* 				   																				*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - �Խ��ѤߤΥ�å�����													*/
-/*		�ѥ�᡼����(2)	 - �ե�����ƥ�															*/
-/*		�ѥ�᡼����(3)	 - �ץ饤����ǥ�														*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 編集済みのメッセージ													*/
+/*		パラメーター(2)	 - ファシリティ															*/
+/*		パラメーター(3)	 - プライオリディ														*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (NORMAL)																			*/
-/*		���� (D_OSWRITE1_OUTPUT_ERROR)															*/
+/*	リターン:																					*/
+/*		成功 (NORMAL)																			*/
+/*		失敗 (D_OSWRITE1_OUTPUT_ERROR)															*/
 /************************************************************************************************/
 long os_MsgOut(char *pcMsgFormat, char *pcKey, char *pcPriority)
 {
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
-	long lRetSg = 0;									// SG���ֵ���
+	long lRetSg = 0;									// SGの返却値
 	
 	long lRetSys = 0;									// priority
 	
-	long lStr = 0;										// SG��
+	long lStr = 0;										// SG値
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
-	lRetSg = os_getSG(pcKey, &lStr);					// SG�ǡ����μ���
+	lRetSg = os_getSG(pcKey, &lStr);					// SGデータの取得
 	
 	DbgMsg01( DLv04, ( OutPut, "*** os_MsgOut (1) lRetSg == %ld\n", lStr) );
 	
 	DbgMsg01( DLv04, ( OutPut, "*** os_MsgOut (2) pcKey == %s\n", pcKey) );		
 	
-	if(lRetSg == -1)									// �۾��
+	if(lRetSg == -1)									// 異常時
 	{
 
 		return(INV_ERROR);				
@@ -1598,13 +1598,13 @@ long os_MsgOut(char *pcMsgFormat, char *pcKey, char *pcPriority)
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_OPENLOG, 3, NULL, LOG_ODELAY, lFacility[lStr] );
 	
-	openlog(SYS_IDENT, LOG_ODELAY, lFacility[lStr]);			// openlog �����ƥॳ����
+	openlog(SYS_IDENT, LOG_ODELAY, lFacility[lStr]);			// openlog システムコール
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
 	DbgMsg01( DLv04, ( OutPut, "*** os_MsgOut (3) pcPriority == %s\n", pcPriority) );	
 	
-	lRetSys = os_ChgPriority(pcPriority);				// priority�Υ����ɤ��Ѵ�����
+	lRetSys = os_ChgPriority(pcPriority);				// priorityのコードを変換する
 	
 	DbgMsg01( DLv04, ( OutPut, "*** os_MsgOut (4) lRetSys == %ld\n", lRetSys) );	
 	
@@ -1617,18 +1617,18 @@ long os_MsgOut(char *pcMsgFormat, char *pcKey, char *pcPriority)
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_SYSLOG, 2, lRetSys, pcMsgFormat );
 															// TBCS0172		Start	2003.06.27
-	syslog(lRetSys, "%s", pcMsgFormat);						// syslog �����ƥॳ���� 
+	syslog(lRetSys, "%s", pcMsgFormat);						// syslog システムコール 
 															// TBCS0172		 End	2003.06.27
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_CLOSELOG, 0 );
 	
-	closelog();											// closelog �����ƥॳ����
+	closelog();											// closelog システムコール
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 0 );
 	
 	/********************************************************************************************/
-	/*  ������λ				                                                                */
+	/*  処理終了				                                                                */
 	/********************************************************************************************/
 	
 	return (NORMAL); 	
@@ -1638,35 +1638,35 @@ long os_MsgOut(char *pcMsgFormat, char *pcKey, char *pcPriority)
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� int os_ChgPriority(char* pcPrioCode)												*/
+/*	＜関数名＞ int os_ChgPriority(char* pcPrioCode)												*/
 /*																								*/
-/*	�㵡ǽ���ס� - syslog�Υץ饤����ǥ��������Ѵ���Ԥ�										*/
+/*	＜機能概要＞ - syslogのプライオリディコード変換を行う										*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - �Ѵ����Υץ饤����ǥ�������											*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 変換前のプライオリディコード											*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (syslog�Υץ饤����ǥ�������)														*/
-/*		���� (-1)  																				*/
+/*	リターン:																					*/
+/*		成功 (syslogのプライオリディコード)														*/
+/*		失敗 (-1)  																				*/
 /*																								*/
 /************************************************************************************************/
 int os_ChgPriority(char *pcPrioCode)
 {
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
-	long len = 0;										// �ץ饤����ǥ������ɤΥ�����
+	long len = 0;										// プライオリディコードのサイズ
 	
-	char *pcTmpPriCode = NULL;							// �����ѤΥץ饤����ǥ�������
+	char *pcTmpPriCode = NULL;							// 検索用のプライオリディコード
 	
-	int iCnt = 0;										// �롼�ץ����� 
+	int iCnt = 0;										// ループカウンタ 
 	
-	int iCnt1 = 0;										// �롼�ץ�����
+	int iCnt1 = 0;										// ループカウンタ
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
-	len = strlen(pcPrioCode);							// �ץ饤����ǥ������ɤΥ�����
+	len = strlen(pcPrioCode);							// プライオリディコードのサイズ
 
 	
 	DbgMsg01( DLv04, ( OutPut, "*** os_ChgPriority (1) len == %ld\n", len) );	
@@ -1674,13 +1674,13 @@ int os_ChgPriority(char *pcPrioCode)
 	DbgMsg01( DLv04, ( OutPut, "*** os_ChgPriority (2) pcPrioCode == %s\n", pcPrioCode) );
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_MALLOC, 1, len+1 );
-														// �����ѤΥץ饤����ǥ������ɤ�malloc
+														// 検索用のプライオリディコードをmalloc
 	pcTmpPriCode = (char*)malloc(len+1);  
 	
 	os_trcget2( D_MD_OSWRITE1, D_T_SYS_END, 1, pcTmpPriCode );
 	
-	while(pcPrioCode[iCnt] != '\0' && iCnt < len)		// �����ѤΥץ饤����ǥ�������
-	{													// �����ꤹ��
+	while(pcPrioCode[iCnt] != '\0' && iCnt < len)		// 検索用のプライオリディコード
+	{													// に設定する
 		if(pcPrioCode[iCnt] != ' ')						
 		{
 			pcTmpPriCode[iCnt1] = pcPrioCode[iCnt];
@@ -1692,13 +1692,13 @@ int os_ChgPriority(char *pcPrioCode)
 		
 	}
 	
-	pcTmpPriCode[iCnt1] = '\0';							// ʸ����Υ����ߥ͡����������� 
+	pcTmpPriCode[iCnt1] = '\0';							// 文字列のターミネーターを設定 
 	
 	DbgMsg01( DLv04, ( OutPut, "*** os_ChgPriority (3) pcTmpPriCode == %s\n", 
 			pcTmpPriCode) );
 	
 	/******************************************/
-	/* 	�ץ饤����ǥ������ɤ��Ѵ���Ԥ�	  */
+	/* 	プライオリディコードの変換を行う	  */
 	/******************************************/
 	
 	if( (strcmp(pcTmpPriCode, "EMERG") ) == 0 )			
@@ -1742,46 +1742,46 @@ int os_ChgPriority(char *pcPrioCode)
 	}
 
 	/********************************************************************************************/
-	/*  ������λ				                                                                */
+	/*  処理終了				                                                                */
 	/********************************************************************************************/
 	
-	return(-1);											// SYSLOG�Υץ饤����ǥ������ɤ�
-														// ���פ��ʤ��Ȥ����顼��å��������ֵ�
+	return(-1);											// SYSLOGのプライオリディコードと
+														// 合致しないときエラーメッセージを返却
 
 }
 
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� os_SearchJIS(short* ptr, long start, long end, long target)					  	*/
+/*	＜関数名＞ os_SearchJIS(short* ptr, long start, long end, long target)					  	*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� JIS code�򥵡�������															*/
+/*	＜機能概要＞ JIS codeをサーチする															*/
 /*																								*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - 	ʸ������															*/
-/*  	�ѥ�᡼����(2)	 -  ʸ���������Ƭ�ΰ���												*/
-/*		�ѥ�᡼����(3)	 -  ʸ������ǺǸ�ΰ���												*/
-/*		�ѥ�᡼����(4)	 -  ��ɸ																*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 	文字配列															*/
+/*  	パラメーター(2)	 -  文字配列で先頭の位置												*/
+/*		パラメーター(3)	 -  文字配列で最後の位置												*/
+/*		パラメーター(4)	 -  目標																*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (������ɸ��ʸ������ˤϤ�����֡�													*/
-/*		���� (-1)																				*/
+/*	リターン:																					*/
+/*		成功 (その目標は文字配列にはいる位置）													*/
+/*		失敗 (-1)																				*/
 /*																								*/
 /************************************************************************************************/
 long os_SearchJIS(short* ptr, long start, long end, long target)
 {
 	
-	long mid;											// ��ɸ�ΰ���
+	long mid;											// 目標の位置
 	
-	if (start == end)									// �ǽ�ΰ��֤��Ǹ�ΰ��֤ȹ��פ�����
+	if (start == end)									// 最初の位置が最後の位置と合致する場合
 	{
 		
-		if (target == ptr[start])						// ����κǽ�ΰ���
+		if (target == ptr[start])						// 配列の最初の位置
 		{
 	
-			return start;								// ��ɸ�����Ĥ��ä����ֵѤ���
+			return start;								// 目標が見つかったら返却する
 		}
 		else
 		{
@@ -1792,23 +1792,23 @@ long os_SearchJIS(short* ptr, long start, long end, long target)
 	else
 	{
 		
-		mid = (start + end) / 2;						// ����ΤȤ���
+		mid = (start + end) / 2;						// 間中のところ
 
-		if (target == ptr[mid])							// ��ɸ�����Ĥ��ä����ֵѤ���
+		if (target == ptr[mid])							// 目標が見つかったら返却する
 		{
 			
 			return mid;
 		}
 		else
 		{
-			if (target > ptr[mid])						// ��ɸ�����Ĥ���ʤ��ä����ֵѤ���
+			if (target > ptr[mid])						// 目標が見つからなかったら返却する
 			{
-														// ���ΤȤ�����
+														// 右のところへ
 				return os_SearchJIS(ptr,mid+1,end,target);
 			}
 			else
 			{
-														// ���ΤȤ�����	
+														// 左のところへ	
 				return os_SearchJIS(ptr,start,mid-1,target);
 			}
 		}
@@ -1818,45 +1818,45 @@ long os_SearchJIS(short* ptr, long start, long end, long target)
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� os_ChangeCode(char *pcMsgSig, short *after, long lBufStart, long lBufEnd,		*/ 
+/*	＜関数名＞ os_ChangeCode(char *pcMsgSig, short *after, long lBufStart, long lBufEnd,		*/ 
 /*							 char *pcMsg)													  	*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� ʸ��������Υơ������ž����													*/
+/*	＜機能概要＞ 文字配列中のテーダを逆転する													*/
 /*																								*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - 	������ʸ����													*/
-/*  	�ѥ�᡼����(2)	 -  EUC������															*/
-/*		�ѥ�᡼����(3)	 -  �Ѵ��ϰϤ���Ƭ														*/
-/*		�ѥ�᡼����(4)	 -  �Ѵ��ϰϤκǸ�														*/
-/*		�ѥ�᡼����(5)	 -  �ǡ�����Ǽ�Хåե�													*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 	埋め込み文字列１													*/
+/*  	パラメーター(2)	 -  EUCコード															*/
+/*		パラメーター(3)	 -  変換範囲の先頭														*/
+/*		パラメーター(4)	 -  変換範囲の最後														*/
+/*		パラメーター(5)	 -  データ格納バッファ													*/
 /*																								*/
 /*																								*/
 /************************************************************************************************/
 void os_ChangeCode(char *pcMsgSig, short *after, long lBufStart, long lBufEnd, char *pcMsg)
 {
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
-	long lRet = 0;										// �ֵ���	
+	long lRet = 0;										// 返却値	
 
-	long lCnt = 0;										// ������
+	long lCnt = 0;										// カウンタ
 	
-	short sTemp = 0;									// �Ѵ������� TBCS0123
+	short sTemp = 0;									// 変換コード TBCS0123
 	
-	long lSize = 0;										// �Ѵ����줿�Х��ȿ� TBCS0123
+	long lSize = 0;										// 変換されたバイト数 TBCS0123
 	
-	char *pcWork = NULL;								// �Ѵ��Ѥ��ΰ� TBCS0123
+	char *pcWork = NULL;								// 変換用の領域 TBCS0123
 	
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 	
 	pcWork = (char*)malloc( lBufEnd * 2 );				// TBCS0123
 		
 	for (lCnt = lBufStart; lCnt < lBufEnd; lCnt++)
-	{													// JIS�����ɤ򸡺�
+	{													// JISコードを検索
 		
 		sTemp = 0x00ff & pcMsgSig[lCnt]; 				// TBCS0123
 		
@@ -1864,7 +1864,7 @@ void os_ChangeCode(char *pcMsgSig, short *after, long lBufStart, long lBufEnd, c
 
 		DbgMsg01( DLv04, ( OutPut, "*** os_SearchJIS (5) lRet == %ld\n", lRet) );	
 
-		if(lRet != -1)									// ��ä���ţգä��Ѵ�
+		if(lRet != -1)									// 合ったらＥＵＣを変換
 		{
 
 			if( (after[lRet] & 0xff00) != 0x0000 )		// TBCS0123
@@ -1901,7 +1901,7 @@ void os_ChangeCode(char *pcMsgSig, short *after, long lBufStart, long lBufEnd, c
 	os_EditString(pcWork, pcMsg, 0, lSize);				// TBCS0123
 
  	/********************************************************************************************/
-	/*  ������λ				                                                                */
+	/*  処理終了				                                                                */
 	/********************************************************************************************/
 	
 	free(pcWork);										// TBCS0123
@@ -1911,102 +1911,102 @@ void os_ChangeCode(char *pcMsgSig, short *after, long lBufStart, long lBufEnd, c
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� long os_Time( long lHour, long lMin)											  	*/
+/*	＜関数名＞ long os_Time( long lHour, long lMin)											  	*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� ���֤μ���																		*/
+/*	＜機能概要＞ 時間の取得																		*/
 /*																								*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - 	��																	*/
-/*  	�ѥ�᡼����(2)	 -  ʬ																	*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 	時																	*/
+/*  	パラメーター(2)	 -  分																	*/
 /*																								*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (���ߤλ��֡�																		*/
-/*		���� (D_OSWRITE1_OUTPUT_ERROR)															*/
+/*	リターン:																					*/
+/*		成功 (現在の時間）																		*/
+/*		失敗 (D_OSWRITE1_OUTPUT_ERROR)															*/
 /*																								*/
 /************************************************************************************************/
 long os_Time( long *lHour, long *lMin)
 {
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
-	long lDay = 0;										// ����
+	long lDay = 0;										// 日日
 
-	long lTime = 0;										// ����
+	long lTime = 0;										// 時間
 
-	long lRet = 0;										// ���߻��֤��ֵ���
+	long lRet = 0;										// 現在時間の返却値
 	
 		
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 
-	lRet = osgtdat(&lDay, &lTime);						// ���յڤӻ���μ���
+	lRet = osgtdat(&lDay, &lTime);						// 日付及び時刻の取得
 	
-	if(lRet !=NORMAL)									// �۾��
+	if(lRet !=NORMAL)									// 異常時
 	{
-		return(0x940d);				// ���顼��å��������ֵ�
+		return(0x940d);				// エラーメッセージを返却
 	}
 	
-    *lHour = ( lTime >> 16 ) & 0x0000000f;				// ����1�ΰ̤����
+    *lHour = ( lTime >> 16 ) & 0x0000000f;				// 時の1の位を取得
     
-    *lHour += ( ( lTime >> 20 ) & 0x0000000f) * 10;		// ����10�ΰ̤����
+    *lHour += ( ( lTime >> 20 ) & 0x0000000f) * 10;		// 時の10の位を取得
    
-    *lMin = ( lTime  >> 8 ) & 0x0000000f;				// ʬ��1�ΰ̤����
+    *lMin = ( lTime  >> 8 ) & 0x0000000f;				// 分の1の位を取得
     									
-    *lMin += ( ( ( lTime >> 12 ) & 0x0000000f ) * 10 );	// ʬ��10�ΰ̤����			
+    *lMin += ( ( ( lTime >> 12 ) & 0x0000000f ) * 10 );	// 分の10の位を取得			
    
  
    	/********************************************************************************************/
-	/*  ������λ				                                                                */
+	/*  処理終了				                                                                */
 	/********************************************************************************************/
 	
-	return(lRet);										// ������ֵ�
+	return(lRet);										// 時刻を返却
 	
 } 
 
 
 /************************************************************************************************/
 /*																								*/
-/*	��ؿ�̾�� long os_SeekStr(char *pcPtr, char cTarget, long lStart, long lEnd)				*/
+/*	＜関数名＞ long os_SeekStr(char *pcPtr, char cTarget, long lStart, long lEnd)				*/
 /*                                	     			    										*/
 /*																								*/
-/*	�㵡ǽ���ס� ��å���������λ����ϰϤ����													*/
+/*	＜機能概要＞ メッセージ配列の指定範囲を取得													*/
 /*																								*/
 /*																								*/
-/*	�ѥ�᡼����:																				*/
-/*		�ѥ�᡼����(1)  - 	ʸ������															*/
-/*  	�ѥ�᡼����(2)	 -	��ɸ																*/
-/*		�ѥ�᡼����(3)	 -  ��Ƭ�ΰ���															*/
-/*		�ѥ�᡼����(4)	 -  �Ǹ�ΰ���															*/
+/*	パラメーター:																				*/
+/*		パラメーター(1)  - 	文字配列															*/
+/*  	パラメーター(2)	 -	目標																*/
+/*		パラメーター(3)	 -  先頭の位置															*/
+/*		パラメーター(4)	 -  最後の位置															*/
 /*																								*/
-/*	�꥿����:																					*/
-/*		���� (���ϻؼ�ʸ��)																		*/
-/*		���� (D_OSWRITE1_ERROR)																	*/
+/*	リターン:																					*/
+/*		成功 (出力指示文字)																		*/
+/*		失敗 (D_OSWRITE1_ERROR)																	*/
 /*																								*/
 /************************************************************************************************/
 long os_SeekStr(char *pcPtr, char cTarget, long lStart, long lEnd)
 {
 	/********************************************************************************************/
-	/*  ����ΰ�                                                                              */
+	/*  ワーク領域                                                                              */
 	/********************************************************************************************/
-	long lCnt;											// �롼�פΥ�����
+	long lCnt;											// ループのカウンタ
 	 
     
 	/********************************************************************************************/
-	/*	 �ܽ���																				    */
+	/*	 本処理																				    */
 	/********************************************************************************************/
 	
 	if(lStart >= 0)
-	{													//��ɸ�򸡺�
+	{													//目標を検索
 		for(lCnt = lStart; lCnt < lEnd; lCnt++) 
 		{
-			if(pcPtr[lCnt] == cTarget) 					// ���פ�����
+			if(pcPtr[lCnt] == cTarget) 					// 合致したら
 			{
 				
-				return(lCnt);							// ���֤��ֵ�
+				return(lCnt);							// 位置を返却
 			}
 		
 		}
@@ -2014,10 +2014,10 @@ long os_SeekStr(char *pcPtr, char cTarget, long lStart, long lEnd)
 
 
  	/********************************************************************************************/
-	/*  ������λ				                                                                */
+	/*  処理終了				                                                                */
 	/********************************************************************************************/
 	
-	return(-1);											// ���顼��å��������ֵ�
+	return(-1);											// エラーメッセージを返却
 	
 }	
 
