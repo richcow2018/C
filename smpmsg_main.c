@@ -1,45 +1,45 @@
 /*------------------------------------------------------------------*/
-/* ¡ãÂĞ¾İ¶ÈÌ³Ì¾¡ä                    ±¿Å¾´ÉÍı¶ÈÌ³                   */
-/* ¡ãÂĞ¾İ¶ÈÌ³£É£Ä¡ä                  £Ï£Ã£Ğ                         */
-/* ¡ã¥µ¡¼¥Ó¥¹¹àÌÜÌ¾¡ä                ÅÅÊ¸ÄÌÃÎ                       */
-/* ¡ã¥µ¡¼¥Ó¥¹¹àÌÜ£É£Ä¡ä              £Ø£Ø£Ø                         */
-/* ¡ã¥â¥¸¥å¡¼¥ëÌ¾¡ä                  £Ø£Ø£Ø£Ø£Ø£Ø£Ø£Ø£Ø£Ø           */
-/* ¡ã¥â¥¸¥å¡¼¥ë£É£Ä¡ä                £Ø£Ø£Ø£Ø£Ø£Ø£Ø£Ø               */
-/* ¡ã¥â¥¸¥å¡¼¥ëÄÌÈÖ¡ä                                               */
+/* ï¼œå¯¾è±¡æ¥­å‹™åï¼                    é‹è»¢ç®¡ç†æ¥­å‹™                   */
+/* ï¼œå¯¾è±¡æ¥­å‹™ï¼©ï¼¤ï¼                  ï¼¯ï¼£ï¼°                         */
+/* ï¼œã‚µãƒ¼ãƒ“ã‚¹é …ç›®åï¼                é›»æ–‡é€šçŸ¥                       */
+/* ï¼œã‚µãƒ¼ãƒ“ã‚¹é …ç›®ï¼©ï¼¤ï¼              ï¼¸ï¼¸ï¼¸                         */
+/* ï¼œãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«åï¼                  ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸           */
+/* ï¼œãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼©ï¼¤ï¼                ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸               */
+/* ï¼œãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«é€šç•ªï¼                                               */
 /*------------------------------------------------------------------*/
-/* ¡ãÅ¬ÍÑµ¡¼ï¡ä                      £Á£Ã£Å                         */
-/* ¡ãÅ¬ÍÑ£Ï£Ó¡ä                      £Ì£É£Î£Õ£Ø                     */
-/* ¡ã³«È¯´Ä¶­¡ä                      £Ì£É£Î£Õ£Ø                     */
-/* ¡ãµ­½Ò¸À¸ì¡ä                      £Ã¸À¸ì                         */
-/* ¡ã¥â¥¸¥å¡¼¥ë·ÁÂÖ¡ä                ¥³¥Ş¥ó¥É                       */
-/* ¡ãµ¡Ç½¶èÊ¬¡ä                                                     */
-/* ¡ãÂĞ¾İ¥Ç¡¼¥¿¡ä                                                   */
-/* ¡ã¹©Äø¡¦³¬ÁØ¶èÊ¬¡ä                                               */
+/* ï¼œé©ç”¨æ©Ÿç¨®ï¼                      ï¼¡ï¼£ï¼¥                         */
+/* ï¼œé©ç”¨ï¼¯ï¼³ï¼                      ï¼¬ï¼©ï¼®ï¼µï¼¸                     */
+/* ï¼œé–‹ç™ºç’°å¢ƒï¼                      ï¼¬ï¼©ï¼®ï¼µï¼¸                     */
+/* ï¼œè¨˜è¿°è¨€èªï¼                      ï¼£è¨€èª                         */
+/* ï¼œãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«å½¢æ…‹ï¼                ã‚³ãƒãƒ³ãƒ‰                       */
+/* ï¼œæ©Ÿèƒ½åŒºåˆ†ï¼                                                     */
+/* ï¼œå¯¾è±¡ãƒ‡ãƒ¼ã‚¿ï¼                                                   */
+/* ï¼œå·¥ç¨‹ãƒ»éšå±¤åŒºåˆ†ï¼                                               */
 /*------------------------------------------------------------------*/
-/* ¡ã³«È¯¥·¥¹¥Æ¥àÌ¾¡ä                £Á£Ã£Å¡İ£Ó£Í£Ğ¥·¥¹¥Æ¥à         */
-/* ¡ã³«È¯¥·¥¹¥Æ¥àÈÖ¹æ¡ä              £Ø£Ø£Ø£Ø£Ø£Ø£Ø£Ø£Ø£Ø£Ø£Ø       */
+/* ï¼œé–‹ç™ºã‚·ã‚¹ãƒ†ãƒ åï¼                ï¼¡ï¼£ï¼¥ï¼ï¼³ï¼­ï¼°ã‚·ã‚¹ãƒ†ãƒ          */
+/* ï¼œé–‹ç™ºã‚·ã‚¹ãƒ†ãƒ ç•ªå·ï¼              ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸ï¼¸       */
 /*------------------------------------------------------------------*/
-/* ¡ã³«È¯Ã´Åö¼ÔÌ¾¡ä                  £Ó£õ£ğ£ğ£ì£ù                   */
-/* ¡ãÅÅÏÃÈÖ¹æ¡ä                      03-3341-5504                   */
+/* ï¼œé–‹ç™ºæ‹…å½“è€…åï¼                                     */
+/* ï¼œé›»è©±ç•ªå·ï¼                                        */
 /*------------------------------------------------------------------*/
-/* ¡ãÀß·×¼ÔÌ¾¡ä                      £Ó£õ£ğ£ğ£ì£ù                   */
-/* ¡ãÀß·×Ç¯·îÆü¡ä                    £²£°£°£³Ç¯£°£±·î£²£¹Æü         */
-/* ¡ãÀß·×½¤Àµ¼ÔÌ¾¡ä                                                 */
-/* ¡ãÀß·×½¤ÀµÇ¯·îÆüµÚ¤Ó½¤Àµ£É£Ä¡ä                                   */
+/* ï¼œè¨­è¨ˆè€…åï¼                                        */
+/* ï¼œè¨­è¨ˆå¹´æœˆæ—¥ï¼                             */
+/* ï¼œè¨­è¨ˆä¿®æ­£è€…åï¼                                                 */
+/* ï¼œè¨­è¨ˆä¿®æ­£å¹´æœˆæ—¥åŠã³ä¿®æ­£ï¼©ï¼¤ï¼                                   */
 /*------------------------------------------------------------------*/
-/* ¡ã¥½¡¼¥¹ºîÀ®¼ÔÌ¾¡ä                £Ó£õ£ğ£ğ£ì£ù                   */
-/* ¡ã¥½¡¼¥¹ºîÀ®Ç¯·îÆü¡ä              £²£°£°£³Ç¯£°£²·î£°£²Æü         */
-/* ¡ã¥½¡¼¥¹½¤Àµ¼ÔÌ¾¡ä                                               */
-/* ¡ã¥½¡¼¥¹½¤ÀµÇ¯·îÆüµÚ¤Ó½¤Àµ£É£Ä¡ä                                 */
+/* ï¼œã‚½ãƒ¼ã‚¹ä½œæˆè€…åï¼                                 */
+/* ï¼œã‚½ãƒ¼ã‚¹ä½œæˆå¹´æœˆæ—¥ï¼                      */
+/* ï¼œã‚½ãƒ¼ã‚¹ä¿®æ­£è€…åï¼                                               */
+/* ï¼œã‚½ãƒ¼ã‚¹ä¿®æ­£å¹´æœˆæ—¥åŠã³ä¿®æ­£ï¼©ï¼¤ï¼                                 */
 /*------------------------------------------------------------------*/
-/* ¡ã¸«ÀÑ¥¹¥Æ¥Ã¥×¿ô¡ä                ¥¹¥Æ¥Ã¥×                       */
+/* ï¼œè¦‹ç©ã‚¹ãƒ†ãƒƒãƒ—æ•°ï¼                ã‚¹ãƒ†ãƒƒãƒ—                       */
 /*------------------------------------------------------------------*/
-/* ¡ãµ¡Ç½³µÍ×¡ä                                                     */
+/* ï¼œæ©Ÿèƒ½æ¦‚è¦ï¼                                                     */
 /*                                                                  */
-/*       £Ó£Í£ĞÇÛ²¼¤ÎÅÅÊ¸Ãæ·Ñ¥×¥í¥»¥¹¤Ë°ÍÍê¤µ¤ì¤¿ÅÅÊ¸¤òÁ÷¿®¤¹¤ë     */
+/*       ï¼³ï¼­ï¼°é…ä¸‹ã®é›»æ–‡ä¸­ç¶™ãƒ—ãƒ­ã‚»ã‚¹ã«ä¾é ¼ã•ã‚ŒãŸé›»æ–‡ã‚’é€ä¿¡ã™ã‚‹     */
 /*                                                                  */
 /*------------------------------------------------------------------*/
-/* ¡ã¸Æ½Ğ·Á¼°¡ä                                                     */
+/* ï¼œå‘¼å‡ºå½¢å¼ï¼                                                     */
 /*     int     smpmsg( pCdMk                                        */
 /*                     pNmSendPoint                                 */
 /*                     pDtMia                                       */
@@ -48,76 +48,76 @@
 /*                     [-s ]                                        */
 /*                     [-t timRtySnd ]                              */
 /*                                                                  */
-/* ¡ã²¾°ú¿ô¡ä                                                       */
-/*		pCdMk			:	£Í£Ë¥³¡¼¥É¡ÊÉ¬¿Ü¡Ë						*/
-/*		pNmSendPoint	:	È¯¿®Àè¥×¥í¥»¥¹Ì¾¡ÊÉ¬¿Ü¡Ë				*/
-/*		pDtMia			:	£Í£É£Á¸ÄÊÌ°èÀßÄê¥Ç¡¼¥¿¡ÊÉ¬¿Ü¡Ë			*/
-/*		-l				:	£Í£É£Á¸ÄÊÌ°èÀßÄê¥Ç¡¼¥¿Ä¹¥ª¥×¥·¥ç¥ó		*/
-/*		lenDtMia		:	£Í£É£Á¸ÄÊÌ°èÀßÄê¥Ç¡¼¥¿Ä¹				*/
-/*		-n				:	Á÷¿®²ó¿ô¥ª¥×¥·¥ç¥ó						*/
-/*		noSend			:	Á÷¿®²ó¿ô								*/
-/*		-s				:	Á÷Ã£³ÎÇ§»Ø¼¨							*/
-/*		-t				:	Á÷¿®¥ê¥È¥é¥¤´Ö³Ö¥ª¥×¥·¥ç¥ó				*/
-/*		timRtySnd		:	Á÷¿®¥ê¥È¥é¥¤´Ö³Ö						*/
-/*              ¤Ê¤·                                                */
-/* ¡ãÊÖµÑÃÍ¡ä                                                       */
-/*		0	:	Àµ¾ï												*/
-/*		-1	:	°Û¾ï¡Ê°ú¿ô¥¨¥é¡¼¡Ë									*/
-/*		-2	:	°Û¾ï¡ÊÅÅÊ¸Ãæ·Ñ¥×¥í¥»¥¹À¸Â¸³ÎÇ§¼ºÇÔ¡Ë				*/
-/*		-3	:	°Û¾ï¡ÊÅÅÊ¸Ãæ·Ñ¥á¥¤¥ë¥Ü¥Ã¥¯¥¹¼±ÊÌ»Ò					*/
-/*								´ÉÍı¥Õ¥¡¥¤¥ë¥ª¡¼¥×¥ó¼ºÇÔ¡Ë			*/
-/*		-4	:	°Û¾ï¡ÊÅÅÊ¸Ãæ·Ñ¥á¥¤¥ë¥Ü¥Ã¥¯¥¹¼±ÊÌ»Ò					*/
-/*								´ÉÍı¥Õ¥¡¥¤¥ë¥ª¡¼¥×¥ó¼ºÇÔ¡Ë			*/
-/*		-5	:	°Û¾ï¡ÊÅÅÊ¸Ãæ·Ñ¥á¥¤¥ë¥Ü¥Ã¥¯¥¹¼±ÊÌ»Ò					*/
-/*								´ÉÍı¥Õ¥¡¥¤¥ë¥ª¡¼¥×¥ó¼ºÇÔ¡Ë			*/
-/*		-6	:	°Û¾ï¡ÊÁê¼ê¥á¥Ã¥»¡¼¥¸¥­¡¼¼èÆÀ¼ºÇÔ¡Ë					*/
-/*		-7	:	°Û¾ï¡ÊÁê¼ê¥á¥Ã¥»¡¼¥¸¥­¥å¡¼¼èÆÀ¼ºÇÔ¡Ë				*/
-/*		-8	:	°Û¾ï¡ÊÁ÷¿®ÅÅÊ¸ÊÔ½¸ÎÎ°è³ÎÊİ¼ºÇÔ¡Ë					*/
-/*		-9	:	°Û¾ï¡Ê¼«¥á¥Ã¥»¡¼¥¸¥­¡¼¼èÆÀ¼ºÇÔ¡Ë					*/
-/*		-10	:	°Û¾ï¡Ê¼«¥á¥Ã¥»¡¼¥¸¥­¥å¡¼¼èÆÀ¼ºÇÔ¡Ë					*/
-/*		-11	:	°Û¾ï¡ÊÅÅÊ¸Ãæ·Ñ°ÍÍêÅÅÊ¸Á÷¿®¼ºÇÔ¡Ë					*/
-/*		-12	:	°Û¾ï¡ÊÁ÷Ã£³ÎÇ§¼ºÇÔ¡Ë								*/
-/*		-13	:	°Û¾ï¡ÊÁ÷Ã£³ÎÇ§ÅÅÊ¸¼õ¿®¼ºÇÔ¡Ë						*/
+/* ï¼œä»®å¼•æ•°ï¼                                                       */
+/*		pCdMk			:	ï¼­ï¼«ã‚³ãƒ¼ãƒ‰ï¼ˆå¿…é ˆï¼‰						*/
+/*		pNmSendPoint	:	ç™ºä¿¡å…ˆãƒ—ãƒ­ã‚»ã‚¹åï¼ˆå¿…é ˆï¼‰				*/
+/*		pDtMia			:	ï¼­ï¼©ï¼¡å€‹åˆ¥åŸŸè¨­å®šãƒ‡ãƒ¼ã‚¿ï¼ˆå¿…é ˆï¼‰			*/
+/*		-l				:	ï¼­ï¼©ï¼¡å€‹åˆ¥åŸŸè¨­å®šãƒ‡ãƒ¼ã‚¿é•·ã‚ªãƒ—ã‚·ãƒ§ãƒ³		*/
+/*		lenDtMia		:	ï¼­ï¼©ï¼¡å€‹åˆ¥åŸŸè¨­å®šãƒ‡ãƒ¼ã‚¿é•·				*/
+/*		-n				:	é€ä¿¡å›æ•°ã‚ªãƒ—ã‚·ãƒ§ãƒ³						*/
+/*		noSend			:	é€ä¿¡å›æ•°								*/
+/*		-s				:	é€é”ç¢ºèªæŒ‡ç¤º							*/
+/*		-t				:	é€ä¿¡ãƒªãƒˆãƒ©ã‚¤é–“éš”ã‚ªãƒ—ã‚·ãƒ§ãƒ³				*/
+/*		timRtySnd		:	é€ä¿¡ãƒªãƒˆãƒ©ã‚¤é–“éš”						*/
+/*              ãªã—                                                */
+/* ï¼œè¿”å´å€¤ï¼                                                       */
+/*		0	:	æ­£å¸¸												*/
+/*		-1	:	ç•°å¸¸ï¼ˆå¼•æ•°ã‚¨ãƒ©ãƒ¼ï¼‰									*/
+/*		-2	:	ç•°å¸¸ï¼ˆé›»æ–‡ä¸­ç¶™ãƒ—ãƒ­ã‚»ã‚¹ç”Ÿå­˜ç¢ºèªå¤±æ•—ï¼‰				*/
+/*		-3	:	ç•°å¸¸ï¼ˆé›»æ–‡ä¸­ç¶™ãƒ¡ã‚¤ãƒ«ãƒœãƒƒã‚¯ã‚¹è­˜åˆ¥å­					*/
+/*								ç®¡ç†ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³å¤±æ•—ï¼‰			*/
+/*		-4	:	ç•°å¸¸ï¼ˆé›»æ–‡ä¸­ç¶™ãƒ¡ã‚¤ãƒ«ãƒœãƒƒã‚¯ã‚¹è­˜åˆ¥å­					*/
+/*								ç®¡ç†ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³å¤±æ•—ï¼‰			*/
+/*		-5	:	ç•°å¸¸ï¼ˆé›»æ–‡ä¸­ç¶™ãƒ¡ã‚¤ãƒ«ãƒœãƒƒã‚¯ã‚¹è­˜åˆ¥å­					*/
+/*								ç®¡ç†ãƒ•ã‚¡ã‚¤ãƒ«ã‚ªãƒ¼ãƒ—ãƒ³å¤±æ•—ï¼‰			*/
+/*		-6	:	ç•°å¸¸ï¼ˆç›¸æ‰‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚­ãƒ¼å–å¾—å¤±æ•—ï¼‰					*/
+/*		-7	:	ç•°å¸¸ï¼ˆç›¸æ‰‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚­ãƒ¥ãƒ¼å–å¾—å¤±æ•—ï¼‰				*/
+/*		-8	:	ç•°å¸¸ï¼ˆé€ä¿¡é›»æ–‡ç·¨é›†é ˜åŸŸç¢ºä¿å¤±æ•—ï¼‰					*/
+/*		-9	:	ç•°å¸¸ï¼ˆè‡ªãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚­ãƒ¼å–å¾—å¤±æ•—ï¼‰					*/
+/*		-10	:	ç•°å¸¸ï¼ˆè‡ªãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚­ãƒ¥ãƒ¼å–å¾—å¤±æ•—ï¼‰					*/
+/*		-11	:	ç•°å¸¸ï¼ˆé›»æ–‡ä¸­ç¶™ä¾é ¼é›»æ–‡é€ä¿¡å¤±æ•—ï¼‰					*/
+/*		-12	:	ç•°å¸¸ï¼ˆé€é”ç¢ºèªå¤±æ•—ï¼‰								*/
+/*		-13	:	ç•°å¸¸ï¼ˆé€é”ç¢ºèªé›»æ–‡å—ä¿¡å¤±æ•—ï¼‰						*/
 /*------------------------------------------------------------------*/
-/* ¡ãÀ©¸Â»ö¹à¡ä         ¤Ê¤·                                        */
+/* ï¼œåˆ¶é™äº‹é …ï¼         ãªã—                                        */
 /*                                                                  */
-/* ¡ã»ÈÍÑ³°Éô¥â¥¸¥å¡¼¥ë£É£Ä¡ä                                       */
-/* ¡ã¸Æ½Ğ¥â¥¸¥å¡¼¥ë£É£Ä¡ä                                           */
+/* ï¼œä½¿ç”¨å¤–éƒ¨ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼©ï¼¤ï¼                                       */
+/* ï¼œå‘¼å‡ºãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼©ï¼¤ï¼                                           */
 /*                                                                  */
 /********************************************************************/
-/* ½¤ÀµÍúÎò															*/
+/* ä¿®æ­£å±¥æ­´															*/
 /********************************************************************/
-/* ¾ã³²ÈÖ¹æ	  : TBCS0066											*/
-/* ¾ã³²ÆâÍÆ	  : MIA¸ÄÊÌ°è¤Ë»ØÄê¤·¤¿¥Ç¡¼¥¿¤¬Àµ¤·¤¯ÅÅÊ¸¤ËÀßÄê¤µ¤ì¤Ê¤¤ */
-/* ½¤ÀµÆâÍÆ	  : MIA¸ÄÊÌÉôÂÅÅöÀ­¥Á¥§¥Ã¥¯½èÍı¤ÎÄÉ²Ã					*/
-/* ½¤ÀµÆüÉÕ	  : 2003.04.24           	                            */
-/* ½¤Àµ¼Ô	  : Supply Sugawara										*/
+/* éšœå®³ç•ªå·	  : TBCS0066											*/
+/* éšœå®³å†…å®¹	  : MIAå€‹åˆ¥åŸŸã«æŒ‡å®šã—ãŸãƒ‡ãƒ¼ã‚¿ãŒæ­£ã—ãé›»æ–‡ã«è¨­å®šã•ã‚Œãªã„ */
+/* ä¿®æ­£å†…å®¹	  : MIAå€‹åˆ¥éƒ¨å¦¥å½“æ€§ãƒã‚§ãƒƒã‚¯å‡¦ç†ã®è¿½åŠ 					*/
+/* ä¿®æ­£æ—¥ä»˜	  : 2003.04.24           	                            */
+/* ä¿®æ­£è€…	  : Supply Sugawara										*/
 /********************************************************************/
 #include	"smpmsg.h"
 /**/
 char	infoSysLog[256];
 /****************************************/
-/*	ºî¶ÈÎÎ°è							*/
+/*	ä½œæ¥­é ˜åŸŸ							*/
 /****************************************/
-char	*pGetLog;						/*	¥í¥°ÊÔ½¸°è				*/
+char	*pGetLog;						/*	ãƒ­ã‚°ç·¨é›†åŸŸ				*/
 /**/
 int
 main (argc ,argv)
 int		argc;
 char	*argv[];
 {
-	USER_AREA	UA;						/*	I/F¥¨¥ê¥¢				*/
-	int			cLP;					/*	¥ë¡¼¥×¥«¥¦¥ó¥¿			*/
-	int			ckRslt;					/*	ÊÖµÑ¾ğÊó°è				*/
-	int			flgLogOut;				/*	¥í¥°½ĞÎÏ»Ø¼¨¥Õ¥é¥°		*/
-	int			hF;						/*	¥Õ¥¡¥¤¥ë¥Ï¥ó¥É¥ë		*/
-	int			lenData;				/*	ÆÉ¤ß¹ş¤ß¥µ¥¤¥º			*/
-	long		pBuf;					/*	ÆÉ¤ß¹ş¤ß°è				*/
-	key_t		keyIpc;					/*	£É£Ğ£Ã¥­¡¼¾ğÊó			*/
-	int			queIpc;					/*	£É£Ğ£Ã¥­¥å¡¼¾ğÊó		*/
-	long		cPrc;					/*	£Í£Ï£Ê¿ô				*/
+	USER_AREA	UA;						/*	I/Fã‚¨ãƒªã‚¢				*/
+	int			cLP;					/*	ãƒ«ãƒ¼ãƒ—ã‚«ã‚¦ãƒ³ã‚¿			*/
+	int			ckRslt;					/*	è¿”å´æƒ…å ±åŸŸ				*/
+	int			flgLogOut;				/*	ãƒ­ã‚°å‡ºåŠ›æŒ‡ç¤ºãƒ•ãƒ©ã‚°		*/
+	int			hF;						/*	ãƒ•ã‚¡ã‚¤ãƒ«ãƒãƒ³ãƒ‰ãƒ«		*/
+	int			lenData;				/*	èª­ã¿è¾¼ã¿ã‚µã‚¤ã‚º			*/
+	long		pBuf;					/*	èª­ã¿è¾¼ã¿åŸŸ				*/
+	key_t		keyIpc;					/*	ï¼©ï¼°ï¼£ã‚­ãƒ¼æƒ…å ±			*/
+	int			queIpc;					/*	ï¼©ï¼°ï¼£ã‚­ãƒ¥ãƒ¼æƒ…å ±		*/
+	long		cPrc;					/*	ï¼­ï¼¯ï¼ªæ•°				*/
 /****************************************/
-/*	½é´ü²½								*/
+/*	åˆæœŸåŒ–								*/
 /****************************************/
 #ifdef	DEBUGF
 printf ("*** smpmsg Start (%s) ***\n" ,argv[0]);
@@ -125,22 +125,22 @@ printf ("*** smpmsg Start (%s) ***\n" ,argv[0]);
 	memset ((char*)&UA ,0x00 ,sizeof(USER_AREA));
 	UA.ua_Rslt			=	RTN_OK;
 /****************************************/
-/*	¼«¥×¥í¥»¥¹£É£Ä¼èÆÀ					*/
+/*	è‡ªãƒ—ãƒ­ã‚»ã‚¹ï¼©ï¼¤å–å¾—					*/
 /****************************************/
 	UA.ua_idProc	=	getpid();
 #ifdef	DEBUGF
 printf ("*** smpmsg getpid (%d) ***\n" ,UA.ua_idProc);
 #endif
 /****************************************/
-/*	¥Ñ¥é¥á¡¼¥¿¥Á¥§¥Ã¥¯					*/
+/*	ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒã‚§ãƒƒã‚¯					*/
 /****************************************/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call ParamaterCheck ***\n");
 #endif
 	ckRslt	=	ParamaterCheck (&UA ,argc ,argv);
-										/*	¥Ñ¥é¥á¡¼¥¿¥Á¥§¥Ã¥¯½èÍı	*/
-	if (ckRslt == STC_PRC_OK);			/*	¥Ñ¥é¥á¡¼¥¿Àµ¾ï			*/
-	else {								/*	¥Ñ¥é¥á¡¼¥¿ÉÔÀµ			*/
+										/*	ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒã‚§ãƒƒã‚¯å‡¦ç†	*/
+	if (ckRslt == STC_PRC_OK);			/*	ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿æ­£å¸¸			*/
+	else {								/*	ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ä¸æ­£			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg PrmaterError (%d ,%d) ***\n" ,RTN_NG_PRM ,ckRslt );
 #endif
@@ -154,23 +154,23 @@ printf ("*** smpmsg PrmaterError (%d ,%d) ***\n" ,RTN_NG_PRM ,ckRslt );
 printf ("*** smpmsg Call ParamaterCheck Success ***\n");
 #endif
 /****************************************/
-/*	ÅÅÊ¸Ãæ·Ñ¥×¥í¥»¥¹À¸Â¸³ÎÇ§			*/
+/*	é›»æ–‡ä¸­ç¶™ãƒ—ãƒ­ã‚»ã‚¹ç”Ÿå­˜ç¢ºèª			*/
 /****************************************/
 	UA.ua_noRtySend		=	1;
-	while (1) {							/*	À¸Â¸¤¹¤ë¤Ş¤Ç·«¤êÊÖ¤¹	*/
+	while (1) {							/*	ç”Ÿå­˜ã™ã‚‹ã¾ã§ç¹°ã‚Šè¿”ã™	*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call MojArriveCheck ***\n");
 #endif
 		ckRslt	=	MojArriveCheck (&UA ,&cPrc);
-										/*	À¸Â¸³ÎÇ§½èÍı			*/
-		if (ckRslt == STC_PRC_OK) {		/*	Àµ¾ïÉüµ¢¤Î»ş			*/
-			if (cPrc >= 1) {			/*	À¸Â¸¤¹¤ë¾ì¹ç			*/
+										/*	ç”Ÿå­˜ç¢ºèªå‡¦ç†			*/
+		if (ckRslt == STC_PRC_OK) {		/*	æ­£å¸¸å¾©å¸°ã®æ™‚			*/
+			if (cPrc >= 1) {			/*	ç”Ÿå­˜ã™ã‚‹å ´åˆ			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg MojArriveCheck MojRunning (%d) ***\n" ,cPrc);
 #endif
-				break;					/*	while¤òÈ´¤±¤ë			*/
+				break;					/*	whileã‚’æŠœã‘ã‚‹			*/
 			}
-			else {						/*	À¸Â¸¤·¤Ê¤¤¾ì¹ç			*/
+			else {						/*	ç”Ÿå­˜ã—ãªã„å ´åˆ			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg MojArriveCheck MojNotRunning (%d) ***\n" ,cPrc);
 #endif
@@ -178,14 +178,14 @@ printf ("*** smpmsg MojArriveCheck MojNotRunning (%d) ***\n" ,cPrc);
 				GetSysLog ("SOH2" ,"ERR" ,infoSysLog);
 				if ((UA.ua_noSend == DEF_SND_UNLIMIT)	||
 					((UA.ua_noSend != DEF_SND_UNLIMIT)	&&	(UA.ua_noSend > UA.ua_noRtySend))) {
-										/*	¥ê¥È¥é¥¤µöÍÆÈÏ°Ï		*/
-					sleep(UA.ua_tmSend);/*	£×£Á£É£Ô				*/
-					UA.ua_noRtySend++;	/*	ºÆÁ÷¿®²ó¿ô£Õ£Ğ			*/
+										/*	ãƒªãƒˆãƒ©ã‚¤è¨±å®¹ç¯„å›²		*/
+					sleep(UA.ua_tmSend);/*	ï¼·ï¼¡ï¼©ï¼´				*/
+					UA.ua_noRtySend++;	/*	å†é€ä¿¡å›æ•°ï¼µï¼°			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg MojArriveCheck Retry (%d ,%d) ***\n" ,UA.ua_noSend, UA.ua_noRtySend);
 #endif
 				}
-				else {					/*	¥ê¥È¥é¥¤¥ª¡¼¥Ğ¡¼		*/
+				else {					/*	ãƒªãƒˆãƒ©ã‚¤ã‚ªãƒ¼ãƒãƒ¼		*/
 #ifdef	DEBUGF
 printf ("*** smpmsg MojArriveCheck RetryOver (%d ,%d) ***\n" ,ckRslt ,RTN_NG_MOJ);
 #endif
@@ -195,7 +195,7 @@ printf ("*** smpmsg MojArriveCheck RetryOver (%d ,%d) ***\n" ,ckRslt ,RTN_NG_MOJ
 				}
 			}
 		}
-		else {							/*	°Û¾ïÉüµ¢¤Î»ş			*/
+		else {							/*	ç•°å¸¸å¾©å¸°ã®æ™‚			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg MojArriveCheck Error (%d ,%d) ***\n" ,ckRslt ,RTN_NG_MOJ);
 #endif
@@ -208,18 +208,18 @@ printf ("*** smpmsg MojArriveCheck Error (%d ,%d) ***\n" ,ckRslt ,RTN_NG_MOJ);
 printf ("*** smpmsg Call MojArriveCheck Success ***\n");
 #endif
 /****************************************/
-/*	ÅÅÊ¸Ãæ·Ñ¥á¥¤¥ë¥Ü¥Ã¥¯¥¹¼±ÊÌ»Ò¤Î¼èÆÀ	*/
+/*	é›»æ–‡ä¸­ç¶™ãƒ¡ã‚¤ãƒ«ãƒœãƒƒã‚¯ã‚¹è­˜åˆ¥å­ã®å–å¾—	*/
 /****************************************/
-	while (1) {							/*	¾ğÊó¤¬¼èÆÀ¤Ç¤­¤ë¤Ş¤Ç	*/
+	while (1) {							/*	æƒ…å ±ãŒå–å¾—ã§ãã‚‹ã¾ã§	*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call File Open (%s) ***\n" ,DEF_MOJ_MBOX_PATH);
 #endif
 		hF	=	open (DEF_MOJ_MBOX_PATH ,O_RDONLY);
-		if (hF != -1) {					/*	¥ª¡¼¥×¥óÀ®¸ù			*/
+		if (hF != -1) {					/*	ã‚ªãƒ¼ãƒ—ãƒ³æˆåŠŸ			*/
 			break;
 		}
-		else {							/*	¥ª¡¼¥×¥ó¼ºÇÔ			*/
-			if (errno == ENOENT) {		/*	¥Õ¥¡¥¤¥ëÌµ¤·			*/
+		else {							/*	ã‚ªãƒ¼ãƒ—ãƒ³å¤±æ•—			*/
+			if (errno == ENOENT) {		/*	ãƒ•ã‚¡ã‚¤ãƒ«ç„¡ã—			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg File Open FileNothing ***\n");
 #endif
@@ -227,14 +227,14 @@ printf ("*** smpmsg File Open FileNothing ***\n");
 				GetSysLog ("SOH5" ,"ERR" ,infoSysLog);
 				if ((UA.ua_noSend == DEF_SND_UNLIMIT)	||
 					((UA.ua_noSend != DEF_SND_UNLIMIT)	&&	(UA.ua_noSend > UA.ua_noRtySend))) {
-										/*	¥ê¥È¥é¥¤µöÍÆÈÏ°Ï		*/
-					sleep(UA.ua_tmSend);/*	£×£Á£É£Ô				*/
-					UA.ua_noRtySend++;	/*	ºÆÁ÷¿®²ó¿ô£Õ£Ğ			*/
+										/*	ãƒªãƒˆãƒ©ã‚¤è¨±å®¹ç¯„å›²		*/
+					sleep(UA.ua_tmSend);/*	ï¼·ï¼¡ï¼©ï¼´				*/
+					UA.ua_noRtySend++;	/*	å†é€ä¿¡å›æ•°ï¼µï¼°			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg File Open Retry (%d ,%d) ***\n" ,UA.ua_noSend, UA.ua_noRtySend);
 #endif
 				}
-				else {					/*	¥ê¥È¥é¥¤¥ª¡¼¥Ğ¡¼		*/
+				else {					/*	ãƒªãƒˆãƒ©ã‚¤ã‚ªãƒ¼ãƒãƒ¼		*/
 #ifdef	DEBUGF
 printf ("*** smpmsg File Open RtryOver (%d) ***\n" ,RTN_NG_FL_OPEN);
 #endif
@@ -243,7 +243,7 @@ printf ("*** smpmsg File Open RtryOver (%d) ***\n" ,RTN_NG_FL_OPEN);
 					return	RTN_NG_FL_OPEN;
 				}
 			}
-			else {						/*	¥Õ¥¡¥¤¥ëÌµ¤·°Ê³°		*/
+			else {						/*	ãƒ•ã‚¡ã‚¤ãƒ«ç„¡ã—ä»¥å¤–		*/
 #ifdef	DEBUGF
 printf ("*** smpmsg File Open Error (%d ,%d ,%s) ***\n" ,RTN_NG_FL_OPEN ,errno ,strerror(errno));
 #endif
@@ -276,23 +276,23 @@ errno	=	EINTR;
 printf ("*** smpmsg File Read Rslt sigNG_Set End (%d ,%d(%s)) ***\n" ,
 						lenData ,errno ,strerror(errno));
 #endif
-		if (lenData == -1) {			/*	ÆÉ¤ß¹ş¤ß°Û¾ï			*/
+		if (lenData == -1) {			/*	èª­ã¿è¾¼ã¿ç•°å¸¸			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg File Read Error (%d(%s) ,%d) ***\n" ,errno ,strerror(errno) ,RTN_NG_FL_READ);
 #endif
-			if (errno == EINTR) {		/*	¥·¥°¥Ê¥ëÈ¯À¸			*/
-				continue;				/*	while¤ËÌá¤ë				*/
+			if (errno == EINTR) {		/*	ã‚·ã‚°ãƒŠãƒ«ç™ºç”Ÿ			*/
+				continue;				/*	whileã«æˆ»ã‚‹				*/
 			}
 			sprintf (infoSysLog ,"%s  WatchFile READ Error (errno=%d ,rc=%d)" ,argv[0] ,errno ,RTN_NG_FL_READ);
 			GetSysLog ("SOH7" ,"ERR" ,infoSysLog);
-			close (hF);					/*	¥Õ¥¡¥¤¥ë¥¯¥í¡¼¥º		*/
+			close (hF);					/*	ãƒ•ã‚¡ã‚¤ãƒ«ã‚¯ãƒ­ãƒ¼ã‚º		*/
 			return	RTN_NG_FL_READ;
 		}
 		if (lenData == 0) {				/*	EOF						*/
 #ifdef	DEBUGF
 printf ("*** smpmsg File Read EOF (%d ,%d) ***\n" ,errno ,RTN_NG_FL_READ);
 #endif
-			close (hF);						/*	¥Õ¥¡¥¤¥ë¥¯¥í¡¼¥º		*/
+			close (hF);						/*	ãƒ•ã‚¡ã‚¤ãƒ«ã‚¯ãƒ­ãƒ¼ã‚º		*/
 			return	RTN_NG_FL_READ;
 		}
 		UA.InfoPartProc.ua_PartProcMbox	=	pBuf;
@@ -306,7 +306,7 @@ printf ("*** smpmsg Call File Read Success ***\n");
 #ifdef	DEBUGF
 printf ("*** smpmsg Call File Close ***\n");
 #endif
-		ckRslt	=	close (hF);			/*	¥Õ¥¡¥¤¥ë¥¯¥í¡¼¥º		*/
+		ckRslt	=	close (hF);			/*	ãƒ•ã‚¡ã‚¤ãƒ«ã‚¯ãƒ­ãƒ¼ã‚º		*/
 #ifdef	CLERR
 printf ("*** smpmsg File Close Rslt errNG_Set Start (%d) ***\n" ,ckRslt);
 ckRslt	=	-1;
@@ -321,12 +321,12 @@ errno	=	EINTR;
 printf ("*** smpmsg File Close Rslt sigNG_Set End (%d ,%d(%s)) ***\n" ,
 						ckRslt ,errno ,strerror(errno));
 #endif
-		if (ckRslt == -1) {				/*	¥¯¥í¡¼¥º¼ºÇÔ			*/
+		if (ckRslt == -1) {				/*	ã‚¯ãƒ­ãƒ¼ã‚ºå¤±æ•—			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg File Close Error (%d(%s) ,%d) ***\n" ,errno ,strerror(errno) ,RTN_NG_FL_CLOSE);
 #endif
-			if (errno == EINTR) {		/*	¥·¥°¥Ê¥ëÈ¯À¸			*/
-				continue;				/*	while¤ËÌá¤ë				*/
+			if (errno == EINTR) {		/*	ã‚·ã‚°ãƒŠãƒ«ç™ºç”Ÿ			*/
+				continue;				/*	whileã«æˆ»ã‚‹				*/
 			}
 			sprintf (infoSysLog ,"%s  WatchFile CLOSE Error (errno=%d ,rc=%d)" ,argv[0] ,errno ,RTN_NG_FL_CLOSE);
 			GetSysLog ("SOH8" ,"ERR" ,infoSysLog);
@@ -338,16 +338,16 @@ printf ("*** smpmsg File Close Error (%d(%s) ,%d) ***\n" ,errno ,strerror(errno)
 printf ("*** smpmsg Call File Close Success ***\n");
 #endif
 /****************************************/
-/*	Áê¼ê¥­¥å¡¼¥ª¡¼¥×¥ó					*/
+/*	ç›¸æ‰‹ã‚­ãƒ¥ãƒ¼ã‚ªãƒ¼ãƒ—ãƒ³					*/
 /****************************************/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call GetKey_IPC(Part) ***\n");
 #endif
 	ckRslt	=	GetKey_IPC (&UA ,UA.InfoPartProc.ua_PartProcMbox ,
 								DEF_MOJ_PRJ_ID ,&UA.InfoPartProc.ua_PartIpcKey);
-										/*	£É£Ğ£Ã¥­¡¼¼èÆÀ			*/
-	if (ckRslt == STC_PRC_OK);			/*	¼èÆÀÀ®¸ù				*/
-	else {								/*	¼èÆÀ¼ºÇÔ				*/
+										/*	ï¼©ï¼°ï¼£ã‚­ãƒ¼å–å¾—			*/
+	if (ckRslt == STC_PRC_OK);			/*	å–å¾—æˆåŠŸ				*/
+	else {								/*	å–å¾—å¤±æ•—				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg GetKey_IPC(Part) Error (%d ,%d) ***\n" ,ckRslt ,RTN_NG_MOJ_KEY);
 #endif
@@ -359,32 +359,32 @@ printf ("*** smpmsg GetKey_IPC(Part) Error (%d ,%d) ***\n" ,ckRslt ,RTN_NG_MOJ_K
 printf ("*** smpmsg Call GetKey_IPC(Part) Success ***\n");
 #endif
 /**/
-	while (1) {							/*	Á÷¿®£É£Ğ£Ã¥­¥å¡¼¤¬¼èÆÀ¤Ç¤­¤ë¤Ş¤Ç	*/
+	while (1) {							/*	é€ä¿¡ï¼©ï¼°ï¼£ã‚­ãƒ¥ãƒ¼ãŒå–å¾—ã§ãã‚‹ã¾ã§	*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call CreOpn_IPC(Part) ***\n");
 #endif
 		ckRslt	=	CreOpn_IPC (&UA ,UA.InfoPartProc.ua_PartIpcKey ,
 									&UA.InfoPartProc.ua_PartIpcQid);
-		if (ckRslt == STC_PRC_OK) {		/*	£É£Ğ£Ã¥­¥å¡¼¼èÆÀÀ®¸ù	*/
-			break;						/*	whileÈ´¤±¤ë				*/
+		if (ckRslt == STC_PRC_OK) {		/*	ï¼©ï¼°ï¼£ã‚­ãƒ¥ãƒ¼å–å¾—æˆåŠŸ	*/
+			break;						/*	whileæŠœã‘ã‚‹				*/
 		}
-		else {							/*	£É£Ğ£Ã¥­¥å¡¼¼èÆÀ¼ºÇÔ	*/
+		else {							/*	ï¼©ï¼°ï¼£ã‚­ãƒ¥ãƒ¼å–å¾—å¤±æ•—	*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call CreOpn_IPC(Part) Fail ***\n");
 #endif
-			if (errno == ENOENT) {		/*	£É£Ğ£Ã¥­¥å¡¼Ì¤À¸À®		*/
+			if (errno == ENOENT) {		/*	ï¼©ï¼°ï¼£ã‚­ãƒ¥ãƒ¼æœªç”Ÿæˆ		*/
 				sprintf (infoSysLog ,"%s  MOJ_IPC_QUE NotCreate (errno=%d ,SendCount=%d)" ,argv[0] ,errno ,UA.ua_noRtySend);
 				GetSysLog ("SOHA" ,"ERR" ,infoSysLog);
 				if ((UA.ua_noSend == DEF_SND_UNLIMIT)	||
 					((UA.ua_noSend != DEF_SND_UNLIMIT)	&&	(UA.ua_noSend > UA.ua_noRtySend))) {
-										/*	¥ê¥È¥é¥¤µöÍÆÈÏ°Ï		*/
-					sleep(UA.ua_tmSend);/*	£×£Á£É£Ô				*/
-					UA.ua_noRtySend++;	/*	ºÆÁ÷¿®²ó¿ô£Õ£Ğ			*/
+										/*	ãƒªãƒˆãƒ©ã‚¤è¨±å®¹ç¯„å›²		*/
+					sleep(UA.ua_tmSend);/*	ï¼·ï¼¡ï¼©ï¼´				*/
+					UA.ua_noRtySend++;	/*	å†é€ä¿¡å›æ•°ï¼µï¼°			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg CreOpn_IPC(Part) Retry (%d ,%d) ***\n" ,UA.ua_noSend, UA.ua_noRtySend);
 #endif
 				}
-				else {					/*	¥ê¥È¥é¥¤¥ª¡¼¥Ğ¡¼		*/
+				else {					/*	ãƒªãƒˆãƒ©ã‚¤ã‚ªãƒ¼ãƒãƒ¼		*/
 #ifdef	DEBUGF
 printf ("*** smpmsg CreOpn_IPC(Part) RtryOver (%d) ***\n" ,RTN_NG_MOJ_QUE);
 #endif
@@ -393,7 +393,7 @@ printf ("*** smpmsg CreOpn_IPC(Part) RtryOver (%d) ***\n" ,RTN_NG_MOJ_QUE);
 					return	RTN_NG_MOJ_QUE;
 				}
 			}
-			else {						/*	£É£Ğ£Ã¥­¥å¡¼¥ª¡¼¥×¥ó¼ºÇÔ*/
+			else {						/*	ï¼©ï¼°ï¼£ã‚­ãƒ¥ãƒ¼ã‚ªãƒ¼ãƒ—ãƒ³å¤±æ•—*/
 #ifdef	DEBUGF
 printf ("*** smpmsg CreOpn_IPC(Part) Error (%d) ***\n" ,RTN_NG_MOJ_QUE);
 #endif
@@ -407,14 +407,14 @@ printf ("*** smpmsg CreOpn_IPC(Part) Error (%d) ***\n" ,RTN_NG_MOJ_QUE);
 printf ("*** smpmsg Call CreOpn_IPC(Part) Success ***\n");
 #endif
 /****************************************/
-/*	ÅÅÊ¸ÊÔ½¸ÎÎ°è¤Î³ÎÊİ					*/
+/*	é›»æ–‡ç·¨é›†é ˜åŸŸã®ç¢ºä¿					*/
 /****************************************/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call GetDataArea ***\n");
 #endif
-	ckRslt	=	GetDataArea (&UA);		/*	ÎÎ°è³ÎÊİ½èÍı			*/
-	if (ckRslt == STC_PRC_OK);			/*	ÎÎ°è³ÎÊİÀ®¸ù			*/
-	else {								/*	ÎÎ°è³ÎÊİ¼ºÇÔ			*/
+	ckRslt	=	GetDataArea (&UA);		/*	é ˜åŸŸç¢ºä¿å‡¦ç†			*/
+	if (ckRslt == STC_PRC_OK);			/*	é ˜åŸŸç¢ºä¿æˆåŠŸ			*/
+	else {								/*	é ˜åŸŸç¢ºä¿å¤±æ•—			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg GetDataArea Error (%d ,%d) ***\n" ,ckRslt ,RTN_NG_SND_AREA);
 #endif
@@ -426,25 +426,25 @@ printf ("*** smpmsg GetDataArea Error (%d ,%d) ***\n" ,ckRslt ,RTN_NG_SND_AREA);
 printf ("*** smpmsg Call GetDataArea Success ***\n");
 #endif
 /****************************************/
-/*	¼«¥­¥å¡¼ºîÀ®						*/
+/*	è‡ªã‚­ãƒ¥ãƒ¼ä½œæˆ						*/
 /****************************************/
 #ifdef	DEBUGF
 printf ("*** smpmsg ResponsMsgInfo (%d) ***\n" ,UA.ua_fAccChk);
 #endif
-	if (UA.ua_fAccChk == DEF_FLG_ON) {	/*	Á÷Ã£³ÎÇ§Í×				*/
+	if (UA.ua_fAccChk == DEF_FLG_ON) {	/*	é€é”ç¢ºèªè¦				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call GetKey_IPC(My) ***\n");
 #endif
 		ckRslt	=	GetKey_IPC (&UA ,DEF_SMPMSG_MBOX_ID ,
 									DEF_SMPMSG_PRJ_ID ,&UA.InfoMyProc.ua_MyIpcKey);
-										/*	£É£Ğ£Ã¥­¡¼¼èÆÀ			*/
+										/*	ï¼©ï¼°ï¼£ã‚­ãƒ¼å–å¾—			*/
 #ifdef	GETKEYERR
 printf ("*** smpmsg GetKey_IPC(My) Rslt NG_Set Start (%d) ***\n" ,ckRslt);
 ckRslt	=	STC_PRC_NG;
 printf ("*** smpmsg GetKey_IPC(My) Rslt NG_Set End (%d) ***\n" ,ckRslt);
 #endif
-		if (ckRslt == STC_PRC_OK);		/*	¼èÆÀÀ®¸ù				*/
-		else {							/*	¼èÆÀ¼ºÇÔ				*/
+		if (ckRslt == STC_PRC_OK);		/*	å–å¾—æˆåŠŸ				*/
+		else {							/*	å–å¾—å¤±æ•—				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg GetKey_IPC(My) Error (%d) ***\n" ,ckRslt);
 #endif
@@ -461,8 +461,8 @@ printf ("*** smpmsg Call CreOpn_IPC(My) ***\n");
 #endif
 		ckRslt	=	CreOpn_IPC (&UA ,UA.InfoMyProc.ua_MyIpcKey ,
 									&UA.InfoMyProc.ua_MyIpcQid);
-		if (ckRslt == STC_PRC_OK);		/*	£É£Ğ£Ã¥­¥å¡¼¼èÆÀÀ®¸ù	*/
-		else {							/*	£É£Ğ£Ã¥­¥å¡¼¥ª¡¼¥×¥ó¼ºÇÔ*/
+		if (ckRslt == STC_PRC_OK);		/*	ï¼©ï¼°ï¼£ã‚­ãƒ¥ãƒ¼å–å¾—æˆåŠŸ	*/
+		else {							/*	ï¼©ï¼°ï¼£ã‚­ãƒ¥ãƒ¼ã‚ªãƒ¼ãƒ—ãƒ³å¤±æ•—*/
 #ifdef	DEBUGF
 printf ("*** smpmsg CreOpn_IPC(My) Error (%d) ***\n" ,ckRslt);
 #endif
@@ -474,13 +474,13 @@ printf ("*** smpmsg CreOpn_IPC(My) Error (%d) ***\n" ,ckRslt);
 printf ("*** smpmsg Call CreOpn_IPC(My) Success ***\n");
 #endif
 	}
-	else {								/*	Á÷Ã£³ÎÇ§ÉÔÍ×			*/
+	else {								/*	é€é”ç¢ºèªä¸è¦			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ResponsMsgInfo Nothing ***\n");
 #endif
 	}
 /****************************************/
-/*	ÅÅÊ¸Ãæ·Ñ°ÍÍêÅÅÊ¸ÊÔ½¸				*/
+/*	é›»æ–‡ä¸­ç¶™ä¾é ¼é›»æ–‡ç·¨é›†				*/
 /****************************************/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call EditData ***\n");
@@ -488,24 +488,24 @@ printf ("*** smpmsg Call EditData ***\n");
 	EditData (&UA ,argv);
 /**/
 /****************************************/
-/*	ÅÅÊ¸Á÷¿®½èÍı						*/
+/*	é›»æ–‡é€ä¿¡å‡¦ç†						*/
 /****************************************/
-	while (1) {							/*	Á÷¿®¤Ç¤­¤ë¤Ş¤Ç			*/
+	while (1) {							/*	é€ä¿¡ã§ãã‚‹ã¾ã§			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call Send_IPC ***\n");
 #endif
 		ckRslt	=	Send_IPC (&UA);
-		if (ckRslt == STC_PRC_OK) {		/*	Á÷¿®À®¸ù				*/
-			break;						/*	whileÈ´¤±¤ë				*/
+		if (ckRslt == STC_PRC_OK) {		/*	é€ä¿¡æˆåŠŸ				*/
+			break;						/*	whileæŠœã‘ã‚‹				*/
 		}
-		else {							/*	Á÷¿®¼ºÇÔ				*/
-			if (errno == EINTR) {		/*	¥·¥°¥Ê¥ëÈ¯À¸			*/
+		else {							/*	é€ä¿¡å¤±æ•—				*/
+			if (errno == EINTR) {		/*	ã‚·ã‚°ãƒŠãƒ«ç™ºç”Ÿ			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Send_IPC SndError Signal ***\n");
 #endif
-				continue;				/*	while¤ËÌá¤ë				*/
+				continue;				/*	whileã«æˆ»ã‚‹				*/
 			}
-			if (errno == EAGAIN) {		/*	¥­¥å¡¼°ìÇÕ				*/
+			if (errno == EAGAIN) {		/*	ã‚­ãƒ¥ãƒ¼ä¸€æ¯				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Send_IPC SndError QueFull ***\n");
 #endif
@@ -513,14 +513,14 @@ printf ("*** smpmsg Send_IPC SndError QueFull ***\n");
 				GetSysLog ("SOHF" ,"ERR" ,infoSysLog);
 				if ((UA.ua_noSend == DEF_SND_UNLIMIT)	||
 					((UA.ua_noSend != DEF_SND_UNLIMIT)	&&	(UA.ua_noSend > UA.ua_noRtySend))) {
-										/*	¥ê¥È¥é¥¤µöÍÆÈÏ°Ï		*/
-					sleep(UA.ua_tmSend);/*	£×£Á£É£Ô				*/
-					UA.ua_noRtySend++;	/*	ºÆÁ÷¿®²ó¿ô£Õ£Ğ			*/
+										/*	ãƒªãƒˆãƒ©ã‚¤è¨±å®¹ç¯„å›²		*/
+					sleep(UA.ua_tmSend);/*	ï¼·ï¼¡ï¼©ï¼´				*/
+					UA.ua_noRtySend++;	/*	å†é€ä¿¡å›æ•°ï¼µï¼°			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Send_IPC Retry (%d ,%d) ***\n" ,UA.ua_noSend, UA.ua_noRtySend);
 #endif
 				}
-				else {					/*	¥ê¥È¥é¥¤¥ª¡¼¥Ğ¡¼		*/
+				else {					/*	ãƒªãƒˆãƒ©ã‚¤ã‚ªãƒ¼ãƒãƒ¼		*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Send_IPC RtryOver (%d) ***\n" ,RTN_NG_MSG_SND);
 #endif
@@ -529,7 +529,7 @@ printf ("*** smpmsg Send_IPC RtryOver (%d) ***\n" ,RTN_NG_MSG_SND);
 					return	RTN_NG_MSG_SND;
 				}
 			}
-			else {						/*	Ã×Ì¿Åª¤ÊÁ÷¿®¼ºÇÔ		*/
+			else {						/*	è‡´å‘½çš„ãªé€ä¿¡å¤±æ•—		*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Send_IPC Error (%d) ***\n" ,RTN_NG_MSG_SND);
 #endif
@@ -543,31 +543,31 @@ printf ("*** smpmsg Send_IPC Error (%d) ***\n" ,RTN_NG_MSG_SND);
 printf ("*** smpmsg Call Send_IPC Success ***\n");
 #endif
 /****************************************/
-/*	ÅÅÊ¸¼õ¿®½èÍı						*/
+/*	é›»æ–‡å—ä¿¡å‡¦ç†						*/
 /****************************************/
 	while (UA.ua_fAccChk == DEF_FLG_ON) {
-										/*	Á÷Ã£³ÎÇ§ÅÅÊ¸¤ò¼õ¿®¤¹¤ë¤Ş¤Ç	*/
+										/*	é€é”ç¢ºèªé›»æ–‡ã‚’å—ä¿¡ã™ã‚‹ã¾ã§	*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Call Rcv_IPC ***\n");
 #endif
 		ckRslt	=	Rcv_IPC (&UA);
-		if (ckRslt == STC_PRC_OK) {		/*	¼õ¿®À®¸ù					*/;
+		if (ckRslt == STC_PRC_OK) {		/*	å—ä¿¡æˆåŠŸ					*/;
 #ifdef	DEBUGF
 printf ("*** smpmsg Call Rcv_IPC Success ***\n");
 #endif
 			if (UA.ua_pRcvData.msg_type == UA.ua_idProc) {
-										/*	¥×¥í¥»¥¹£É£Ä°ìÃ×			*/
+										/*	ãƒ—ãƒ­ã‚»ã‚¹ï¼©ï¼¤ä¸€è‡´			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Rcv_IPC msg_type (%d ,%d) OK ***\n" ,UA.ua_pRcvData.msg_type ,UA.ua_idProc);
 #endif
 				if (UA.ua_pRcvData.msg_rslt == 0) {
-										/*	Á÷Ã£³ÎÇ§À®¸ù				*/
+										/*	é€é”ç¢ºèªæˆåŠŸ				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Rcv_IPC msg_rslt (%d) OK ***\n" ,UA.ua_pRcvData.msg_rslt);
 #endif
-					break;				/*	while¤òÈ´¤±¤ë				*/
+					break;				/*	whileã‚’æŠœã‘ã‚‹				*/
 				}
-				else {					/*	Á÷Ã£³ÎÇ§°Û¾ï				*/
+				else {					/*	é€é”ç¢ºèªç•°å¸¸				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Rcv_IPC msg_rslt (%d) NG ***\n" ,UA.ua_pRcvData.msg_rslt);
 #endif
@@ -576,23 +576,23 @@ printf ("*** smpmsg Rcv_IPC msg_rslt (%d) NG ***\n" ,UA.ua_pRcvData.msg_rslt);
 					return	RTN_NG_ACC_SND;
 				}
 			}
-			else {						/*	¥×¥í¥»¥¹£É£ÄÉÔ°ìÃ×			*/
+			else {						/*	ãƒ—ãƒ­ã‚»ã‚¹ï¼©ï¼¤ä¸ä¸€è‡´			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Rcv_IPC msg_type (%d ,%d) NG ***\n" ,UA.ua_pRcvData.msg_type ,UA.ua_idProc);
 #endif
 				sprintf (infoSysLog ,"%s  MessageType UnMatch (MyType=%d ,RcvMsgType=%d)" ,argv[0] ,UA.ua_idProc ,UA.ua_pRcvData.msg_type);
 				GetSysLog ("SOHI" ,"ERR" ,infoSysLog);
-				continue;				/*	while¤ËÌá¤ë					*/
+				continue;				/*	whileã«æˆ»ã‚‹					*/
 			}
 		}
-		else {							/*	¼õ¿®¼ºÇÔ					*/
-			if (errno == EINTR) {		/*	¥·¥°¥Ê¥ëÈ¯À¸				*/
+		else {							/*	å—ä¿¡å¤±æ•—					*/
+			if (errno == EINTR) {		/*	ã‚·ã‚°ãƒŠãƒ«ç™ºç”Ÿ				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Rcv_IPC RcvError Signal ***\n");
 #endif
-				continue;				/*	while¤ËÌá¤ë					*/
+				continue;				/*	whileã«æˆ»ã‚‹					*/
 			}
-			else {						/*	Ã×Ì¿Åª¤Ê¼õ¿®¼ºÇÔ			*/
+			else {						/*	è‡´å‘½çš„ãªå—ä¿¡å¤±æ•—			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg Rcv_IPC RcvError (%d ,%d) ***\n" ,ckRslt ,errno);
 #endif
@@ -612,73 +612,73 @@ printf ("*** smpmsg End (%s) ***\n" ,argv[0]);
 }
 /**/
 /********************************************************************/
-/*	ÆşÎÏ¥Á¥§¥Ã¥¯													*/
+/*	å…¥åŠ›ãƒã‚§ãƒƒã‚¯													*/
 /********************************************************************/
 int		ParamaterCheck (pUA ,argc ,argv)
-USER_AREA	*pUA;						/*	»ı¤Á²ó¤ê¾ğÊó			*/
-int			argc;						/*	¥Ñ¥é¥á¡¼¥¿¿ô			*/
-char		*argv[];					/*	¥Ñ¥é¥á¡¼¥¿ÆâÍÆ			*/
+USER_AREA	*pUA;						/*	æŒã¡å›ã‚Šæƒ…å ±			*/
+int			argc;						/*	ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿æ•°			*/
+char		*argv[];					/*	ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿å†…å®¹			*/
 {
-	long	cLP;						/*	¥ë¡¼¥×¥«¥¦¥ó¥¿			*/
-	long	cFreePrm;					/*	Ç¤°Õ¥Ñ¥é¥á¡¼¥¿¿ô°è		*/
-	long	cMiaKlen;					/*  MIA¸ÄÊÌÉô¥µ¥¤¥º			*/
-	char	*endptr;					/*	strtol¥¨¥é¡¼¾ğÊó		*/
-	int		i;							/*	¥«¥¦¥ó¥¿				*/
+	long	cLP;						/*	ãƒ«ãƒ¼ãƒ—ã‚«ã‚¦ãƒ³ã‚¿			*/
+	long	cFreePrm;					/*	ä»»æ„ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿æ•°åŸŸ		*/
+	long	cMiaKlen;					/*  MIAå€‹åˆ¥éƒ¨ã‚µã‚¤ã‚º			*/
+	char	*endptr;					/*	strtolã‚¨ãƒ©ãƒ¼æƒ…å ±		*/
+	int		i;							/*	ã‚«ã‚¦ãƒ³ã‚¿				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck Start ***\n");
 #endif
-/*	¥Ñ¥é¥á¡¼¥¿¿ô¥Á¥§¥Ã¥¯				*/
+/*	ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿æ•°ãƒã‚§ãƒƒã‚¯				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck CountPram=%d ***\n" ,argc);
 #endif
-	if (((argc - 1) >= CK_PRM_MIN)	&&	/*	¥Ñ¥é¥á¡¼¥¿¿ô¤¬£³°Ê¾å	*/
-		((argc - 1) <= CK_PRM_MAX)) {	/*	³î¤Ä£±£°°Ê²¼			*/
+	if (((argc - 1) >= CK_PRM_MIN)	&&	/*	ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿æ•°ãŒï¼“ä»¥ä¸Š	*/
+		((argc - 1) <= CK_PRM_MAX)) {	/*	ä¸”ã¤ï¼‘ï¼ä»¥ä¸‹			*/
 		cFreePrm	=	argc - CK_PRM_MIN - 1;
 	}
-	else {								/*	¥Ñ¥é¥á¡¼¥¿¿ôÉÔÀµ		*/
+	else {								/*	ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿æ•°ä¸æ­£		*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck CountPramError ***\n");
 #endif
 		return	STC_PRC_NG;
 	}
 /****************************************/
-/*	É¬¿Ü¥Ñ¥é¥á¡¼¥¿¾ğÊó¥Á¥§¥Ã¥¯			*/
+/*	å¿…é ˆãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿æƒ…å ±ãƒã‚§ãƒƒã‚¯			*/
 /****************************************/
-/***£Í£Ë¥³¡¼¥É¥Á¥§¥Ã¥¯				*****/
-	if (strlen(argv[1]) == CK_PRM_LEN8);/*	£¸·å¤Î»ş				*/
-	else {								/*	£¸·å°Ê³°				*/
+/***ï¼­ï¼«ã‚³ãƒ¼ãƒ‰ãƒã‚§ãƒƒã‚¯				*****/
+	if (strlen(argv[1]) == CK_PRM_LEN8);/*	ï¼˜æ¡ã®æ™‚				*/
+	else {								/*	ï¼˜æ¡ä»¥å¤–				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck MkCode LengthError (%d) ***\n" ,strlen(argv[1]));
 #endif
 		return	STC_PRC_NG;
 	}
-	strtol (argv[1] ,&endptr ,16);		/*	£Â£Ã£ÄÊÑ´¹¥Á¥§¥Ã¥¯		*/
-	if (endptr[0] == '\0');				/*	£Â£Ã£ÄÊÑ´¹²ÄÇ½¥³¡¼¥É	*/
-	else {								/*	£Â£Ã£ÄÊÑ´¹ÉÔ²ÄÇ½¥³¡¼¥É	*/
+	strtol (argv[1] ,&endptr ,16);		/*	ï¼¢ï¼£ï¼¤å¤‰æ›ãƒã‚§ãƒƒã‚¯		*/
+	if (endptr[0] == '\0');				/*	ï¼¢ï¼£ï¼¤å¤‰æ›å¯èƒ½ã‚³ãƒ¼ãƒ‰	*/
+	else {								/*	ï¼¢ï¼£ï¼¤å¤‰æ›ä¸å¯èƒ½ã‚³ãƒ¼ãƒ‰	*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck MkCode BcdError (%s) ***\n" ,argv[1]);
 #endif
 		return	STC_PRC_NG;
 	}
-/***È¯¿®Àè¥×¥í¥»¥¹Ì¾¥Á¥§¥Ã¥¯		*****/
+/***ç™ºä¿¡å…ˆãƒ—ãƒ­ã‚»ã‚¹åãƒã‚§ãƒƒã‚¯		*****/
 	if ((strlen(argv[2]) >= CK_PRM_LEN1)	&&	(strlen(argv[2]) <= CK_PRM_LEN8));
-										/*	ÈÏ°ÏÆâ¡Ê£±¤«¤é£¸·å¡Ë	*/
-	else {								/*	ÈÏ°Ï³°					*/
+										/*	ç¯„å›²å†…ï¼ˆï¼‘ã‹ã‚‰ï¼˜æ¡ï¼‰	*/
+	else {								/*	ç¯„å›²å¤–					*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck nmSend LengthError (%d) ***\n" ,strlen(argv[2]));
 #endif
 		return	STC_PRC_NG;
 	}
-/***£Í£É£Á¸ÄÊÌ°èÀßÄê¥Ç¡¼¥¿¥Á¥§¥Ã¥¯	*****/
-	if ((strlen(argv[3]) % 2) == 0);	/*	¶ö¿ô·å¿ô¤Î»ş			*/
-	else {								/*	´ñ¿ô·å¿ô¤Î»ş			*/
+/***ï¼­ï¼©ï¼¡å€‹åˆ¥åŸŸè¨­å®šãƒ‡ãƒ¼ã‚¿ãƒã‚§ãƒƒã‚¯	*****/
+	if ((strlen(argv[3]) % 2) == 0);	/*	å¶æ•°æ¡æ•°ã®æ™‚			*/
+	else {								/*	å¥‡æ•°æ¡æ•°ã®æ™‚			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck MiaData LengthError (%d) ***\n" ,strlen(argv[3]));
 #endif
 		return	STC_PRC_NG;
 	}
 /****************************************/
-/*	Ç¤°Õ¥Ñ¥é¥á¡¼¥¿¾ğÊó¥Á¥§¥Ã¥¯			*/
+/*	ä»»æ„ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿æƒ…å ±ãƒã‚§ãƒƒã‚¯			*/
 /****************************************/
 	for (i = 0 ,pUA->ua_lenMia = DEF_MIA_LEN ,pUA->ua_noSend = DEF_SND_NUM ,
 				pUA->ua_fAccChk = DEF_FLG_OFF ,pUA->ua_tmSend = DEF_TIM_SND ;i < cFreePrm ;i++) {
@@ -686,38 +686,38 @@ printf ("*** smpmsg ParamaterCheck MiaData LengthError (%d) ***\n" ,strlen(argv[
 			(strcmp(argv[i+4] ,CK_PRM_SND_OPT) == 0)	||
 			(strcmp(argv[i+4] ,CK_PRM_CHK_OPT) == 0)	||
 			(strcmp(argv[i+4] ,CK_PRM_TIM_OPT) == 0));
-										/*	¥ª¥×¥·¥ç¥óÂÅÅö»ş		*/
-		else {							/*	¥ª¥×¥·¥ç¥óÉÔÀµ»ş		*/
+										/*	ã‚ªãƒ—ã‚·ãƒ§ãƒ³å¦¥å½“æ™‚		*/
+		else {							/*	ã‚ªãƒ—ã‚·ãƒ§ãƒ³ä¸æ­£æ™‚		*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck OptionError (%s) ***\n" ,argv[i+4]);
 #endif
 			return	STC_PRC_NG;
 		}
-/*	£Í£É£Á¸ÄÊÌ°èÀßÄê¥Ç¡¼¥¿Ä¹¥ª¥×¥·¥ç¥ó	*/
+/*	ï¼­ï¼©ï¼¡å€‹åˆ¥åŸŸè¨­å®šãƒ‡ãƒ¼ã‚¿é•·ã‚ªãƒ—ã‚·ãƒ§ãƒ³	*/
 		if (strcmp(argv[i+4] ,CK_PRM_MIA_OPT) == 0) {
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck MiaOption (%s) ***\n" ,argv[i+4]);
 #endif
 			i++;
-			if (argv[i+4] != NULL);				/*	¼¡¾ğÊó¤¢¤ê				*/
-			else {								/*	¼¡¾ğÊó¤Ê¤·				*/
+			if (argv[i+4] != NULL);				/*	æ¬¡æƒ…å ±ã‚ã‚Š				*/
+			else {								/*	æ¬¡æƒ…å ±ãªã—				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck MiaOption DataNothing ***\n");
 #endif
 				return	STC_PRC_NG;
 			}
 			pUA->ua_lenMia	=	strtol (argv[i+4] ,&endptr ,10);
-												/*	£Â£Ã£ÄÊÑ´¹				*/
-			if (endptr[0] == '\0');				/*	£Â£Ã£ÄÊÑ´¹²ÄÇ½¥³¡¼¥É	*/
-			else {								/*	£Â£Ã£ÄÊÑ´¹ÉÔ²ÄÇ½¥³¡¼¥É	*/
+												/*	ï¼¢ï¼£ï¼¤å¤‰æ›				*/
+			if (endptr[0] == '\0');				/*	ï¼¢ï¼£ï¼¤å¤‰æ›å¯èƒ½ã‚³ãƒ¼ãƒ‰	*/
+			else {								/*	ï¼¢ï¼£ï¼¤å¤‰æ›ä¸å¯èƒ½ã‚³ãƒ¼ãƒ‰	*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck MiaLength BcdError (%s) ***\n" ,argv[i+4]);
 #endif
 				return	STC_PRC_NG;
 			}
 			if (pUA->ua_lenMia >= CK_PRM_MIA_MIN);
-												/*	ÈÏ°ÏÆâ¡Ê£´°Ê¾å¡Ë		*/
-			else {								/*	ÈÏ°Ï³°					*/
+												/*	ç¯„å›²å†…ï¼ˆï¼”ä»¥ä¸Šï¼‰		*/
+			else {								/*	ç¯„å›²å¤–					*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck MiaLengthError (%d) ***\n" ,pUA->ua_lenMia);
 #endif
@@ -725,31 +725,31 @@ printf ("*** smpmsg ParamaterCheck MiaLengthError (%d) ***\n" ,pUA->ua_lenMia);
 			}
 			continue;
 		}
-/*	Á÷¿®²ó¿ô¥ª¥×¥·¥ç¥ó					*/
+/*	é€ä¿¡å›æ•°ã‚ªãƒ—ã‚·ãƒ§ãƒ³					*/
 		if (strcmp(argv[i+4] ,CK_PRM_SND_OPT) == 0) {
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck SendCountOption (%s) ***\n" ,argv[i+4]);
 #endif
 			i++;
-			if (argv[i+4] != NULL);				/*	¼¡¾ğÊó¤¢¤ê				*/
-			else {								/*	¼¡¾ğÊó¤Ê¤·				*/
+			if (argv[i+4] != NULL);				/*	æ¬¡æƒ…å ±ã‚ã‚Š				*/
+			else {								/*	æ¬¡æƒ…å ±ãªã—				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck SendCountOption DataNothing ***\n");
 #endif
 				return	STC_PRC_NG;
 			}
 			pUA->ua_noSend	=	strtol (argv[i+4] ,&endptr ,10);
-												/*	£Â£Ã£ÄÊÑ´¹				*/
-			if (endptr[0] == '\0');				/*	£Â£Ã£ÄÊÑ´¹²ÄÇ½¥³¡¼¥É	*/
-			else {								/*	£Â£Ã£ÄÊÑ´¹ÉÔ²ÄÇ½¥³¡¼¥É	*/
+												/*	ï¼¢ï¼£ï¼¤å¤‰æ›				*/
+			if (endptr[0] == '\0');				/*	ï¼¢ï¼£ï¼¤å¤‰æ›å¯èƒ½ã‚³ãƒ¼ãƒ‰	*/
+			else {								/*	ï¼¢ï¼£ï¼¤å¤‰æ›ä¸å¯èƒ½ã‚³ãƒ¼ãƒ‰	*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck SendCountLength BcdError (%s) ***\n" ,argv[i+4]);
 #endif
 				return	STC_PRC_NG;
 			}
 			if ((pUA->ua_noSend >= CK_PRM_SND_MIN)	&&	(pUA->ua_noSend <= CK_PRM_SND_MAX));
-										/*	ÈÏ°ÏÆâ¡Ê£°¤«¤é£±£°£°¡Ë	*/
-			else {						/*	ÈÏ°Ï³°					*/
+										/*	ç¯„å›²å†…ï¼ˆï¼ã‹ã‚‰ï¼‘ï¼ï¼ï¼‰	*/
+			else {						/*	ç¯„å›²å¤–					*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck SendCountLengthError (%d) ***\n" ,pUA->ua_noSend);
 #endif
@@ -757,7 +757,7 @@ printf ("*** smpmsg ParamaterCheck SendCountLengthError (%d) ***\n" ,pUA->ua_noS
 			}
 			continue;
 		}
-/*	Á÷Ã£³ÎÇ§¥ª¥×¥·¥ç¥ó					*/
+/*	é€é”ç¢ºèªã‚ªãƒ—ã‚·ãƒ§ãƒ³					*/
 		if (strcmp(argv[i+4] ,CK_PRM_CHK_OPT) == 0) {
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck SendChekOption (%s) ***\n" ,argv[i+4]);
@@ -765,31 +765,31 @@ printf ("*** smpmsg ParamaterCheck SendChekOption (%s) ***\n" ,argv[i+4]);
 			pUA->ua_fAccChk	=	DEF_FLG_ON;
 			continue;
 		}
-/*	ºÆÁ÷´Ö³Ö¥ª¥×¥·¥ç¥ó					*/
+/*	å†é€é–“éš”ã‚ªãƒ—ã‚·ãƒ§ãƒ³					*/
 		if (strcmp(argv[i+4] ,CK_PRM_TIM_OPT) == 0) {
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck RetryOption (%s) ***\n" ,argv[i+4]);
 #endif
 			i++;
-			if (argv[i+4] != NULL);				/*	¼¡¾ğÊó¤¢¤ê				*/
-			else {								/*	¼¡¾ğÊó¤Ê¤·				*/
+			if (argv[i+4] != NULL);				/*	æ¬¡æƒ…å ±ã‚ã‚Š				*/
+			else {								/*	æ¬¡æƒ…å ±ãªã—				*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck RetryOption DataNothing ***\n");
 #endif
 				return	STC_PRC_NG;
 			}
 			pUA->ua_tmSend	=	strtol (argv[i+4] ,&endptr ,10);
-												/*	£Â£Ã£ÄÊÑ´¹				*/
-			if (endptr[0] == '\0');				/*	£Â£Ã£ÄÊÑ´¹²ÄÇ½¥³¡¼¥É	*/
-			else {								/*	£Â£Ã£ÄÊÑ´¹ÉÔ²ÄÇ½¥³¡¼¥É	*/
+												/*	ï¼¢ï¼£ï¼¤å¤‰æ›				*/
+			if (endptr[0] == '\0');				/*	ï¼¢ï¼£ï¼¤å¤‰æ›å¯èƒ½ã‚³ãƒ¼ãƒ‰	*/
+			else {								/*	ï¼¢ï¼£ï¼¤å¤‰æ›ä¸å¯èƒ½ã‚³ãƒ¼ãƒ‰	*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck RetryLength BcdError (%s) ***\n" ,argv[i+4]);
 #endif
 				return	STC_PRC_NG;
 			}
 			if (pUA->ua_tmSend >= CK_PRM_TIM_MIN);
-												/*	ÈÏ°ÏÆâ¡Ê£±°Ê¾å¡Ë		*/
-			else {								/*	ÈÏ°Ï³°					*/
+												/*	ç¯„å›²å†…ï¼ˆï¼‘ä»¥ä¸Šï¼‰		*/
+			else {								/*	ç¯„å›²å¤–					*/
 #ifdef	DEBUGF
 printf ("*** smpmsg ParamaterCheck RetryLengthError (%d) ***\n" ,pUA->ua_tmSend);
 #endif
@@ -799,9 +799,9 @@ printf ("*** smpmsg ParamaterCheck RetryLengthError (%d) ***\n" ,pUA->ua_tmSend)
 		}
 	}
 	/* TBCS0066 Start */
-	/* MIA¸ÄÊÌÉô¥Ç¡¼¥¿ÂÅÅöÀ­¥Á¥§¥Ã¥¯ÄÉ²Ã : BCDÊÑ´¹²ÄÇ½¤Ê¥³¡¼¥É¤Ç¤¢¤ë¤³¤È*/
+	/* MIAå€‹åˆ¥éƒ¨ãƒ‡ãƒ¼ã‚¿å¦¥å½“æ€§ãƒã‚§ãƒƒã‚¯è¿½åŠ  : BCDå¤‰æ›å¯èƒ½ãªã‚³ãƒ¼ãƒ‰ã§ã‚ã‚‹ã“ã¨*/
 
-	cMiaKlen = strlen(argv[3]) ;		/*  MIA¸ÄÊÌÉô¥µ¥¤¥º         */
+	cMiaKlen = strlen(argv[3]) ;		/*  MIAå€‹åˆ¥éƒ¨ã‚µã‚¤ã‚º         */
 #ifdef DEBUGF
 printf( "*** smpmsg ParamaterCheck cMiaKlen= %d ***\n", cMiaKlen );
 #endif
@@ -830,30 +830,30 @@ printf ("*** smpmsg ParamaterCheck End ***\n");
 	return	STC_PRC_OK;
 }
 /********************************************************************/
-/*	ÅÅÊ¸Ãæ·Ñ¥×¥í¥»¥¹À¸Â¸³ÎÇ§										*/
+/*	é›»æ–‡ä¸­ç¶™ãƒ—ãƒ­ã‚»ã‚¹ç”Ÿå­˜ç¢ºèª										*/
 /********************************************************************/
 int		MojArriveCheck (pUA ,cPrc)
-USER_AREA	*pUA;						/*	»ı¤Á²ó¤ê¾ğÊó			*/
-long		*cPrc;						/*	À¸Â¸¿ô					*/
+USER_AREA	*pUA;						/*	æŒã¡å›ã‚Šæƒ…å ±			*/
+long		*cPrc;						/*	ç”Ÿå­˜æ•°					*/
 {
-	int			cdRt;					/*	ÊÖµÑ¾ğÊó				*/
-	FILE		*pF;					/*	popen¥Õ¥¡¥¤¥ë¥İ¥¤¥ó¥¿	*/
-	char		infGet[64];				/*	popen·ë²Ì¾ğÊó¼èÆÀ		*/
+	int			cdRt;					/*	è¿”å´æƒ…å ±				*/
+	FILE		*pF;					/*	popenãƒ•ã‚¡ã‚¤ãƒ«ãƒã‚¤ãƒ³ã‚¿	*/
+	char		infGet[64];				/*	popençµæœæƒ…å ±å–å¾—		*/
 #ifdef	DEBUGF
 printf ("*** smpmsg MojArriveCheck Start ***\n");
 #endif
 /**/
 	if ((pF = popen (DEF_MOJ_ARRIVE ,"r")) == NULL) {
-										/*	¥³¥Ş¥ó¥É¼ºÇÔ			*/
+										/*	ã‚³ãƒãƒ³ãƒ‰å¤±æ•—			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg MojArriveCheck CommandError ***\n");
 #endif
 		cdRt	=	STC_PRC_NG;
 	}
-	else {								/*	¥³¥Ş¥ó¥ÉÀ®¸ù			*/
-		while (1) {						/*	£Í£Ï£Ê¤ò¸¡º÷¤¹¤ë¤Ş¤Ç	*/
+	else {								/*	ã‚³ãƒãƒ³ãƒ‰æˆåŠŸ			*/
+		while (1) {						/*	ï¼­ï¼¯ï¼ªã‚’æ¤œç´¢ã™ã‚‹ã¾ã§	*/
 			if ((fgets (infGet ,sizeof(infGet) ,pF)) == NULL) {
-										/*	¸¡º÷¾ğÊó¼èÆÀ			*/
+										/*	æ¤œç´¢æƒ…å ±å–å¾—			*/
 #ifdef	DEBUGF
 printf ("*** smpmsg MojArriveCheck InfomationNothing ***\n");
 #endif
